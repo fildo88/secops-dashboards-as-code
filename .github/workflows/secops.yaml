@@ -1,0 +1,104 @@
+name: "SecOps Dashboards As Code"
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+      - opened
+      - synchronize
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "Command to run (plan or apply)"
+        required: true
+        default: "plan"
+        type: choice
+        options:
+          - plan
+          - apply
+
+env:
+  SECOPS_CUSTOMER_ID: "8a9bcdd8-288f-488c-b433-3fb2f1794b21"
+  SECOPS_PROJECT_ID: "secops-lab-lowe-01"
+  SECOPS_REGION: "asia-southeast1"
+  WIF_PROVIDER: "projects/383339244683/locations/global/workloadIdentityPools/github-actions-google-secops-1/providers/thdac"
+
+jobs:
+  secops-dashboards:
+    permissions:
+      contents: read
+      id-token: write
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - id: checkout
+        name: Checkout repository
+        uses: actions/checkout@v4
+
+      - id: gcp-auth
+        name: Authenticate to Google Cloud (Direct WIF)
+        uses: google-github-actions/auth@v2
+        with:
+          project_id: ${{ env.SECOPS_PROJECT_ID }}
+          workload_identity_provider: ${{ secrets.GOOGLE_CLOUD_WORKLOAD_IDENTITY_PROVIDER || env.WIF_PROVIDER }}
+          access_token_lifetime: 900s
+          export_environment_variables: true
+          create_credentials_file: true
+          cleanup_credentials: true
+
+      - id: install-python
+        name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - id: install-dependencies
+        name: Install Dependencies
+        run: pip install -r ./requirements.txt
+
+      - id: plan-dashboards
+        if: (github.event_name == 'pull_request' && github.event.pull_request.merged != true) || (github.event_name == 'workflow_dispatch' && inputs.command == 'plan')
+        name: Plan Dashboards
+        env:
+          PYTHONPATH: ${{ github.workspace }}/script
+        continue-on-error: true
+        run: python script/main.py plan
+
+      - id: apply-dashboards
+        if: (github.event_name == 'pull_request' && github.event.pull_request.merged == true) || (github.event_name == 'workflow_dispatch' && inputs.command == 'apply')
+        name: Apply Dashboards
+        env:
+          PYTHONPATH: ${{ github.workspace }}/script
+        continue-on-error: true
+        run: python script/main.py apply
+
+      - id: pr-comment
+        name: Post comment to Pull Request
+        continue-on-error: true
+        uses: actions/github-script@v7
+        if: github.event_name == 'pull_request' && (steps.plan-dashboards.outcome == 'success' || steps.apply-dashboards.outcome == 'success')
+        with:
+          script: |
+            const raw = ${{ toJSON(steps.plan-dashboards.outputs.pr_comment_data || steps.apply-dashboards.outputs.pr_comment_data) }};
+            const data = JSON.parse(raw);
+            const commentBody = `## ${data.title}\n${data.summary}\n<details><summary>Show Details</summary>\n\n${data.details}\n\n</details>`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: commentBody
+            });
+
+      - id: check-plan
+        name: Check plan failure
+        if: ((github.event_name == 'pull_request' && github.event.pull_request.merged != true) || (github.event_name == 'workflow_dispatch' && inputs.command == 'plan')) && steps.plan-dashboards.outcome != 'success'
+        run: exit 1
+
+      - id: check-apply
+        name: Check apply failure
+        if: ((github.event_name == 'pull_request' && github.event.pull_request.merged == true) || (github.event_name == 'workflow_dispatch' && inputs.command == 'apply')) && steps.apply-dashboards.outcome != 'success'
+        run: exit 1

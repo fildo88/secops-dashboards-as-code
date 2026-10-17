@@ -1,0 +1,1527 @@
+{
+  "dashboards": [
+    {
+      "dashboard": {
+        "name": "9d6b5b1a-824e-4e98-9e69-26ebbd55e54a",
+        "displayName": "Pi-Hole Overview",
+        "description": "Pi-hole DNS activity overview",
+        "definition": {
+          "filters": [
+            {
+              "id": "GlobalTimeFilter",
+              "dataSource": "GLOBAL",
+              "filterOperatorAndFieldValues": [
+                {
+                  "filterOperator": "PAST",
+                  "fieldValues": [
+                    "7",
+                    "DAY"
+                  ]
+                }
+              ],
+              "displayName": "Global Time Filter",
+              "isStandardTimeRangeFilter": true,
+              "isStandardTimeRangeFilterEnabled": true
+            }
+          ],
+          "charts": [
+            {
+              "dashboardChart": "753d0a71-069f-4d4f-9abf-4445978fbcb1",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 96,
+                "startY": 0,
+                "spanY": 40
+              }
+            },
+            {
+              "dashboardChart": "de2c5b06-49b0-4334-a9f3-9901af6dd24b",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 96,
+                "startY": 40,
+                "spanY": 48
+              }
+            }
+          ]
+        },
+        "type": "CUSTOM",
+        "etag": "4bc0deb12ef4e2cf58be217355d6da1dd88c73d4a965573bae8dddf6cfbd9b38",
+        "access": "DASHBOARD_PUBLIC"
+      },
+      "dashboardCharts": [
+        {
+          "name": "753d0a71-069f-4d4f-9abf-4445978fbcb1",
+          "displayName": "Top 5 Domains per Hour",
+          "description": "Hourly query counts (Australia/Sydney) for the top 5 domains queried through Pi-hole",
+          "chartDatasource": {
+            "dashboardQuery": "87db1906-de3b-42d7-9ffb-f220aee5adcc",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "dit.whatsapp.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#0c67df"
+                },
+                "seriesUniqueValue": "dit.whatsapp.net"
+              },
+              {
+                "seriesName": "gateway.fe2.apple-dns.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "gateway.fe2.apple-dns.net"
+              },
+              {
+                "seriesName": "mmx-ds.cdn.whatsapp.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#10a3b7"
+                },
+                "seriesUniqueValue": "mmx-ds.cdn.whatsapp.net"
+              },
+              {
+                "seriesName": "self.events.data.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "self.events.data.microsoft.com"
+              },
+              {
+                "seriesName": "mobile.events.data.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e51f8f"
+                },
+                "seriesUniqueValue": "mobile.events.data.microsoft.com"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Query Count"
+              }
+            ],
+            "legends": [
+              {
+                "right": 12,
+                "legendOrient": "VERTICAL"
+              }
+            ],
+            "seriesColumn": [
+              "Domain"
+            ],
+            "groupingType": "Stacked"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "edff5847b35d4d82032e5747c6e8813554f5194888e1c65719e2f194aad84bcd",
+          "drillDownConfig": {}
+        },
+        {
+          "name": "de2c5b06-49b0-4334-a9f3-9901af6dd24b",
+          "displayName": "Top 5 Domains in Each Hour",
+          "description": "Top 5 domains queried through Pi-hole in each hour (Australia/Sydney). Ties for 5th place are included.",
+          "chartDatasource": {
+            "dashboardQuery": "cab7ae19-af16-4ad0-836e-1bc780797eb5",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "gateway.fe2.apple-dns.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "gateway.fe2.apple-dns.net"
+              },
+              {
+                "seriesName": "mmx-ds.cdn.whatsapp.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "mmx-ds.cdn.whatsapp.net"
+              },
+              {
+                "seriesName": "connectivitycheck.gstatic.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "connectivitycheck.gstatic.com"
+              },
+              {
+                "seriesName": "dit.whatsapp.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "dit.whatsapp.net"
+              },
+              {
+                "seriesName": "mobile.events.data.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "mobile.events.data.microsoft.com"
+              },
+              {
+                "seriesName": "self.events.data.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "self.events.data.microsoft.com"
+              },
+              {
+                "seriesName": "unagi-fe.amazon.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "unagi-fe.amazon.com"
+              },
+              {
+                "seriesName": "nrdp.logs.netflix.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "nrdp.logs.netflix.com"
+              },
+              {
+                "seriesName": "news-edge.apple.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "news-edge.apple.com"
+              },
+              {
+                "seriesName": "www.youtube.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "www.youtube.com"
+              },
+              {
+                "seriesName": "graph.instagram.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "graph.instagram.com"
+              },
+              {
+                "seriesName": "sdk.split.io",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "sdk.split.io"
+              },
+              {
+                "seriesName": "www.google.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "www.google.com"
+              },
+              {
+                "seriesName": "e2733.dscb.akamaiedge.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "e2733.dscb.akamaiedge.net"
+              },
+              {
+                "seriesName": "g.live.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "g.live.com"
+              },
+              {
+                "seriesName": "logs.netflix.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "logs.netflix.com"
+              },
+              {
+                "seriesName": "uberproxy.l.google.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "uberproxy.l.google.com"
+              },
+              {
+                "seriesName": "www.evernote.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "www.evernote.com"
+              },
+              {
+                "seriesName": "ts01-b.cloudsink.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "ts01-b.cloudsink.net"
+              },
+              {
+                "seriesName": "gspe1-ssl.ls.apple.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "gspe1-ssl.ls.apple.com"
+              },
+              {
+                "seriesName": "log.tailscale.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "log.tailscale.com"
+              },
+              {
+                "seriesName": "oauth2.googleapis.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "oauth2.googleapis.com"
+              },
+              {
+                "seriesName": "setup.icloud.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "setup.icloud.com"
+              },
+              {
+                "seriesName": "proxyconfig.corp.google.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "proxyconfig.corp.google.com"
+              },
+              {
+                "seriesName": "eeroup.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "eeroup.com"
+              },
+              {
+                "seriesName": "up-logs-codelab.googleplex.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "up-logs-codelab.googleplex.com"
+              },
+              {
+                "seriesName": "login.corp.google.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "login.corp.google.com"
+              },
+              {
+                "seriesName": "ipv4-c022-syd001-tpg-isp.1.oca.nflxvideo.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "ipv4-c022-syd001-tpg-isp.1.oca.nflxvideo.net"
+              },
+              {
+                "seriesName": "uptime.signal.org",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "uptime.signal.org"
+              },
+              {
+                "seriesName": "ipv4-c015-syd002-tpg-isp.1.oca.nflxvideo.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "ipv4-c015-syd002-tpg-isp.1.oca.nflxvideo.net"
+              },
+              {
+                "seriesName": "prd-apne2-ucs.aibixby.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "prd-apne2-ucs.aibixby.com"
+              },
+              {
+                "seriesName": "ssl.gstatic.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "ssl.gstatic.com"
+              },
+              {
+                "seriesName": "xp.apple.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "xp.apple.com"
+              },
+              {
+                "seriesName": "ipv4-c023-syd001-tpg-isp.1.oca.nflxvideo.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "ipv4-c023-syd001-tpg-isp.1.oca.nflxvideo.net"
+              },
+              {
+                "seriesName": "ipv4-c014-syd002-tpg-isp.1.oca.nflxvideo.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "ipv4-c014-syd002-tpg-isp.1.oca.nflxvideo.net"
+              },
+              {
+                "seriesName": "mcs.trendmicro.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "mcs.trendmicro.com"
+              },
+              {
+                "seriesName": "global.telemetry.insights.video.a2z.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "global.telemetry.insights.video.a2z.com"
+              },
+              {
+                "seriesName": "lma.npaw.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "lma.npaw.com"
+              },
+              {
+                "seriesName": "ocsp2.g.aaplimg.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "ocsp2.g.aaplimg.com"
+              },
+              {
+                "seriesName": "deliver.oztam.com.au",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "deliver.oztam.com.au"
+              },
+              {
+                "seriesName": "cp801.prod.do.dsp.mp.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "cp801.prod.do.dsp.mp.microsoft.com"
+              },
+              {
+                "seriesName": "weatherkit.apple.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "weatherkit.apple.com"
+              },
+              {
+                "seriesName": "sbs-vod-dai-prod-01.akamaized.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "sbs-vod-dai-prod-01.akamaized.net"
+              },
+              {
+                "seriesName": "iview-vod.akamaized.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "iview-vod.akamaized.net"
+              },
+              {
+                "seriesName": "fcmconnection.googleapis.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "fcmconnection.googleapis.com"
+              },
+              {
+                "seriesName": "ts01-laggar-gcw.cloudsink.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "ts01-laggar-gcw.cloudsink.net"
+              },
+              {
+                "seriesName": "ipv4-c012-syd002-tpg-isp.1.oca.nflxvideo.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "ipv4-c012-syd002-tpg-isp.1.oca.nflxvideo.net"
+              },
+              {
+                "seriesName": "nrdp.push.prod.netflix.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "nrdp.push.prod.netflix.com"
+              },
+              {
+                "seriesName": "occ-0-998-2567.1.nflxso.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "occ-0-998-2567.1.nflxso.net"
+              },
+              {
+                "seriesName": "gld.push.samsungosp.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "gld.push.samsungosp.com"
+              },
+              {
+                "seriesName": "ipv4-c018-syd001-tpg-isp.1.oca.nflxvideo.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "ipv4-c018-syd001-tpg-isp.1.oca.nflxvideo.net"
+              },
+              {
+                "seriesName": "ipv4-c020-syd001-tpg-isp.1.oca.nflxvideo.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "ipv4-c020-syd001-tpg-isp.1.oca.nflxvideo.net"
+              },
+              {
+                "seriesName": "b800410803a4659ffcd7b9b6577a907110b7aa21.cws.conviva.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "b800410803a4659ffcd7b9b6577a907110b7aa21.cws.conviva.com"
+              },
+              {
+                "seriesName": "user-activity.pr.sbsod.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "user-activity.pr.sbsod.com"
+              },
+              {
+                "seriesName": "api.seesaw.abc.net.au",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "api.seesaw.abc.net.au"
+              },
+              {
+                "seriesName": "lcprd1.samsungcloudsolution.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "lcprd1.samsungcloudsolution.net"
+              },
+              {
+                "seriesName": "fonts.googleapis.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "fonts.googleapis.com"
+              },
+              {
+                "seriesName": "mydramanovel.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "mydramanovel.com"
+              },
+              {
+                "seriesName": "australia-southeast1-malachiteingestion-pa.googleapis.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "australia-southeast1-malachiteingestion-pa.googleapis.com"
+              },
+              {
+                "seriesName": "tvp-ads-log.samsungads.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "tvp-ads-log.samsungads.com"
+              },
+              {
+                "seriesName": "tvx.adgrx.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "tvx.adgrx.com"
+              },
+              {
+                "seriesName": "client.smartthings.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "client.smartthings.com"
+              },
+              {
+                "seriesName": "get-bx.g.aaplimg.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "get-bx.g.aaplimg.com"
+              },
+              {
+                "seriesName": "osb-v2.samsungqbe.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "osb-v2.samsungqbe.com"
+              },
+              {
+                "seriesName": "settings-win.data.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "settings-win.data.microsoft.com"
+              },
+              {
+                "seriesName": "_grpclb._tcp.australia-southeast1-malachiteingestion-pa.googleapis.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "_grpclb._tcp.australia-southeast1-malachiteingestion-pa.googleapis.com"
+              },
+              {
+                "seriesName": "_grpc_config.australia-southeast1-malachiteingestion-pa.googleapis.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "_grpc_config.australia-southeast1-malachiteingestion-pa.googleapis.com"
+              },
+              {
+                "seriesName": "prodxmon-wbl.corp.googleapis.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "prodxmon-wbl.corp.googleapis.com"
+              },
+              {
+                "seriesName": "v10.events.data.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "v10.events.data.microsoft.com"
+              },
+              {
+                "seriesName": "app.bindplane.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "app.bindplane.com"
+              },
+              {
+                "seriesName": "asia-southeast1-chronicle.googleapis.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "asia-southeast1-chronicle.googleapis.com"
+              },
+              {
+                "seriesName": "img-resize-cdn-prod.samsungnyc.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "img-resize-cdn-prod.samsungnyc.com"
+              },
+              {
+                "seriesName": "api.whatsapp.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "api.whatsapp.net"
+              },
+              {
+                "seriesName": "ocsp2.apple.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "ocsp2.apple.com"
+              },
+              {
+                "seriesName": "grpc.chat.signal.org",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "grpc.chat.signal.org"
+              },
+              {
+                "seriesName": "graph-fallback.instagram.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "graph-fallback.instagram.com"
+              },
+              {
+                "seriesName": "i.ytimg.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "i.ytimg.com"
+              },
+              {
+                "seriesName": "assets.adobedtm.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "assets.adobedtm.com"
+              },
+              {
+                "seriesName": "gateway.icloud.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "gateway.icloud.com"
+              },
+              {
+                "seriesName": "federatedcompute-pa.googleapis.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "federatedcompute-pa.googleapis.com"
+              },
+              {
+                "seriesName": "gsp-ssl.ls.apple.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "gsp-ssl.ls.apple.com"
+              },
+              {
+                "seriesName": "ts01-b.csa.cloudsink.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "ts01-b.csa.cloudsink.net"
+              },
+              {
+                "seriesName": "edge.e2ro.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "edge.e2ro.com"
+              },
+              {
+                "seriesName": "array808.prod.do.dsp.mp.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "array808.prod.do.dsp.mp.microsoft.com"
+              },
+              {
+                "seriesName": "ctldl.windowsupdate.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "ctldl.windowsupdate.com"
+              },
+              {
+                "seriesName": "login.live.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "login.live.com"
+              },
+              {
+                "seriesName": "array807.prod.do.dsp.mp.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "array807.prod.do.dsp.mp.microsoft.com"
+              },
+              {
+                "seriesName": "203.252.123.52.in-addr.arpa",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "203.252.123.52.in-addr.arpa"
+              },
+              {
+                "seriesName": "lb._dns-sd._udp.acme.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "lb._dns-sd._udp.acme.com"
+              },
+              {
+                "seriesName": "db._dns-sd._udp.acme.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "db._dns-sd._udp.acme.com"
+              },
+              {
+                "seriesName": "array812.prod.do.dsp.mp.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "array812.prod.do.dsp.mp.microsoft.com"
+              },
+              {
+                "seriesName": "b._dns-sd._udp.acme.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "b._dns-sd._udp.acme.com"
+              },
+              {
+                "seriesName": "_grpc_config.warppipe.corp.googleapis.com.acme.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "_grpc_config.warppipe.corp.googleapis.com.acme.com"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour (AEDT)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Query Count"
+              }
+            ],
+            "seriesColumn": [
+              "Domain"
+            ],
+            "groupingType": "Stacked"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "a6f4a73248511a989c02b24d60d3a233c5d26273a11878c548ace962300c778f"
+        }
+      ],
+      "dashboardQueries": [
+        {
+          "name": "87db1906-de3b-42d7-9ffb-f220aee5adcc",
+          "query": "stage top_domains {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n\n  match:\n    $Domain\n\n  outcome:\n    $Total = count(metadata.id)\n\n  order:\n    $Total desc\n\n  limit:\n    5\n}\n\nmetadata.log_type = \"PIHOLE\"\nmetadata.event_type = \"NETWORK_DNS\"\n$Domain = network.dns.questions.name\n$Domain = $top_domains.Domain\n$Hour = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\nmatch:\n  $Hour, $Domain\n\noutcome:\n  $Count = count(metadata.id)\n\norder:\n  $Hour asc\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "2"
+            }
+          },
+          "etag": "aa7f2958431776735ea8d71516c1fe36f6c78e857220bb65f5e89849a31b68a8",
+          "dialect": "YL2"
+        },
+        {
+          "name": "cab7ae19-af16-4ad0-836e-1bc780797eb5",
+          "query": "stage hourly_a {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage hourly_b {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage ranked {\n  $Slot = $hourly_a.Slot\n  $Slot = $hourly_b.Slot\n  $Domain = $hourly_a.Domain\n  $Mine = $hourly_a.Cnt\n  $Other = $hourly_b.Cnt\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Queries = max($Mine)\n    $Higher = sum(if($Other > $Mine, 1, 0))\n}\n\n$Hour = $ranked.Slot\n$Domain = $ranked.Domain\n$ranked.Higher < 5\n\nmatch:\n  $Hour, $Domain\n\noutcome:\n  $Count = max($ranked.Queries)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "507325be5cbdf109876d43c7a2957d5943f3f9284b992d9b41bad02cd42c6231",
+          "dialect": "YL2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "dashboards": [
+    {
+      "dashboard": {
+        "name": "3b82f6a9-53f6-4d6c-a402-35feed50e784",
+        "displayName": "IOC Search - Pi-hole & pfSense",
+        "description": "Enter an IOC (IP, domain, hostname, hash, user, email or URL) in the IOC filter. Charts show whether it appears in Pi-hole DNS and pfSense firewall logs, plus every other log source.",
+        "definition": {
+          "filters": [
+            {
+              "id": "GlobalTimeFilter",
+              "dataSource": "GLOBAL",
+              "filterOperatorAndFieldValues": [
+                {
+                  "filterOperator": "PAST",
+                  "fieldValues": [
+                    "7",
+                    "DAY"
+                  ]
+                }
+              ],
+              "displayName": "Global Time Filter",
+              "chartIds": [
+                "6a7f2cf2-bf24-4e69-91a6-87e1e7269416",
+                "8c8625cf-ad69-404d-aa45-d38ac7ee60b1",
+                "bdf4073f-d30e-478b-95e8-68cc6a58e6cc",
+                "0f183cde-1ac7-4238-be45-d505129c1e66"
+              ],
+              "isStandardTimeRangeFilter": true,
+              "isStandardTimeRangeFilterEnabled": true
+            },
+            {
+              "id": "ioc",
+              "dataSource": "GLOBAL",
+              "filterOperatorAndFieldValues": [
+                {
+                  "filterOperator": "EQUAL",
+                  "fieldValues": [
+                    "NO_IOC_ENTERED"
+                  ]
+                }
+              ],
+              "displayName": "IOC",
+              "chartIds": [
+                "6a7f2cf2-bf24-4e69-91a6-87e1e7269416",
+                "8c8625cf-ad69-404d-aa45-d38ac7ee60b1",
+                "bdf4073f-d30e-478b-95e8-68cc6a58e6cc",
+                "0f183cde-1ac7-4238-be45-d505129c1e66"
+              ],
+              "advancedFilterConfig": {
+                "token": "ioc",
+                "prefix": "\"",
+                "suffix": "\"",
+                "defaultValues": [
+                  "NO_IOC_ENTERED"
+                ],
+                "valueSource": {
+                  "manualOptions": {
+                    "options": [
+                      "NO_IOC_ENTERED"
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "charts": [
+            {
+              "dashboardChart": "6a7f2cf2-bf24-4e69-91a6-87e1e7269416",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 48,
+                "startY": 0,
+                "spanY": 22
+              },
+              "filtersIds": [
+                "GlobalTimeFilter",
+                "ioc"
+              ]
+            },
+            {
+              "dashboardChart": "8c8625cf-ad69-404d-aa45-d38ac7ee60b1",
+              "chartLayout": {
+                "startX": 48,
+                "spanX": 48,
+                "startY": 0,
+                "spanY": 22
+              },
+              "filtersIds": [
+                "GlobalTimeFilter",
+                "ioc"
+              ]
+            },
+            {
+              "dashboardChart": "bdf4073f-d30e-478b-95e8-68cc6a58e6cc",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 96,
+                "startY": 22,
+                "spanY": 28
+              },
+              "filtersIds": [
+                "GlobalTimeFilter",
+                "ioc"
+              ]
+            },
+            {
+              "dashboardChart": "0f183cde-1ac7-4238-be45-d505129c1e66",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 96,
+                "startY": 50,
+                "spanY": 28
+              },
+              "filtersIds": [
+                "GlobalTimeFilter",
+                "ioc"
+              ]
+            }
+          ]
+        },
+        "type": "CUSTOM",
+        "etag": "2dc579e8a0194c811dc861b986b0fd625d0b2f9674105887825d74762c5a72d7",
+        "access": "DASHBOARD_PUBLIC"
+      },
+      "dashboardCharts": [
+        {
+          "name": "8c8625cf-ad69-404d-aa45-d38ac7ee60b1",
+          "displayName": "Pi-hole & pfSense IOC hits over time",
+          "description": "Hourly matches for the IOC in Pi-hole DNS and pfSense firewall logs.",
+          "chartDatasource": {
+            "dashboardQuery": "d48a2311-e781-45a3-b10e-f49d278a239b",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "PIHOLE",
+                "seriesType": "LINE",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Hits"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "PIHOLE"
+              },
+              {
+                "seriesName": "PFSENSE",
+                "seriesType": "LINE",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Hits"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "PFSENSE"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour (Sydney)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Hits"
+              }
+            ],
+            "legends": [
+              {
+                "right": 12,
+                "legendOrient": "VERTICAL"
+              }
+            ],
+            "seriesColumn": [
+              "Log_Source"
+            ],
+            "groupingType": "Grouped"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "18b40139576f749def89a9ac7e77517391bb6e738eca85ded3abf7593ae33377",
+          "tokens": [
+            "ioc"
+          ]
+        },
+        {
+          "name": "bdf4073f-d30e-478b-95e8-68cc6a58e6cc",
+          "displayName": "Pi-hole: DNS activity matching IOC",
+          "description": "Pi-hole events where the IOC is the queried domain, the client IP, or a resolved answer IP.",
+          "chartDatasource": {
+            "dashboardQuery": "b461bd44-4a47-4cf6-92a6-b91a2b27ac10",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Domain",
+                "header": "Domain"
+              },
+              {
+                "field": "Client_IP",
+                "header": "Client IP"
+              },
+              {
+                "field": "Action",
+                "header": "Action"
+              },
+              {
+                "field": "Hits",
+                "header": "Hits"
+              },
+              {
+                "field": "Answers",
+                "header": "Answers"
+              },
+              {
+                "field": "First_Seen",
+                "header": "First Seen"
+              },
+              {
+                "field": "Last_Seen",
+                "header": "Last Seen"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "ed7f015dad60a352f0c24f5f936bd13c45048953fffe2593922ab6df118f9074",
+          "tokens": [
+            "ioc"
+          ]
+        },
+        {
+          "name": "6a7f2cf2-bf24-4e69-91a6-87e1e7269416",
+          "displayName": "IOC matches by log source",
+          "description": "Every log source containing the IOC, with first and last sighting (Australia/Sydney).",
+          "chartDatasource": {
+            "dashboardQuery": "eb7beaa0-dafa-4a3e-ac43-84b337c27822",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Log_Source",
+                "header": "Log Source"
+              },
+              {
+                "field": "Hits",
+                "header": "Hits"
+              },
+              {
+                "field": "First_Seen",
+                "header": "First Seen"
+              },
+              {
+                "field": "Last_Seen",
+                "header": "Last Seen"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "4861c62b18960a4d5ec7ca6bfbac55aa0360df480ef378c3f7e5dec3e48c665a",
+          "tokens": [
+            "ioc"
+          ]
+        },
+        {
+          "name": "0f183cde-1ac7-4238-be45-d505129c1e66",
+          "displayName": "pfSense: firewall connections matching IOC",
+          "description": "pfSense connections where the IOC is the source or destination.",
+          "chartDatasource": {
+            "dashboardQuery": "d1ac5ccd-1cc7-4737-8afc-1eb7cbb4d191",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Source_IP",
+                "header": "Source IP"
+              },
+              {
+                "field": "Destination_IP",
+                "header": "Destination IP"
+              },
+              {
+                "field": "Destination_Port",
+                "header": "Destination Port"
+              },
+              {
+                "field": "Protocol",
+                "header": "Protocol"
+              },
+              {
+                "field": "Action",
+                "header": "Action"
+              },
+              {
+                "field": "Hits",
+                "header": "Hits"
+              },
+              {
+                "field": "First_Seen",
+                "header": "First Seen"
+              },
+              {
+                "field": "Last_Seen",
+                "header": "Last Seen"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "ffc2eca059b61e680c2438e21b9e657033a3ddc28869e908f6d269c481de0935",
+          "tokens": [
+            "ioc"
+          ]
+        }
+      ],
+      "dashboardQueries": [
+        {
+          "name": "eb7beaa0-dafa-4a3e-ac43-84b337c27822",
+          "query": "(ip = $ioc$ or domain = $ioc$ or hostname = $ioc$ or hash = $ioc$ or user = $ioc$ or email = $ioc$ or target.url = $ioc$)\n$Log_Source = metadata.log_type\n\nmatch:\n  $Log_Source\n\noutcome:\n  $Hits = count(metadata.id)\n  $First_Seen = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n\norder:\n  $Hits desc\n\nlimit:\n  50\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "d64c702d066a273cd334fbe49cac13c466122b0e995ed07dfb7d6daf312f45a9",
+          "dialect": "YL2"
+        },
+        {
+          "name": "d1ac5ccd-1cc7-4737-8afc-1eb7cbb4d191",
+          "query": "metadata.log_type = \"PFSENSE\"\n(ip = $ioc$ or domain = $ioc$ or hostname = $ioc$ or hash = $ioc$ or user = $ioc$ or email = $ioc$ or target.url = $ioc$)\n$Source_IP = principal.ip\n$Destination_IP = target.ip\n$Destination_Port = target.port\n$Protocol = network.ip_protocol\n$Action = security_result.action\n\nmatch:\n  $Source_IP, $Destination_IP, $Destination_Port, $Protocol, $Action\n\noutcome:\n  $Hits = count(metadata.id)\n  $First_Seen = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n\norder:\n  $Hits desc\n\nlimit:\n  1000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "964b388bb06b5a66e7b9755ad6c38c950f7cfc15b0dc37c03a20ba99fbbd1774",
+          "dialect": "YL2"
+        },
+        {
+          "name": "d48a2311-e781-45a3-b10e-f49d278a239b",
+          "query": "(metadata.log_type = \"PIHOLE\" or metadata.log_type = \"PFSENSE\")\n(ip = $ioc$ or domain = $ioc$ or hostname = $ioc$ or hash = $ioc$ or user = $ioc$ or email = $ioc$ or target.url = $ioc$)\n$Log_Source = metadata.log_type\n$Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\nmatch:\n  $Slot, $Log_Source\n\noutcome:\n  $Hits = count(metadata.id)\n\norder:\n  $Slot asc\n\nlimit:\n  10000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "0971d4a4718493424835b37b8dbb82cf08a88ec3e231bd45b8f0630d926f1a55",
+          "dialect": "YL2"
+        },
+        {
+          "name": "b461bd44-4a47-4cf6-92a6-b91a2b27ac10",
+          "query": "metadata.log_type = \"PIHOLE\"\n(ip = $ioc$ or domain = $ioc$ or hostname = $ioc$ or hash = $ioc$ or user = $ioc$ or email = $ioc$ or target.url = $ioc$)\n$Domain = network.dns.questions.name\n$Client_IP = principal.ip\n$Action = security_result.action\n\nmatch:\n  $Domain, $Client_IP, $Action\n\noutcome:\n  $Hits = count(metadata.id)\n  $Answers = array_distinct(network.dns.answers.data)\n  $First_Seen = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n\norder:\n  $Hits desc\n\nlimit:\n  1000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "b1ed5b2d0e6e68207411a5f7adae36cf1db3f11bfdc0bf7c9fd00bb871687da6",
+          "dialect": "YL2"
+        }
+      ]
+    }
+  ]
+}

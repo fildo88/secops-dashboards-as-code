@@ -1,0 +1,2666 @@
+{
+  "dashboards": [
+    {
+      "dashboard": {
+        "name": "6ca1c61b-cc89-4879-99a5-66f7ebf4f2fc",
+        "displayName": "pfSense Overview",
+        "description": "pfSense firewall activity overview",
+        "definition": {
+          "filters": [
+            {
+              "id": "GlobalTimeFilter",
+              "dataSource": "GLOBAL",
+              "filterOperatorAndFieldValues": [
+                {
+                  "filterOperator": "PAST",
+                  "fieldValues": [
+                    "7",
+                    "DAY"
+                  ]
+                }
+              ],
+              "displayName": "Global Time Filter",
+              "isStandardTimeRangeFilter": true,
+              "isStandardTimeRangeFilterEnabled": true
+            }
+          ],
+          "charts": [
+            {
+              "dashboardChart": "09f5c9f7-8a07-4c08-9f24-2e124c3f04a3",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 96,
+                "startY": 0,
+                "spanY": 40
+              }
+            },
+            {
+              "dashboardChart": "3dc78fe2-0eab-4b6c-b6c8-c0288f02b420",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 96,
+                "startY": 40,
+                "spanY": 40
+              }
+            }
+          ]
+        },
+        "type": "CUSTOM",
+        "etag": "5d9998be49c99f0dd867697e0e3247b03d81fe7918a4970e9e862b93704a2b66",
+        "access": "DASHBOARD_PUBLIC"
+      },
+      "dashboardCharts": [
+        {
+          "name": "3dc78fe2-0eab-4b6c-b6c8-c0288f02b420",
+          "displayName": "Top 20 Target Ports in Each Hour",
+          "description": "Top 20 target ports seen by pfSense in each hour (Australia/Sydney). Ties for 20th place are included.",
+          "chartDatasource": {
+            "dashboardQuery": "b32464ca-818e-4f90-9a53-aedf9068f285",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "443",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "443"
+              },
+              {
+                "seriesName": "53",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "53"
+              },
+              {
+                "seriesName": "15600",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "15600"
+              },
+              {
+                "seriesName": "5031",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "5031"
+              },
+              {
+                "seriesName": "123",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "123"
+              },
+              {
+                "seriesName": "9191",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "9191"
+              },
+              {
+                "seriesName": "41641",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "41641"
+              },
+              {
+                "seriesName": "80",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "80"
+              },
+              {
+                "seriesName": "5223",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "5223"
+              },
+              {
+                "seriesName": "3478",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "3478"
+              },
+              {
+                "seriesName": "137",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "137"
+              },
+              {
+                "seriesName": "5351",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "5351"
+              },
+              {
+                "seriesName": "2730",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#3949ab"
+                },
+                "seriesUniqueValue": "2730"
+              },
+              {
+                "seriesName": "993",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f4511e"
+                },
+                "seriesUniqueValue": "993"
+              },
+              {
+                "seriesName": "5228",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c0ca33"
+                },
+                "seriesUniqueValue": "5228"
+              },
+              {
+                "seriesName": "1900",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#6d4c41"
+                },
+                "seriesUniqueValue": "1900"
+              },
+              {
+                "seriesName": "19307",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#039be5"
+                },
+                "seriesUniqueValue": "19307"
+              },
+              {
+                "seriesName": "5222",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d81b60"
+                },
+                "seriesUniqueValue": "5222"
+              },
+              {
+                "seriesName": "853",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#43a047"
+                },
+                "seriesUniqueValue": "853"
+              },
+              {
+                "seriesName": "2551",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fb8c00"
+                },
+                "seriesUniqueValue": "2551"
+              },
+              {
+                "seriesName": "8443",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "8443"
+              },
+              {
+                "seriesName": "18999",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "18999"
+              },
+              {
+                "seriesName": "3480",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "3480"
+              },
+              {
+                "seriesName": "1872",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "1872"
+              },
+              {
+                "seriesName": "7680",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "7680"
+              },
+              {
+                "seriesName": "19302",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "19302"
+              },
+              {
+                "seriesName": "5229",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "5229"
+              },
+              {
+                "seriesName": "22",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "22"
+              },
+              {
+                "seriesName": "7000",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "7000"
+              },
+              {
+                "seriesName": "139",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "139"
+              },
+              {
+                "seriesName": "1335",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "1335"
+              },
+              {
+                "seriesName": "1802",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "1802"
+              },
+              {
+                "seriesName": "445",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#3949ab"
+                },
+                "seriesUniqueValue": "445"
+              },
+              {
+                "seriesName": "13572",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f4511e"
+                },
+                "seriesUniqueValue": "13572"
+              },
+              {
+                "seriesName": "1948",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c0ca33"
+                },
+                "seriesUniqueValue": "1948"
+              },
+              {
+                "seriesName": "24230",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#6d4c41"
+                },
+                "seriesUniqueValue": "24230"
+              },
+              {
+                "seriesName": "15571",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#039be5"
+                },
+                "seriesUniqueValue": "15571"
+              },
+              {
+                "seriesName": "18774",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d81b60"
+                },
+                "seriesUniqueValue": "18774"
+              },
+              {
+                "seriesName": "65117",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#43a047"
+                },
+                "seriesUniqueValue": "65117"
+              },
+              {
+                "seriesName": "62854",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fb8c00"
+                },
+                "seriesUniqueValue": "62854"
+              },
+              {
+                "seriesName": "54107",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "54107"
+              },
+              {
+                "seriesName": "19314",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "19314"
+              },
+              {
+                "seriesName": "9999",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "9999"
+              },
+              {
+                "seriesName": "25000",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "25000"
+              },
+              {
+                "seriesName": "7201",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "7201"
+              },
+              {
+                "seriesName": "4123",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "4123"
+              },
+              {
+                "seriesName": "7020",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "7020"
+              },
+              {
+                "seriesName": "11436",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "11436"
+              },
+              {
+                "seriesName": "21387",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "21387"
+              },
+              {
+                "seriesName": "26912",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "26912"
+              },
+              {
+                "seriesName": "53911",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "53911"
+              },
+              {
+                "seriesName": "32094",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "32094"
+              },
+              {
+                "seriesName": "2523",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#3949ab"
+                },
+                "seriesUniqueValue": "2523"
+              },
+              {
+                "seriesName": "55432",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f4511e"
+                },
+                "seriesUniqueValue": "55432"
+              },
+              {
+                "seriesName": "59121",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c0ca33"
+                },
+                "seriesUniqueValue": "59121"
+              },
+              {
+                "seriesName": "30790",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#6d4c41"
+                },
+                "seriesUniqueValue": "30790"
+              },
+              {
+                "seriesName": "30501",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#039be5"
+                },
+                "seriesUniqueValue": "30501"
+              },
+              {
+                "seriesName": "59208",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d81b60"
+                },
+                "seriesUniqueValue": "59208"
+              },
+              {
+                "seriesName": "15708",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#43a047"
+                },
+                "seriesUniqueValue": "15708"
+              },
+              {
+                "seriesName": "1889",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fb8c00"
+                },
+                "seriesUniqueValue": "1889"
+              },
+              {
+                "seriesName": "9443",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "9443"
+              },
+              {
+                "seriesName": "32953",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "32953"
+              },
+              {
+                "seriesName": "36688",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "36688"
+              },
+              {
+                "seriesName": "48511",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "48511"
+              },
+              {
+                "seriesName": "7275",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "7275"
+              },
+              {
+                "seriesName": "60604",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "60604"
+              },
+              {
+                "seriesName": "13622",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "13622"
+              },
+              {
+                "seriesName": "57393",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "57393"
+              },
+              {
+                "seriesName": "42295",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "42295"
+              },
+              {
+                "seriesName": "3389",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "3389"
+              },
+              {
+                "seriesName": "41326",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "41326"
+              },
+              {
+                "seriesName": "4460",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "4460"
+              },
+              {
+                "seriesName": "8883",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#3949ab"
+                },
+                "seriesUniqueValue": "8883"
+              },
+              {
+                "seriesName": "465",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f4511e"
+                },
+                "seriesUniqueValue": "465"
+              },
+              {
+                "seriesName": "50525",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c0ca33"
+                },
+                "seriesUniqueValue": "50525"
+              },
+              {
+                "seriesName": "2498",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#6d4c41"
+                },
+                "seriesUniqueValue": "2498"
+              },
+              {
+                "seriesName": "58837",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#039be5"
+                },
+                "seriesUniqueValue": "58837"
+              },
+              {
+                "seriesName": "62070",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d81b60"
+                },
+                "seriesUniqueValue": "62070"
+              },
+              {
+                "seriesName": "60441",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#43a047"
+                },
+                "seriesUniqueValue": "60441"
+              },
+              {
+                "seriesName": "62689",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fb8c00"
+                },
+                "seriesUniqueValue": "62689"
+              },
+              {
+                "seriesName": "49266",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "49266"
+              },
+              {
+                "seriesName": "53857",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "53857"
+              },
+              {
+                "seriesName": "58462",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "58462"
+              },
+              {
+                "seriesName": "63196",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "63196"
+              },
+              {
+                "seriesName": "61536",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "61536"
+              },
+              {
+                "seriesName": "56662",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "56662"
+              },
+              {
+                "seriesName": "52605",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "52605"
+              },
+              {
+                "seriesName": "52526",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "52526"
+              },
+              {
+                "seriesName": "63668",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "63668"
+              },
+              {
+                "seriesName": "51554",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "51554"
+              },
+              {
+                "seriesName": "61726",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "61726"
+              },
+              {
+                "seriesName": "65400",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "65400"
+              },
+              {
+                "seriesName": "51835",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#3949ab"
+                },
+                "seriesUniqueValue": "51835"
+              },
+              {
+                "seriesName": "55775",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f4511e"
+                },
+                "seriesUniqueValue": "55775"
+              },
+              {
+                "seriesName": "52633",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c0ca33"
+                },
+                "seriesUniqueValue": "52633"
+              },
+              {
+                "seriesName": "59814",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#6d4c41"
+                },
+                "seriesUniqueValue": "59814"
+              },
+              {
+                "seriesName": "53860",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#039be5"
+                },
+                "seriesUniqueValue": "53860"
+              },
+              {
+                "seriesName": "63562",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d81b60"
+                },
+                "seriesUniqueValue": "63562"
+              },
+              {
+                "seriesName": "1947",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#43a047"
+                },
+                "seriesUniqueValue": "1947"
+              },
+              {
+                "seriesName": "1919",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fb8c00"
+                },
+                "seriesUniqueValue": "1919"
+              },
+              {
+                "seriesName": "2726",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "2726"
+              },
+              {
+                "seriesName": "2018",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "2018"
+              },
+              {
+                "seriesName": "2561",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "2561"
+              },
+              {
+                "seriesName": "50412",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "50412"
+              },
+              {
+                "seriesName": "9769",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "9769"
+              },
+              {
+                "seriesName": "58909",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "58909"
+              },
+              {
+                "seriesName": "52488",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "52488"
+              },
+              {
+                "seriesName": "17581",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "17581"
+              },
+              {
+                "seriesName": "54521",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "54521"
+              },
+              {
+                "seriesName": "33798",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "33798"
+              },
+              {
+                "seriesName": "49255",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "49255"
+              },
+              {
+                "seriesName": "37996",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "37996"
+              },
+              {
+                "seriesName": "59422",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#3949ab"
+                },
+                "seriesUniqueValue": "59422"
+              },
+              {
+                "seriesName": "51560",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f4511e"
+                },
+                "seriesUniqueValue": "51560"
+              },
+              {
+                "seriesName": "52474",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c0ca33"
+                },
+                "seriesUniqueValue": "52474"
+              },
+              {
+                "seriesName": "35752",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#6d4c41"
+                },
+                "seriesUniqueValue": "35752"
+              },
+              {
+                "seriesName": "6972",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#039be5"
+                },
+                "seriesUniqueValue": "6972"
+              },
+              {
+                "seriesName": "2645",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d81b60"
+                },
+                "seriesUniqueValue": "2645"
+              },
+              {
+                "seriesName": "57306",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#43a047"
+                },
+                "seriesUniqueValue": "57306"
+              },
+              {
+                "seriesName": "58203",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fb8c00"
+                },
+                "seriesUniqueValue": "58203"
+              },
+              {
+                "seriesName": "52294",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "52294"
+              },
+              {
+                "seriesName": "27219",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "27219"
+              },
+              {
+                "seriesName": "5350",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "5350"
+              },
+              {
+                "seriesName": "45631",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "45631"
+              },
+              {
+                "seriesName": "37651",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "37651"
+              },
+              {
+                "seriesName": "45046",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "45046"
+              },
+              {
+                "seriesName": "33930",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "33930"
+              },
+              {
+                "seriesName": "46436",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "46436"
+              },
+              {
+                "seriesName": "50093",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "50093"
+              },
+              {
+                "seriesName": "54098",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "54098"
+              },
+              {
+                "seriesName": "32829",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "32829"
+              },
+              {
+                "seriesName": "59250",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "59250"
+              },
+              {
+                "seriesName": "42791",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#3949ab"
+                },
+                "seriesUniqueValue": "42791"
+              },
+              {
+                "seriesName": "43104",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f4511e"
+                },
+                "seriesUniqueValue": "43104"
+              },
+              {
+                "seriesName": "55785",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c0ca33"
+                },
+                "seriesUniqueValue": "55785"
+              },
+              {
+                "seriesName": "55258",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#6d4c41"
+                },
+                "seriesUniqueValue": "55258"
+              },
+              {
+                "seriesName": "50052",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#039be5"
+                },
+                "seriesUniqueValue": "50052"
+              },
+              {
+                "seriesName": "58878",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d81b60"
+                },
+                "seriesUniqueValue": "58878"
+              },
+              {
+                "seriesName": "36352",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#43a047"
+                },
+                "seriesUniqueValue": "36352"
+              },
+              {
+                "seriesName": "40224",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fb8c00"
+                },
+                "seriesUniqueValue": "40224"
+              },
+              {
+                "seriesName": "60273",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "60273"
+              },
+              {
+                "seriesName": "36628",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "36628"
+              },
+              {
+                "seriesName": "43219",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "43219"
+              },
+              {
+                "seriesName": "47957",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "47957"
+              },
+              {
+                "seriesName": "42922",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "42922"
+              },
+              {
+                "seriesName": "53886",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "53886"
+              },
+              {
+                "seriesName": "53270",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "53270"
+              },
+              {
+                "seriesName": "59945",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "59945"
+              },
+              {
+                "seriesName": "48137",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "48137"
+              },
+              {
+                "seriesName": "44977",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "44977"
+              },
+              {
+                "seriesName": "36075",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "36075"
+              },
+              {
+                "seriesName": "49868",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "49868"
+              },
+              {
+                "seriesName": "37536",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#3949ab"
+                },
+                "seriesUniqueValue": "37536"
+              },
+              {
+                "seriesName": "45970",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f4511e"
+                },
+                "seriesUniqueValue": "45970"
+              },
+              {
+                "seriesName": "55798",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c0ca33"
+                },
+                "seriesUniqueValue": "55798"
+              },
+              {
+                "seriesName": "11279",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#6d4c41"
+                },
+                "seriesUniqueValue": "11279"
+              },
+              {
+                "seriesName": "62642",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#039be5"
+                },
+                "seriesUniqueValue": "62642"
+              },
+              {
+                "seriesName": "29152",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d81b60"
+                },
+                "seriesUniqueValue": "29152"
+              },
+              {
+                "seriesName": "23006",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#43a047"
+                },
+                "seriesUniqueValue": "23006"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Connection Count"
+              }
+            ],
+            "legends": [
+              {
+                "right": 12,
+                "legendOrient": "VERTICAL"
+              }
+            ],
+            "seriesColumn": [
+              "Target_Port"
+            ],
+            "groupingType": "Stacked"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "664c4795817e7c4d3cb6a987953710e1f605ae10f1719123874bd027b27f138e"
+        },
+        {
+          "name": "09f5c9f7-8a07-4c08-9f24-2e124c3f04a3",
+          "displayName": "Top 20 Target Ports per Hour",
+          "description": "Hourly connection counts (Australia/Sydney) for the top 20 target ports seen by pfSense",
+          "chartDatasource": {
+            "dashboardQuery": "3a52b101-1985-40e0-9dc5-7c6f03fb79eb",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "443",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "443"
+              },
+              {
+                "seriesName": "53",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "53"
+              },
+              {
+                "seriesName": "15600",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "15600"
+              },
+              {
+                "seriesName": "5031",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "5031"
+              },
+              {
+                "seriesName": "123",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "123"
+              },
+              {
+                "seriesName": "9191",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "9191"
+              },
+              {
+                "seriesName": "41641",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "41641"
+              },
+              {
+                "seriesName": "80",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "80"
+              },
+              {
+                "seriesName": "5223",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "5223"
+              },
+              {
+                "seriesName": "3478",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "3478"
+              },
+              {
+                "seriesName": "137",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "137"
+              },
+              {
+                "seriesName": "5351",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "5351"
+              },
+              {
+                "seriesName": "2730",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#3949ab"
+                },
+                "seriesUniqueValue": "2730"
+              },
+              {
+                "seriesName": "993",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f4511e"
+                },
+                "seriesUniqueValue": "993"
+              },
+              {
+                "seriesName": "5228",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c0ca33"
+                },
+                "seriesUniqueValue": "5228"
+              },
+              {
+                "seriesName": "1900",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#6d4c41"
+                },
+                "seriesUniqueValue": "1900"
+              },
+              {
+                "seriesName": "19307",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#039be5"
+                },
+                "seriesUniqueValue": "19307"
+              },
+              {
+                "seriesName": "5222",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d81b60"
+                },
+                "seriesUniqueValue": "5222"
+              },
+              {
+                "seriesName": "853",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#43a047"
+                },
+                "seriesUniqueValue": "853"
+              },
+              {
+                "seriesName": "2551",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fb8c00"
+                },
+                "seriesUniqueValue": "2551"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Connection Count"
+              }
+            ],
+            "legends": [
+              {
+                "right": 12,
+                "legendOrient": "VERTICAL"
+              }
+            ],
+            "seriesColumn": [
+              "Target_Port"
+            ],
+            "groupingType": "Stacked"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "156cbd894c82bcf2358eb1f679150a7008c197188852327f29eb27e890d76453"
+        }
+      ],
+      "dashboardQueries": [
+        {
+          "name": "3a52b101-1985-40e0-9dc5-7c6f03fb79eb",
+          "query": "stage top_ports {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Target_Port = target.port\n  $Target_Port > 0\n\n  match:\n    $Target_Port\n\n  outcome:\n    $Total = count(metadata.id)\n\n  order:\n    $Total desc\n\n  limit:\n    20\n}\n\nmetadata.log_type = \"PFSENSE\"\nmetadata.event_type = \"NETWORK_CONNECTION\"\n$Target_Port = target.port\n$Target_Port = $top_ports.Target_Port\n$Hour = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\nmatch:\n  $Hour, $Target_Port\n\noutcome:\n  $Count = count(metadata.id)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "6161af6c0bfa944ef32d0ba4361a7ca0759c06cf43ee67e6b6f81627aa6b5fd9",
+          "dialect": "YL2"
+        },
+        {
+          "name": "b32464ca-818e-4f90-9a53-aedf9068f285",
+          "query": "stage hourly_a {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Port_Num = target.port\n  $Port_Num > 0\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage hourly_b {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Port_Num = target.port\n  $Port_Num > 0\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage ranked {\n  $Slot = $hourly_a.Slot\n  $Slot = $hourly_b.Slot\n  $Port_Num = $hourly_a.Port_Num\n  $Mine = $hourly_a.Cnt\n  $Other = $hourly_b.Cnt\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Connections = max($Mine)\n    $Higher = sum(if($Other > $Mine, 1, 0))\n}\n\n$Hour = $ranked.Slot\n$Target_Port = $ranked.Port_Num\n$ranked.Higher < 20\n\nmatch:\n  $Hour, $Target_Port\n\noutcome:\n  $Count = max($ranked.Connections)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "939ce8634f1ede8a17a6b4d07316176702caba27517772836bfe408b9fa021d3",
+          "dialect": "YL2"
+        }
+      ]
+    }
+  ]
+}
