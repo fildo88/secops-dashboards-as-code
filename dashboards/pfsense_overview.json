@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "8666e6f0-1d13-47a6-bb5b-d67e98c06932",
+        "name": "93d9e5d9-5964-4408-9997-7d9f2d99dda8",
         "displayName": "pfSense Overview",
         "description": "pfSense firewall activity overview",
         "definition": {
@@ -26,7 +26,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "9164a5e2-d344-42b8-9776-a89162b363e9",
+              "dashboardChart": "7b747881-b203-4d1d-9fa1-154d7bc9715d",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -35,7 +35,7 @@
               }
             },
             {
-              "dashboardChart": "fce40042-383e-4df2-b8aa-c36689c3516d",
+              "dashboardChart": "80147717-563e-4edf-97ce-de592db3cb9b",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -46,16 +46,16 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "671db51e55cfc159ab085cf92948f2cae253cbc896554f4055e6f590c3d1c4d3",
+        "etag": "bcd81a60ab82bfd3445f62db30efbe39ed592bc197a34d8c8a0192dcfe0d0553",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "9164a5e2-d344-42b8-9776-a89162b363e9",
+          "name": "7b747881-b203-4d1d-9fa1-154d7bc9715d",
           "displayName": "Top 20 Target Ports per Hour",
           "description": "Hourly connection counts (Australia/Sydney) for the top 20 target ports seen by pfSense",
           "chartDatasource": {
-            "dashboardQuery": "3d999d04-d516-404d-90cc-ac64675c894b",
+            "dashboardQuery": "c95263fd-b4e9-47aa-a251-b039924f0a6e",
             "dataSources": [
               "UDM"
             ]
@@ -367,14 +367,14 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "45a539c859ad66f87fe1648787286c72b5c7e05a5b0f5fe7ac528d04dfe3d189"
+          "etag": "20bddbb9287fe53b7728c87b61cf7ece53b87bd70289d113a3f1e1362179d912"
         },
         {
-          "name": "fce40042-383e-4df2-b8aa-c36689c3516d",
+          "name": "80147717-563e-4edf-97ce-de592db3cb9b",
           "displayName": "Top 20 Target Ports in Each Hour",
           "description": "Top 20 target ports seen by pfSense in each hour (Australia/Sydney). Ties for 20th place are included.",
           "chartDatasource": {
-            "dashboardQuery": "f4148bd2-3060-4824-a855-d692432fab98",
+            "dashboardQuery": "d6e25e33-721c-42d8-98a3-ea30976f854b",
             "dataSources": [
               "UDM"
             ]
@@ -2632,24 +2632,12 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "4cae39b487bc3670d31d1b569b9a3387d7ddd421d651b969b5fc0145739154aa"
+          "etag": "2445ef86ce52efb06612b944d8196b9aeb14a53d527d93b152dd588b5d743470"
         }
       ],
       "dashboardQueries": [
         {
-          "name": "f4148bd2-3060-4824-a855-d692432fab98",
-          "query": "stage hourly_a {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Port_Num = target.port\n  $Port_Num > 0\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage hourly_b {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Port_Num = target.port\n  $Port_Num > 0\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage ranked {\n  $Slot = $hourly_a.Slot\n  $Slot = $hourly_b.Slot\n  $Port_Num = $hourly_a.Port_Num\n  $Mine = $hourly_a.Cnt\n  $Other = $hourly_b.Cnt\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Connections = max($Mine)\n    $Higher = sum(if($Other > $Mine, 1, 0))\n}\n\n$Hour = $ranked.Slot\n$Target_Port = $ranked.Port_Num\n$ranked.Higher < 20\n\nmatch:\n  $Hour, $Target_Port\n\noutcome:\n  $Count = max($ranked.Connections)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "207697b1ccaa8cee3717fe48b89098f4ebdb467ddc313600fd9055a6db8ed9d1",
-          "dialect": "YL2"
-        },
-        {
-          "name": "3d999d04-d516-404d-90cc-ac64675c894b",
+          "name": "c95263fd-b4e9-47aa-a251-b039924f0a6e",
           "query": "stage top_ports {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Target_Port = target.port\n  $Target_Port > 0\n\n  match:\n    $Target_Port\n\n  outcome:\n    $Total = count(metadata.id)\n\n  order:\n    $Total desc\n\n  limit:\n    20\n}\n\nmetadata.log_type = \"PFSENSE\"\nmetadata.event_type = \"NETWORK_CONNECTION\"\n$Target_Port = target.port\n$Target_Port = $top_ports.Target_Port\n$Hour = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\nmatch:\n  $Hour, $Target_Port\n\noutcome:\n  $Count = count(metadata.id)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
           "input": {
             "relativeTime": {
@@ -2657,7 +2645,19 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "5532757cb072a40e42d7180ae7d62ece88f77ba7ee8bd5a81d9bbf81f833ebff",
+          "etag": "98fd1a2329c23df2448818bb56cb79bc78f9d9379b71d2d6af7decbed5d1d6bb",
+          "dialect": "YL2"
+        },
+        {
+          "name": "d6e25e33-721c-42d8-98a3-ea30976f854b",
+          "query": "stage hourly_a {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Port_Num = target.port\n  $Port_Num > 0\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage hourly_b {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Port_Num = target.port\n  $Port_Num > 0\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage ranked {\n  $Slot = $hourly_a.Slot\n  $Slot = $hourly_b.Slot\n  $Port_Num = $hourly_a.Port_Num\n  $Mine = $hourly_a.Cnt\n  $Other = $hourly_b.Cnt\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Connections = max($Mine)\n    $Higher = sum(if($Other > $Mine, 1, 0))\n}\n\n$Hour = $ranked.Slot\n$Target_Port = $ranked.Port_Num\n$ranked.Higher < 20\n\nmatch:\n  $Hour, $Target_Port\n\noutcome:\n  $Count = max($ranked.Connections)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "8c9b25b21cf4c1ebbed22dee2f117de4b5f3c514f85c7cee8ea1a3f29b8a8190",
           "dialect": "YL2"
         }
       ]
