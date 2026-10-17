@@ -1,11 +1,21 @@
 name: "SecOps Dashboards As Code"
 
 on:
+  # 1. Scheduled background sync (SecOps UI -> GitHub)
+  # Runs every 6 hours (00:05, 06:05, 12:05, 18:05 UTC)
+  schedule:
+    - cron: "5 */6 * * *"
+
+  # 2. Direct push to main by a user (GitHub -> SecOps apply)
   push:
     branches:
       - main
-    paths-ignore:
-      - "README.md"
+    paths:
+      - "dashboards/**"
+      - "script/**"
+      - ".github/workflows/secops.yaml"
+
+  # 3. Pull Request lifecycle (GitHub -> SecOps plan on PR, apply on merge)
   pull_request:
     branches:
       - main
@@ -13,17 +23,19 @@ on:
       - closed
       - opened
       - synchronize
+
+  # 4. On-demand manual run from the GitHub Actions tab
   workflow_dispatch:
     inputs:
       command:
-        description: "Command to run (plan, apply, or download)"
+        description: "Command to run (download: SecOps->GitHub, plan: diff check, apply: GitHub->SecOps)"
         required: true
-        default: "plan"
+        default: "download"
         type: choice
         options:
+          - download
           - plan
           - apply
-          - download
 
 env:
   SECOPS_CUSTOMER_ID: "8a9bcdd8-288f-488c-b433-3fb2f1794b21"
@@ -33,7 +45,8 @@ env:
 
 jobs:
   secops-dashboards:
-    if: github.actor != 'github-actions[bot]'
+    # Prevent infinite loop when github-actions[bot] pushes downloaded dashboards to main
+    if: github.actor != 'github-actions[bot]' || github.event_name == 'schedule'
     permissions:
       contents: write
       id-token: write
@@ -69,9 +82,10 @@ jobs:
         name: Install Dependencies
         run: pip install -r ./requirements.txt
 
+      # Direction A: SecOps -> GitHub (Scheduled cron or manual 'download')
       - id: download-dashboards
-        if: github.event_name == 'workflow_dispatch' && inputs.command == 'download'
-        name: Download All Custom Dashboards from SecOps
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.command == 'download')
+        name: Pull Latest Custom Dashboards from SecOps (SecOps -> GitHub)
         env:
           PYTHONPATH: ${{ github.workspace }}/script
         run: |
@@ -83,20 +97,22 @@ jobs:
             git commit -m "chore: pull latest custom dashboards from Google SecOps"
             git push origin main
           else
-            echo "No dashboard changes to commit."
+            echo "No dashboard changes in SecOps to commit."
           fi
 
+      # Direction B1: GitHub -> SecOps Dry-Run Plan (Open PR or manual 'plan')
       - id: plan-dashboards
-        if: (github.event_name == 'pull_request' && github.event.pull_request.merged != true) || (github.event_name == 'push') || (github.event_name == 'workflow_dispatch' && inputs.command == 'plan')
-        name: Plan Dashboards
+        if: (github.event_name == 'pull_request' && github.event.pull_request.merged != true) || (github.event_name == 'workflow_dispatch' && inputs.command == 'plan')
+        name: Plan Dashboards (GitHub -> SecOps Diff)
         env:
           PYTHONPATH: ${{ github.workspace }}/script
         continue-on-error: true
         run: python script/main.py plan
 
+      # Direction B2: GitHub -> SecOps Apply (Merged PR, human push to main, or manual 'apply')
       - id: apply-dashboards
-        if: (github.event_name == 'pull_request' && github.event.pull_request.merged == true) || (github.event_name == 'workflow_dispatch' && inputs.command == 'apply')
-        name: Apply Dashboards
+        if: (github.event_name == 'pull_request' && github.event.pull_request.merged == true) || (github.event_name == 'push' && github.actor != 'github-actions[bot]') || (github.event_name == 'workflow_dispatch' && inputs.command == 'apply')
+        name: Apply Dashboards (GitHub -> SecOps Deploy)
         env:
           PYTHONPATH: ${{ github.workspace }}/script
         continue-on-error: true
@@ -121,10 +137,10 @@ jobs:
 
       - id: check-plan
         name: Check plan failure
-        if: ((github.event_name == 'pull_request' && github.event.pull_request.merged != true) || (github.event_name == 'push') || (github.event_name == 'workflow_dispatch' && inputs.command == 'plan')) && steps.plan-dashboards.outcome != 'success'
+        if: ((github.event_name == 'pull_request' && github.event.pull_request.merged != true) || (github.event_name == 'workflow_dispatch' && inputs.command == 'plan')) && steps.plan-dashboards.outcome != 'success'
         run: exit 1
 
       - id: check-apply
         name: Check apply failure
-        if: ((github.event_name == 'pull_request' && github.event.pull_request.merged == true) || (github.event_name == 'workflow_dispatch' && inputs.command == 'apply')) && steps.apply-dashboards.outcome != 'success'
+        if: ((github.event_name == 'pull_request' && github.event.pull_request.merged == true) || (github.event_name == 'push' && github.actor != 'github-actions[bot]') || (github.event_name == 'workflow_dispatch' && inputs.command == 'apply')) && steps.apply-dashboards.outcome != 'success'
         run: exit 1
