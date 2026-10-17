@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "6ca1c61b-cc89-4879-99a5-66f7ebf4f2fc",
+        "name": "8666e6f0-1d13-47a6-bb5b-d67e98c06932",
         "displayName": "pfSense Overview",
         "description": "pfSense firewall activity overview",
         "definition": {
@@ -26,7 +26,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "09f5c9f7-8a07-4c08-9f24-2e124c3f04a3",
+              "dashboardChart": "9164a5e2-d344-42b8-9776-a89162b363e9",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -35,7 +35,7 @@
               }
             },
             {
-              "dashboardChart": "3dc78fe2-0eab-4b6c-b6c8-c0288f02b420",
+              "dashboardChart": "fce40042-383e-4df2-b8aa-c36689c3516d",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -46,16 +46,335 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "5d9998be49c99f0dd867697e0e3247b03d81fe7918a4970e9e862b93704a2b66",
+        "etag": "671db51e55cfc159ab085cf92948f2cae253cbc896554f4055e6f590c3d1c4d3",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "3dc78fe2-0eab-4b6c-b6c8-c0288f02b420",
+          "name": "9164a5e2-d344-42b8-9776-a89162b363e9",
+          "displayName": "Top 20 Target Ports per Hour",
+          "description": "Hourly connection counts (Australia/Sydney) for the top 20 target ports seen by pfSense",
+          "chartDatasource": {
+            "dashboardQuery": "3d999d04-d516-404d-90cc-ac64675c894b",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "443",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "443"
+              },
+              {
+                "seriesName": "53",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "53"
+              },
+              {
+                "seriesName": "15600",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "15600"
+              },
+              {
+                "seriesName": "5031",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "5031"
+              },
+              {
+                "seriesName": "123",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "123"
+              },
+              {
+                "seriesName": "9191",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "9191"
+              },
+              {
+                "seriesName": "41641",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "41641"
+              },
+              {
+                "seriesName": "80",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "80"
+              },
+              {
+                "seriesName": "5223",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "5223"
+              },
+              {
+                "seriesName": "3478",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#7cb342"
+                },
+                "seriesUniqueValue": "3478"
+              },
+              {
+                "seriesName": "137",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#00897b"
+                },
+                "seriesUniqueValue": "137"
+              },
+              {
+                "seriesName": "5351",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#8e24aa"
+                },
+                "seriesUniqueValue": "5351"
+              },
+              {
+                "seriesName": "2730",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#3949ab"
+                },
+                "seriesUniqueValue": "2730"
+              },
+              {
+                "seriesName": "993",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f4511e"
+                },
+                "seriesUniqueValue": "993"
+              },
+              {
+                "seriesName": "5228",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c0ca33"
+                },
+                "seriesUniqueValue": "5228"
+              },
+              {
+                "seriesName": "1900",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#6d4c41"
+                },
+                "seriesUniqueValue": "1900"
+              },
+              {
+                "seriesName": "19307",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#039be5"
+                },
+                "seriesUniqueValue": "19307"
+              },
+              {
+                "seriesName": "5222",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d81b60"
+                },
+                "seriesUniqueValue": "5222"
+              },
+              {
+                "seriesName": "853",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#43a047"
+                },
+                "seriesUniqueValue": "853"
+              },
+              {
+                "seriesName": "2551",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fb8c00"
+                },
+                "seriesUniqueValue": "2551"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Connection Count"
+              }
+            ],
+            "legends": [
+              {
+                "right": 12,
+                "legendOrient": "VERTICAL"
+              }
+            ],
+            "seriesColumn": [
+              "Target_Port"
+            ],
+            "groupingType": "Stacked"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "45a539c859ad66f87fe1648787286c72b5c7e05a5b0f5fe7ac528d04dfe3d189"
+        },
+        {
+          "name": "fce40042-383e-4df2-b8aa-c36689c3516d",
           "displayName": "Top 20 Target Ports in Each Hour",
           "description": "Top 20 target ports seen by pfSense in each hour (Australia/Sydney). Ties for 20th place are included.",
           "chartDatasource": {
-            "dashboardQuery": "b32464ca-818e-4f90-9a53-aedf9068f285",
+            "dashboardQuery": "f4148bd2-3060-4824-a855-d692432fab98",
             "dataSources": [
               "UDM"
             ]
@@ -2313,343 +2632,12 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "664c4795817e7c4d3cb6a987953710e1f605ae10f1719123874bd027b27f138e"
-        },
-        {
-          "name": "09f5c9f7-8a07-4c08-9f24-2e124c3f04a3",
-          "displayName": "Top 20 Target Ports per Hour",
-          "description": "Hourly connection counts (Australia/Sydney) for the top 20 target ports seen by pfSense",
-          "chartDatasource": {
-            "dashboardQuery": "3a52b101-1985-40e0-9dc5-7c6f03fb79eb",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "443",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#1a73e8"
-                },
-                "seriesUniqueValue": "443"
-              },
-              {
-                "seriesName": "53",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#eb730a"
-                },
-                "seriesUniqueValue": "53"
-              },
-              {
-                "seriesName": "15600",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#12b5cb"
-                },
-                "seriesUniqueValue": "15600"
-              },
-              {
-                "seriesName": "5031",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#e52592"
-                },
-                "seriesUniqueValue": "5031"
-              },
-              {
-                "seriesName": "123",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#9334e6"
-                },
-                "seriesUniqueValue": "123"
-              },
-              {
-                "seriesName": "9191",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#188038"
-                },
-                "seriesUniqueValue": "9191"
-              },
-              {
-                "seriesName": "41641",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#f9ab00"
-                },
-                "seriesUniqueValue": "41641"
-              },
-              {
-                "seriesName": "80",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#d93025"
-                },
-                "seriesUniqueValue": "80"
-              },
-              {
-                "seriesName": "5223",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#5f6368"
-                },
-                "seriesUniqueValue": "5223"
-              },
-              {
-                "seriesName": "3478",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#7cb342"
-                },
-                "seriesUniqueValue": "3478"
-              },
-              {
-                "seriesName": "137",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#00897b"
-                },
-                "seriesUniqueValue": "137"
-              },
-              {
-                "seriesName": "5351",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#8e24aa"
-                },
-                "seriesUniqueValue": "5351"
-              },
-              {
-                "seriesName": "2730",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#3949ab"
-                },
-                "seriesUniqueValue": "2730"
-              },
-              {
-                "seriesName": "993",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#f4511e"
-                },
-                "seriesUniqueValue": "993"
-              },
-              {
-                "seriesName": "5228",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#c0ca33"
-                },
-                "seriesUniqueValue": "5228"
-              },
-              {
-                "seriesName": "1900",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#6d4c41"
-                },
-                "seriesUniqueValue": "1900"
-              },
-              {
-                "seriesName": "19307",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#039be5"
-                },
-                "seriesUniqueValue": "19307"
-              },
-              {
-                "seriesName": "5222",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#d81b60"
-                },
-                "seriesUniqueValue": "5222"
-              },
-              {
-                "seriesName": "853",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#43a047"
-                },
-                "seriesUniqueValue": "853"
-              },
-              {
-                "seriesName": "2551",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#fb8c00"
-                },
-                "seriesUniqueValue": "2551"
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Hour"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Connection Count"
-              }
-            ],
-            "legends": [
-              {
-                "right": 12,
-                "legendOrient": "VERTICAL"
-              }
-            ],
-            "seriesColumn": [
-              "Target_Port"
-            ],
-            "groupingType": "Stacked"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "156cbd894c82bcf2358eb1f679150a7008c197188852327f29eb27e890d76453"
+          "etag": "4cae39b487bc3670d31d1b569b9a3387d7ddd421d651b969b5fc0145739154aa"
         }
       ],
       "dashboardQueries": [
         {
-          "name": "3a52b101-1985-40e0-9dc5-7c6f03fb79eb",
-          "query": "stage top_ports {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Target_Port = target.port\n  $Target_Port > 0\n\n  match:\n    $Target_Port\n\n  outcome:\n    $Total = count(metadata.id)\n\n  order:\n    $Total desc\n\n  limit:\n    20\n}\n\nmetadata.log_type = \"PFSENSE\"\nmetadata.event_type = \"NETWORK_CONNECTION\"\n$Target_Port = target.port\n$Target_Port = $top_ports.Target_Port\n$Hour = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\nmatch:\n  $Hour, $Target_Port\n\noutcome:\n  $Count = count(metadata.id)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "6161af6c0bfa944ef32d0ba4361a7ca0759c06cf43ee67e6b6f81627aa6b5fd9",
-          "dialect": "YL2"
-        },
-        {
-          "name": "b32464ca-818e-4f90-9a53-aedf9068f285",
+          "name": "f4148bd2-3060-4824-a855-d692432fab98",
           "query": "stage hourly_a {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Port_Num = target.port\n  $Port_Num > 0\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage hourly_b {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Port_Num = target.port\n  $Port_Num > 0\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage ranked {\n  $Slot = $hourly_a.Slot\n  $Slot = $hourly_b.Slot\n  $Port_Num = $hourly_a.Port_Num\n  $Mine = $hourly_a.Cnt\n  $Other = $hourly_b.Cnt\n\n  match:\n    $Slot, $Port_Num\n\n  outcome:\n    $Connections = max($Mine)\n    $Higher = sum(if($Other > $Mine, 1, 0))\n}\n\n$Hour = $ranked.Slot\n$Target_Port = $ranked.Port_Num\n$ranked.Higher < 20\n\nmatch:\n  $Hour, $Target_Port\n\noutcome:\n  $Count = max($ranked.Connections)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
           "input": {
             "relativeTime": {
@@ -2657,7 +2645,19 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "939ce8634f1ede8a17a6b4d07316176702caba27517772836bfe408b9fa021d3",
+          "etag": "207697b1ccaa8cee3717fe48b89098f4ebdb467ddc313600fd9055a6db8ed9d1",
+          "dialect": "YL2"
+        },
+        {
+          "name": "3d999d04-d516-404d-90cc-ac64675c894b",
+          "query": "stage top_ports {\n  metadata.log_type = \"PFSENSE\"\n  metadata.event_type = \"NETWORK_CONNECTION\"\n  $Target_Port = target.port\n  $Target_Port > 0\n\n  match:\n    $Target_Port\n\n  outcome:\n    $Total = count(metadata.id)\n\n  order:\n    $Total desc\n\n  limit:\n    20\n}\n\nmetadata.log_type = \"PFSENSE\"\nmetadata.event_type = \"NETWORK_CONNECTION\"\n$Target_Port = target.port\n$Target_Port = $top_ports.Target_Port\n$Hour = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\nmatch:\n  $Hour, $Target_Port\n\noutcome:\n  $Count = count(metadata.id)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "5532757cb072a40e42d7180ae7d62ece88f77ba7ee8bd5a81d9bbf81f833ebff",
           "dialect": "YL2"
         }
       ]
