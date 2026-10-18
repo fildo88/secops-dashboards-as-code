@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "4839b75b-4479-45f0-ab6f-9f9a0996478a",
+        "name": "d17b7744-35dd-46c5-93f5-f095c0199efb",
         "displayName": "EDR Overview - CrowdStrike",
         "description": "CrowdStrike Falcon (CS_DETECTS) EDR detections by tactic with endpoints, a 7-day detections/endpoints view, plus the charts from the built-in 'EDR Alerts Overview' (sensors, alert totals, top alerts, severity, users, hosts, tactics and techniques).",
         "definition": {
@@ -21,17 +21,17 @@
               ],
               "displayName": "Global Time Filter",
               "chartIds": [
-                "dcb7ce04-d4b9-4d18-936a-d27f380291fe",
-                "f37a288a-2ce9-4820-af6a-49520a80b67c",
-                "222cc381-784c-45f2-97f3-a48caae322e8",
-                "97268459-f279-4d34-ac80-7515161813dd",
-                "e88ac44c-4346-4697-b901-0856bbe84db8",
-                "8d6ded0a-51d2-460c-9e45-a12e1d1d32c7",
-                "44466f61-6220-441e-b96f-43ef2c8f5112",
-                "d2a4eecf-a245-4e2f-94cd-c7e0638fda52",
-                "45d7a756-6bac-4281-a3fa-9ac71d914800",
-                "cbf88252-e6ae-4a11-9085-48d295374cdb",
-                "c392f4f9-356f-4230-a902-40e6fa700a33"
+                "5e397410-c113-4978-9a2a-b55094f53669",
+                "29ac76b9-3b58-4bd9-bbee-ae16766a2315",
+                "bd6657ca-a773-45a8-81e5-471b7f9d0a37",
+                "0142852f-3ef3-4c32-b627-fe38ee96d46d",
+                "c0c2b38b-2ba7-42f5-a838-94e25298b549",
+                "d078daf8-08d4-4845-871f-69c73a7c760f",
+                "c012f15c-79af-46fb-8ad9-dea5cb00fc3d",
+                "0eff7789-e2df-4fab-8e06-231b3b57b1ce",
+                "29403fcb-1d48-4fd6-bbb2-118cd7deee7a",
+                "53af5738-03b8-49dd-9740-256c990f2267",
+                "c7d65a51-6aa1-4b41-b83e-b7b9ba29ec51"
               ],
               "isStandardTimeRangeFilter": true,
               "isStandardTimeRangeFilterEnabled": true
@@ -39,7 +39,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "dcb7ce04-d4b9-4d18-936a-d27f380291fe",
+              "dashboardChart": "5e397410-c113-4978-9a2a-b55094f53669",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -51,7 +51,7 @@
               ]
             },
             {
-              "dashboardChart": "1eb1fb39-c6fb-4ab4-bf17-e5d73c2a6dac",
+              "dashboardChart": "c85bca18-1095-44cc-8416-c18b4337492b",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 48,
@@ -60,7 +60,7 @@
               }
             },
             {
-              "dashboardChart": "5a9ae425-5413-40f0-a5d3-fa1aa515eb75",
+              "dashboardChart": "25229faf-4642-4461-bbc9-ab8c303d876e",
               "chartLayout": {
                 "startX": 48,
                 "spanX": 48,
@@ -69,7 +69,7 @@
               }
             },
             {
-              "dashboardChart": "f37a288a-2ce9-4820-af6a-49520a80b67c",
+              "dashboardChart": "29ac76b9-3b58-4bd9-bbee-ae16766a2315",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 21,
@@ -81,7 +81,7 @@
               ]
             },
             {
-              "dashboardChart": "222cc381-784c-45f2-97f3-a48caae322e8",
+              "dashboardChart": "bd6657ca-a773-45a8-81e5-471b7f9d0a37",
               "chartLayout": {
                 "startX": 21,
                 "spanX": 22,
@@ -93,7 +93,7 @@
               ]
             },
             {
-              "dashboardChart": "97268459-f279-4d34-ac80-7515161813dd",
+              "dashboardChart": "0142852f-3ef3-4c32-b627-fe38ee96d46d",
               "chartLayout": {
                 "startX": 43,
                 "spanX": 53,
@@ -105,7 +105,7 @@
               ]
             },
             {
-              "dashboardChart": "e88ac44c-4346-4697-b901-0856bbe84db8",
+              "dashboardChart": "c0c2b38b-2ba7-42f5-a838-94e25298b549",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 43,
@@ -117,7 +117,7 @@
               ]
             },
             {
-              "dashboardChart": "8d6ded0a-51d2-460c-9e45-a12e1d1d32c7",
+              "dashboardChart": "d078daf8-08d4-4845-871f-69c73a7c760f",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -129,7 +129,7 @@
               ]
             },
             {
-              "dashboardChart": "44466f61-6220-441e-b96f-43ef2c8f5112",
+              "dashboardChart": "c012f15c-79af-46fb-8ad9-dea5cb00fc3d",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 47,
@@ -141,7 +141,7 @@
               ]
             },
             {
-              "dashboardChart": "d2a4eecf-a245-4e2f-94cd-c7e0638fda52",
+              "dashboardChart": "0eff7789-e2df-4fab-8e06-231b3b57b1ce",
               "chartLayout": {
                 "startX": 47,
                 "spanX": 49,
@@ -153,7 +153,7 @@
               ]
             },
             {
-              "dashboardChart": "45d7a756-6bac-4281-a3fa-9ac71d914800",
+              "dashboardChart": "29403fcb-1d48-4fd6-bbb2-118cd7deee7a",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -165,7 +165,7 @@
               ]
             },
             {
-              "dashboardChart": "cbf88252-e6ae-4a11-9085-48d295374cdb",
+              "dashboardChart": "53af5738-03b8-49dd-9740-256c990f2267",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 49,
@@ -177,7 +177,7 @@
               ]
             },
             {
-              "dashboardChart": "c392f4f9-356f-4230-a902-40e6fa700a33",
+              "dashboardChart": "c7d65a51-6aa1-4b41-b83e-b7b9ba29ec51",
               "chartLayout": {
                 "startX": 49,
                 "spanX": 47,
@@ -191,16 +191,16 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "3f7e506285edc1f94782302fdd3db4d28771aea2933c20e2361edf8a1749e0d0",
+        "etag": "7a3fa8361759164b4eed316ca59a3c9189d55609ff2dc5e4aa37336566f8ff53",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "cbf88252-e6ae-4a11-9085-48d295374cdb",
-          "displayName": "Top 10 Tactics",
-          "description": "This widget shows the top 10 tactics based on EDR alerts.",
+          "name": "c7d65a51-6aa1-4b41-b83e-b7b9ba29ec51",
+          "displayName": "Top 10 Techniques",
+          "description": "This widget shows the top 10 techniques based on EDR alerts.",
           "chartDatasource": {
-            "dashboardQuery": "9741218b-634e-496d-9349-093e3991f328",
+            "dashboardQuery": "16ef5ed6-60ef-4378-89bd-80b60235fb62",
             "dataSources": [
               "UDM"
             ]
@@ -208,46 +208,46 @@
           "visualization": {
             "series": [
               {
-                "seriesName": "TA0005",
+                "seriesName": "T1218.011",
                 "stack": "stack",
                 "seriesType": "BAR",
                 "encode": {
                   "x": "Count",
-                  "y": "Tactic_Name"
+                  "y": "Technique"
                 },
                 "dataLabel": {},
                 "itemStyle": {
                   "color": "#1a73e8"
                 },
-                "seriesUniqueValue": "TA0005"
+                "seriesUniqueValue": "T1218.011"
               },
               {
-                "seriesName": "TA0040",
+                "seriesName": "T1486",
                 "stack": "stack",
                 "seriesType": "BAR",
                 "encode": {
                   "x": "Count",
-                  "y": "Tactic_Name"
+                  "y": "Technique"
                 },
                 "dataLabel": {},
                 "itemStyle": {
                   "color": "#eb730a"
                 },
-                "seriesUniqueValue": "TA0040"
+                "seriesUniqueValue": "T1486"
               },
               {
-                "seriesName": "TA0008",
+                "seriesName": "T1021.001",
                 "stack": "stack",
                 "seriesType": "BAR",
                 "encode": {
                   "x": "Count",
-                  "y": "Tactic_Name"
+                  "y": "Technique"
                 },
                 "dataLabel": {},
                 "itemStyle": {
                   "color": "#10a3b7"
                 },
-                "seriesUniqueValue": "TA0008"
+                "seriesUniqueValue": "T1021.001"
               }
             ],
             "xAxes": [
@@ -259,7 +259,7 @@
             "yAxes": [
               {
                 "axisType": "CATEGORY",
-                "displayName": "Tactic_Name"
+                "displayName": "Technique"
               }
             ],
             "legends": [
@@ -268,168 +268,20 @@
               }
             ],
             "seriesColumn": [
-              "Tactic_ID"
+              "Technique_ID"
             ],
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "6099f6a580b438d500a263ed01d6b27c0da09e8bb1296a561213f10c1afa044b",
+          "etag": "d92eb5032fe395947657b4fca57b2c2b21ff826ecd0ea43e8c046134b74c9173",
           "drillDownConfig": {}
         },
         {
-          "name": "44466f61-6220-441e-b96f-43ef2c8f5112",
-          "displayName": "Severity based on EDR Alerts",
-          "description": "This widget shows the list of severity based on EDR alerts.",
-          "chartDatasource": {
-            "dashboardQuery": "46f7999f-3049-405d-b4ea-8dd1297f7777",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "none",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Count",
-                  "y": "Severity"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#0c67df"
-                },
-                "seriesUniqueValue": "none"
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Count"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Severity"
-              }
-            ],
-            "legends": [
-              {
-                "top": 12,
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "16907a9e357f3943e90982fbe3c7d0147f99b34db7b6910af17fa07d4459c58b",
-          "drillDownConfig": {}
-        },
-        {
-          "name": "1eb1fb39-c6fb-4ab4-bf17-e5d73c2a6dac",
-          "displayName": "Detections per day - last 7 days",
-          "description": "CrowdStrike detections per day, fixed to the last 7 days (Australia/Sydney).",
-          "chartDatasource": {
-            "dashboardQuery": "9b15f599-2e4a-4007-82c5-0a6d800957b7",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "Detections",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Day",
-                  "y": "Detections"
-                },
-                "dataLabel": {
-                  "show": true
-                },
-                "itemStyle": {
-                  "color": "#1a73e8"
-                }
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Day (Sydney)"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Detections"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Grouped"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "b8ef9c96e46ff51549f11fc83aa19db69c8fcfbe5c817274eeaad76a456bf90d"
-        },
-        {
-          "name": "d2a4eecf-a245-4e2f-94cd-c7e0638fda52",
-          "displayName": "Top 10 Users based on EDR Alerts",
-          "description": "This widget shows the top 10 affected users based on EDR alerts.",
-          "chartDatasource": {
-            "dashboardQuery": "aadc9e4d-b030-4af8-a5d0-11da92269555",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "none",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Count",
-                  "y": "User"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#0c67df"
-                },
-                "seriesUniqueValue": "none"
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Count"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "User"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "5cfac57ec3a8d95d754a9124e0c170cb885123c039f0f27bc23adb6e6e1ba47c",
-          "drillDownConfig": {}
-        },
-        {
-          "name": "dcb7ce04-d4b9-4d18-936a-d27f380291fe",
+          "name": "5e397410-c113-4978-9a2a-b55094f53669",
           "displayName": "EDR detections by tactic & endpoints with detections",
           "description": "Daily CrowdStrike detections stacked by MITRE tactic (bars) with the number of endpoints that had detections (labelled line). Days in Australia/Sydney.",
           "chartDatasource": {
-            "dashboardQuery": "51a10fb1-a680-48b8-89de-a62c9d3d7bb1",
+            "dashboardQuery": "8c257f88-4213-490f-9d32-8d404e673d6d",
             "dataSources": [
               "UDM"
             ]
@@ -575,14 +427,14 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "395f1616be4b9757c9e7bc2cd8dcf96e24886f864e8b2c7bfcb1eae07b621b3f"
+          "etag": "7dec3f938f0c5316a07eee881a9bd5c0668de128bb07a655481a4708f6f76fdf"
         },
         {
-          "name": "97268459-f279-4d34-ac80-7515161813dd",
+          "name": "0142852f-3ef3-4c32-b627-fe38ee96d46d",
           "displayName": "Total EDR Alerts Over Time",
           "description": "This widget shows the trend of EDR alerts over time.",
           "chartDatasource": {
-            "dashboardQuery": "bf089c87-391e-40d0-a257-99b62b429298",
+            "dashboardQuery": "3c387749-78f2-4132-a903-e5b8e95cce17",
             "dataSources": [
               "UDM"
             ]
@@ -670,109 +522,15 @@
             "groupingType": "Grouped"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "4af548109cdc5d45fc8cb4ea99dee9ae2e1c575ef9b6f2eebe85d55333817651",
+          "etag": "ae8712c3289f8f0fc4e4fcfd5b9b36bd1b631e60099489ab3e95de22fcbb7a80",
           "drillDownConfig": {}
         },
         {
-          "name": "222cc381-784c-45f2-97f3-a48caae322e8",
-          "displayName": "Total EDR Alerts",
-          "description": "This widget shows the total number of EDR alerts.",
-          "chartDatasource": {
-            "dashboardQuery": "7488786d-4709-47e9-8263-efc92a5bac46",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesType": "TEXT",
-                "label": "Count ",
-                "field": "Count",
-                "metricTrendConfig": {
-                  "metricFormat": "METRIC_FORMAT_NUMBER",
-                  "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
-                  "metricTrendType": "METRIC_TREND_TYPE_REGULAR",
-                  "showMetricTrend": true
-                }
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "e9af91c3b120aebc36cd3c900887701039ad1a7e226f184eddc0cf09bc5f1922",
-          "drillDownConfig": {}
-        },
-        {
-          "name": "45d7a756-6bac-4281-a3fa-9ac71d914800",
-          "displayName": "Top 10 Hosts based on EDR Alerts",
-          "description": "This widget shows the top 10 affected hosts based on EDR alerts.",
-          "chartDatasource": {
-            "dashboardQuery": "b9dddbc3-68e1-4746-84b4-b71969e57794",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "none",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Count",
-                  "y": "Hostname"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#0c67df"
-                },
-                "seriesUniqueValue": "none"
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Count"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Hostname"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "949ef619bf21ec6894dccc2019b53c8e9822aafdf21f11038b00f69a328a6f22",
-          "drillDownConfig": {}
-        },
-        {
-          "name": "8d6ded0a-51d2-460c-9e45-a12e1d1d32c7",
+          "name": "d078daf8-08d4-4845-871f-69c73a7c760f",
           "displayName": "Top 10 EDR Alerts ",
           "description": "This widget shows the top 10 EDR alerts based on log types.",
           "chartDatasource": {
-            "dashboardQuery": "e698c90b-9cc6-4543-9b91-d6ab4095e32f",
+            "dashboardQuery": "21989217-863a-4665-92c7-d9897077681e",
             "dataSources": [
               "UDM"
             ]
@@ -860,15 +618,372 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "87138f4b9391cf06bb2a5a55d1bf32d29e3b3d8bf79c3fe69a9f658c1fec6a08",
+          "etag": "36cc5457ed826bc93fa848b066883ed5da9934a636b893ebc9e6ce67512f6e57",
           "drillDownConfig": {}
         },
         {
-          "name": "5a9ae425-5413-40f0-a5d3-fa1aa515eb75",
+          "name": "c012f15c-79af-46fb-8ad9-dea5cb00fc3d",
+          "displayName": "Severity based on EDR Alerts",
+          "description": "This widget shows the list of severity based on EDR alerts.",
+          "chartDatasource": {
+            "dashboardQuery": "3faad822-ef9f-499a-8490-57d3af32cc27",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "none",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Count",
+                  "y": "Severity"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#0c67df"
+                },
+                "seriesUniqueValue": "none"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Count"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Severity"
+              }
+            ],
+            "legends": [
+              {
+                "top": 12,
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "5db1fe49b7a7b87c5f325c2b551d8d32cc7659de023a107e242ee9483366cb09",
+          "drillDownConfig": {}
+        },
+        {
+          "name": "c85bca18-1095-44cc-8416-c18b4337492b",
+          "displayName": "Detections per day - last 7 days",
+          "description": "CrowdStrike detections per day, fixed to the last 7 days (Australia/Sydney).",
+          "chartDatasource": {
+            "dashboardQuery": "a1891a49-4b10-4525-a48c-2cbbe9e37535",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "Detections",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Day",
+                  "y": "Detections"
+                },
+                "dataLabel": {
+                  "show": true
+                },
+                "itemStyle": {
+                  "color": "#1a73e8"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Day (Sydney)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Detections"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Grouped"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "fbe384b0b0924ecf1dbbba5447b2711690bef7e16c18cb5aab7094f7f6fe89e3"
+        },
+        {
+          "name": "29ac76b9-3b58-4bd9-bbee-ae16766a2315",
+          "displayName": "Number of EDR Sensors",
+          "description": "This widget shows the number of assets with active EDR sensors.",
+          "chartDatasource": {
+            "dashboardQuery": "da51cac7-2e56-4b5e-bebb-29223667082c",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesType": "TEXT",
+                "label": "Count",
+                "field": "Count",
+                "metricTrendConfig": {
+                  "metricFormat": "METRIC_FORMAT_NUMBER",
+                  "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                  "metricTrendType": "METRIC_TREND_TYPE_REGULAR",
+                  "showMetricTrend": true
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "a87bc721ad45a2119286e986bb62c410382059f2954ce608cee9a559e123ab8d",
+          "drillDownConfig": {}
+        },
+        {
+          "name": "c0c2b38b-2ba7-42f5-a838-94e25298b549",
+          "displayName": "Active EDR Sensors",
+          "description": "This widget shows the list of assets with active EDR sensors.",
+          "chartDatasource": {
+            "dashboardQuery": "b57052af-40bf-4c9d-9c95-15666b43ce9d",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "EDR_Asset",
+                "header": "EDR Asset"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "2c27bf1f14b40c30c3da825317ac0b72e106c58aa260611fff7588a9ebfabde8",
+          "drillDownConfig": {}
+        },
+        {
+          "name": "bd6657ca-a773-45a8-81e5-471b7f9d0a37",
+          "displayName": "Total EDR Alerts",
+          "description": "This widget shows the total number of EDR alerts.",
+          "chartDatasource": {
+            "dashboardQuery": "e0a1ece3-3877-44cf-9d7d-4e1c01eecf87",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesType": "TEXT",
+                "label": "Count ",
+                "field": "Count",
+                "metricTrendConfig": {
+                  "metricFormat": "METRIC_FORMAT_NUMBER",
+                  "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                  "metricTrendType": "METRIC_TREND_TYPE_REGULAR",
+                  "showMetricTrend": true
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "556c628f9571f05e4df4ab79711b32f4bf93cd12bfe7c25f07fd5a75164cadc5",
+          "drillDownConfig": {}
+        },
+        {
+          "name": "53af5738-03b8-49dd-9740-256c990f2267",
+          "displayName": "Top 10 Tactics",
+          "description": "This widget shows the top 10 tactics based on EDR alerts.",
+          "chartDatasource": {
+            "dashboardQuery": "425ea845-1ddb-4d2c-abe8-bbd1b7e7d68d",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "TA0005",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Count",
+                  "y": "Tactic_Name"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "TA0005"
+              },
+              {
+                "seriesName": "TA0040",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Count",
+                  "y": "Tactic_Name"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "TA0040"
+              },
+              {
+                "seriesName": "TA0008",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Count",
+                  "y": "Tactic_Name"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#10a3b7"
+                },
+                "seriesUniqueValue": "TA0008"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Count"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Tactic_Name"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "seriesColumn": [
+              "Tactic_ID"
+            ],
+            "groupingType": "Stacked"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "ebed0c805f10eb7feb62d9fcd01ab0c5cdcc95e54914a17b2d9cc6d21c7988a5",
+          "drillDownConfig": {}
+        },
+        {
+          "name": "29403fcb-1d48-4fd6-bbb2-118cd7deee7a",
+          "displayName": "Top 10 Hosts based on EDR Alerts",
+          "description": "This widget shows the top 10 affected hosts based on EDR alerts.",
+          "chartDatasource": {
+            "dashboardQuery": "75d9b01a-af0c-4530-8ed5-a20107187a78",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "none",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Count",
+                  "y": "Hostname"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#0c67df"
+                },
+                "seriesUniqueValue": "none"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Count"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hostname"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "a1655ae75c5626f5e453928fc30336208c9da5dc6d72f70f8f8e7c9c58c9ed1f",
+          "drillDownConfig": {}
+        },
+        {
+          "name": "25229faf-4642-4461-bbc9-ab8c303d876e",
           "displayName": "Endpoints with detections per day - last 7 days",
           "description": "Number of endpoints with at least one CrowdStrike detection per day, fixed to the last 7 days (Australia/Sydney).",
           "chartDatasource": {
-            "dashboardQuery": "20b21d7b-d2dd-4c84-99a2-e16eca43f92b",
+            "dashboardQuery": "3fc90564-7620-49e7-a490-a10c89411040",
             "dataSources": [
               "UDM"
             ]
@@ -910,14 +1025,14 @@
             "groupingType": "Grouped"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "5235c45fad1d7d74ecec77742aca59fa2a23b32d875c7b9c671fbf4983ac1a01"
+          "etag": "e5fca45dc508c0accd00744af43f836e484d6adc9ebb358444588ca93b44e00c"
         },
         {
-          "name": "f37a288a-2ce9-4820-af6a-49520a80b67c",
-          "displayName": "Number of EDR Sensors",
-          "description": "This widget shows the number of assets with active EDR sensors.",
+          "name": "0eff7789-e2df-4fab-8e06-231b3b57b1ce",
+          "displayName": "Top 10 Users based on EDR Alerts",
+          "description": "This widget shows the top 10 affected users based on EDR alerts.",
           "chartDatasource": {
-            "dashboardQuery": "3539d0c4-f2c4-4863-8587-49e1bfe93e70",
+            "dashboardQuery": "c20b8d0c-f9c8-46be-a1b1-3e4e8a7b2748",
             "dataSources": [
               "UDM"
             ]
@@ -925,129 +1040,17 @@
           "visualization": {
             "series": [
               {
-                "seriesType": "TEXT",
-                "label": "Count",
-                "field": "Count",
-                "metricTrendConfig": {
-                  "metricFormat": "METRIC_FORMAT_NUMBER",
-                  "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
-                  "metricTrendType": "METRIC_TREND_TYPE_REGULAR",
-                  "showMetricTrend": true
-                }
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "57648bca67b38133bcbac2082f5f2573787edf63b6a18ccd4ca05ac9154d0eee",
-          "drillDownConfig": {}
-        },
-        {
-          "name": "e88ac44c-4346-4697-b901-0856bbe84db8",
-          "displayName": "Active EDR Sensors",
-          "description": "This widget shows the list of assets with active EDR sensors.",
-          "chartDatasource": {
-            "dashboardQuery": "f07df6ac-9373-4f1d-bca0-b741cf737047",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "xAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "columnDefs": [
-              {
-                "field": "EDR_Asset",
-                "header": "EDR Asset"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "e6a224a1726460f21d4a396d0ff7d588986b0b0d7610669645791a34378f0105",
-          "drillDownConfig": {}
-        },
-        {
-          "name": "c392f4f9-356f-4230-a902-40e6fa700a33",
-          "displayName": "Top 10 Techniques",
-          "description": "This widget shows the top 10 techniques based on EDR alerts.",
-          "chartDatasource": {
-            "dashboardQuery": "54c1c24c-17b1-45de-b841-35637748a74f",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "T1218.011",
-                "stack": "stack",
+                "seriesName": "none",
                 "seriesType": "BAR",
                 "encode": {
                   "x": "Count",
-                  "y": "Technique"
+                  "y": "User"
                 },
                 "dataLabel": {},
                 "itemStyle": {
-                  "color": "#1a73e8"
+                  "color": "#0c67df"
                 },
-                "seriesUniqueValue": "T1218.011"
-              },
-              {
-                "seriesName": "T1486",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Count",
-                  "y": "Technique"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#eb730a"
-                },
-                "seriesUniqueValue": "T1486"
-              },
-              {
-                "seriesName": "T1021.001",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Count",
-                  "y": "Technique"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#10a3b7"
-                },
-                "seriesUniqueValue": "T1021.001"
+                "seriesUniqueValue": "none"
               }
             ],
             "xAxes": [
@@ -1059,7 +1062,7 @@
             "yAxes": [
               {
                 "axisType": "CATEGORY",
-                "displayName": "Technique"
+                "displayName": "User"
               }
             ],
             "legends": [
@@ -1067,67 +1070,16 @@
                 "legendOrient": "HORIZONTAL"
               }
             ],
-            "seriesColumn": [
-              "Technique_ID"
-            ],
-            "groupingType": "Stacked"
+            "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "e89073192c73afd1f70a601b3701b07a0463a3bee63f5e255be6cb2b353f061e",
+          "etag": "fbfcd7238afc5b3c13614cc8f77705fe5fc98711cf77dde708608285f456c19e",
           "drillDownConfig": {}
         }
       ],
       "dashboardQueries": [
         {
-          "name": "20b21d7b-d2dd-4c84-99a2-e16eca43f92b",
-          "query": "metadata.log_type = \"CS_DETECTS\"\n$Day = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d\", \"Australia/Sydney\")\nmatch:\n  $Day\noutcome:\n  $Detections = count_distinct(metadata.id)\n  $Endpoints = count_distinct(principal.hostname)\norder:\n  $Day asc\nlimit:\n  100\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "afbefdb0494b91ccfaddeeea5b0236d20f4bc4014e28584253d27143b015a4c3",
-          "dialect": "YL2"
-        },
-        {
-          "name": "9b15f599-2e4a-4007-82c5-0a6d800957b7",
-          "query": "metadata.log_type = \"CS_DETECTS\"\n$Day = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d\", \"Australia/Sydney\")\nmatch:\n  $Day\noutcome:\n  $Detections = count_distinct(metadata.id)\n  $Endpoints = count_distinct(principal.hostname)\norder:\n  $Day asc\nlimit:\n  100\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "b0c7e7d0e1863a797ad56ed0ff76eb212c9094876da5709967111f675d4c3919",
-          "dialect": "YL2"
-        },
-        {
-          "name": "f07df6ac-9373-4f1d-bca0-b741cf737047",
-          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\n$EDR_Asset = strings.coalesce($event.principal.asset.hostname, $event.principal.hostname)\r\n$EDR_Asset != \"\"\r\n\r\nmatch:\r\n    $EDR_Asset\r\nlimit:\r\n    50",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "d7842d14b1c64e7d641232a3bdbdf4c4037ea10d1a0358fca5250dbfa5179dba",
-          "dialect": "YL2"
-        },
-        {
-          "name": "51a10fb1-a680-48b8-89de-a62c9d3d7bb1",
-          "query": "metadata.log_type = \"CS_DETECTS\"\n$Day = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d\", \"Australia/Sydney\")\nmatch:\n  $Day\noutcome:\n  $Endpoints = count_distinct(principal.hostname)\n  $Detections = count_distinct(metadata.id)\n  $Persistence = sum(if(security_result.attack_details.tactics.name = \"Persistence\", 1, 0))\n  $Command_and_Control = sum(if(security_result.attack_details.tactics.name = \"Command and Control\", 1, 0))\n  $Privilege_Escalation = sum(if(security_result.attack_details.tactics.name = \"Privilege Escalation\", 1, 0))\n  $Machine_Learning = sum(if(security_result.attack_details.tactics.name = \"Machine Learning\", 1, 0))\n  $Execution = sum(if(security_result.attack_details.tactics.name = \"Execution\", 1, 0))\n  $Post_Exploit = sum(if(security_result.attack_details.tactics.name = \"Post-Exploit\", 1, 0))\n  $Defense_Evasion = sum(if(security_result.attack_details.tactics.name = \"Defense Evasion\", 1, 0))\n  $Other = sum(if(security_result.attack_details.tactics.name = \"\", 1, 0))\norder:\n  $Day asc\nlimit:\n  10000\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "30"
-            }
-          },
-          "etag": "085fcd2d3bc156731d5952a49cbdc47c4e8bdd73aa3747017fed03a008de7505",
-          "dialect": "YL2"
-        },
-        {
-          "name": "7488786d-4709-47e9-8263-efc92a5bac46",
+          "name": "e0a1ece3-3877-44cf-9d7d-4e1c01eecf87",
           "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\noutcome:\r\n    $Count = count($event.security_result.summary)",
           "input": {
             "relativeTime": {
@@ -1135,95 +1087,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "0db4e0a46830f373870e275f6fa60d2bcaa11f092a36db58b5254b4138fc6e81",
+          "etag": "c06dfcf136b1acd860ad2fba02177fa13a3c5758c3e937300b41e7cd1ffc404b",
           "dialect": "YL2"
         },
         {
-          "name": "9741218b-634e-496d-9349-093e3991f328",
-          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\n$Tactic_ID = strings.coalesce($event.security_result.attack_details.tactics.id, $event.security_result.detection_fields[\"Tactic ID\"])\r\n$Tactic_Name = strings.coalesce($event.security_result.attack_details.tactics.name, $event.security_result.detection_fields[\"Tactic\"])\r\n$Tactic_ID != \"\" \r\n$Tactic_Name != \"\"\r\n\r\nmatch:\r\n    $Tactic_ID, $Tactic_Name\r\noutcome:\r\n    $Count = count($event.security_result.summary)\r\norder:\r\n    $Count desc \r\nlimit:\r\n    10",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "e7a859b889104cdd0156fb497fd77524fd9b6c78d12667e5a9a262f419998305",
-          "dialect": "YL2"
-        },
-        {
-          "name": "46f7999f-3049-405d-b4ea-8dd1297f7777",
-          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\n$event.security_result.summary != \"\"\n\n$Severity = $event.security_result.severity\n\nmatch:\n    $Severity \noutcome:\n    $Count = count($event.security_result.summary)\norder:\n    $Severity asc\nlimit:\n    10",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "49b128f9526ed7cd5ef5cb8cae1d9b973b1a4711619f48a462ef6a10d1566b01",
-          "dialect": "YL2"
-        },
-        {
-          "name": "aadc9e4d-b030-4af8-a5d0-11da92269555",
-          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\n\n$User = $event.principal.user.user_display_name\n$User != \"\"\n\nmatch:      \n    $User\noutcome:\n    $Count = count($event.security_result.summary)\norder:\n    $Count desc\nlimit:\n    10",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "0f16d27a907dd5b43cf0dec2253b274c707106affe10a9f6facea442ae95937d",
-          "dialect": "YL2"
-        },
-        {
-          "name": "3539d0c4-f2c4-4863-8587-49e1bfe93e70",
-          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\noutcome:\r\n    $Count = count_distinct(strings.coalesce($event.principal.asset.hostname, $event.principal.hostname))\r\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "a5d2dad521424a37521c139578b4d35c4add08fd9de73c43c2b3309c3f7333a6",
-          "dialect": "YL2"
-        },
-        {
-          "name": "54c1c24c-17b1-45de-b841-35637748a74f",
-          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\n$Technique_ID = strings.coalesce($event.security_result.attack_details.techniques.id, $event.security_result.detection_fields[\"Technique ID\"])\r\n$Technique  = strings.coalesce($event.security_result.attack_details.techniques.name, $event.security_result.detection_fields[\"Technique\"])\r\n$Technique_ID != \"\"\r\n$Technique  != \"\"\r\n \r\nmatch:\r\n    $Technique_ID, $Technique\r\noutcome:\r\n    $Count = count($event.security_result.summary)\r\norder:\r\n    $Count desc \r\nlimit:\r\n    10",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "5e7ccb74f933cc177ce0f0183f75de8f092211caf569813afe42abf30a6c7486",
-          "dialect": "YL2"
-        },
-        {
-          "name": "bf089c87-391e-40d0-a257-99b62b429298",
-          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\n$Log_Type = $event.metadata.log_type \r\n$Date = timestamp.get_date($event.metadata.event_timestamp.seconds)\r\n\r\nmatch:\r\n    $Date, $Log_Type\r\noutcome:\r\n    $Count = count($event.security_result.summary)\r\norder:\r\n    $Date asc",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "47e6e1b163ca7a9f92cff5606ee3dfe782d8c07d1fae4daa91e711cd4d90c9ca",
-          "dialect": "YL2"
-        },
-        {
-          "name": "b9dddbc3-68e1-4746-84b4-b71969e57794",
-          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\n\n$Hostname = strings.coalesce($event.principal.asset.hostname, $event.principal.hostname)\n$Hostname != \"\"\n\nmatch:      \n    $Hostname\noutcome:\n    $Count = count($event.security_result.summary)\norder:\n    $Count desc\nlimit:\n    10",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "fac9faf184f0381dd49a868acb963e8118e1d48fae69935e6e15d997385f64bc",
-          "dialect": "YL2"
-        },
-        {
-          "name": "e698c90b-9cc6-4543-9b91-d6ab4095e32f",
+          "name": "21989217-863a-4665-92c7-d9897077681e",
           "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\n$Log_Type = $event.metadata.log_type\r\n$Detection = $event.security_result.summary\r\n$Detection != \"\"\r\n\r\nmatch:      \r\n    $Detection, $Log_Type\r\noutcome:\r\n    $Count = count($event.security_result.summary)\r\norder:\r\n    $Count desc\r\nlimit:\r\n    10",
           "input": {
             "relativeTime": {
@@ -1231,7 +1099,139 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "2183523fba34b6429fe66c8b439b860c9b651ae04b089515841e69dd0273d5de",
+          "etag": "eefc369b5f995d4e49bf62071b58b0d12c7f16b6c6e59284726b4fb845633b0d",
+          "dialect": "YL2"
+        },
+        {
+          "name": "3faad822-ef9f-499a-8490-57d3af32cc27",
+          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\n$event.security_result.summary != \"\"\n\n$Severity = $event.security_result.severity\n\nmatch:\n    $Severity \noutcome:\n    $Count = count($event.security_result.summary)\norder:\n    $Severity asc\nlimit:\n    10",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "43335542f520aaf2e2f970b50c78ffc4f80102b581330d88b006f107bcfd3259",
+          "dialect": "YL2"
+        },
+        {
+          "name": "da51cac7-2e56-4b5e-bebb-29223667082c",
+          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\noutcome:\r\n    $Count = count_distinct(strings.coalesce($event.principal.asset.hostname, $event.principal.hostname))\r\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "3363dea7b8825825f67f3752c92deef3ad2f7c925764537544b7c3be1e6fc1a0",
+          "dialect": "YL2"
+        },
+        {
+          "name": "b57052af-40bf-4c9d-9c95-15666b43ce9d",
+          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\n$EDR_Asset = strings.coalesce($event.principal.asset.hostname, $event.principal.hostname)\r\n$EDR_Asset != \"\"\r\n\r\nmatch:\r\n    $EDR_Asset\r\nlimit:\r\n    50",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "67be0e22a775150b00f088a3f3c36e2bd2019c7a86e47fd311939f6df9c2e585",
+          "dialect": "YL2"
+        },
+        {
+          "name": "16ef5ed6-60ef-4378-89bd-80b60235fb62",
+          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\n$Technique_ID = strings.coalesce($event.security_result.attack_details.techniques.id, $event.security_result.detection_fields[\"Technique ID\"])\r\n$Technique  = strings.coalesce($event.security_result.attack_details.techniques.name, $event.security_result.detection_fields[\"Technique\"])\r\n$Technique_ID != \"\"\r\n$Technique  != \"\"\r\n \r\nmatch:\r\n    $Technique_ID, $Technique\r\noutcome:\r\n    $Count = count($event.security_result.summary)\r\norder:\r\n    $Count desc \r\nlimit:\r\n    10",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "ce2bd7762361b8ef831eee67abbf9b89c91ec696572da196ef81f69f8065c0fd",
+          "dialect": "YL2"
+        },
+        {
+          "name": "8c257f88-4213-490f-9d32-8d404e673d6d",
+          "query": "metadata.log_type = \"CS_DETECTS\"\n$Day = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d\", \"Australia/Sydney\")\nmatch:\n  $Day\noutcome:\n  $Endpoints = count_distinct(principal.hostname)\n  $Detections = count_distinct(metadata.id)\n  $Persistence = sum(if(security_result.attack_details.tactics.name = \"Persistence\", 1, 0))\n  $Command_and_Control = sum(if(security_result.attack_details.tactics.name = \"Command and Control\", 1, 0))\n  $Privilege_Escalation = sum(if(security_result.attack_details.tactics.name = \"Privilege Escalation\", 1, 0))\n  $Machine_Learning = sum(if(security_result.attack_details.tactics.name = \"Machine Learning\", 1, 0))\n  $Execution = sum(if(security_result.attack_details.tactics.name = \"Execution\", 1, 0))\n  $Post_Exploit = sum(if(security_result.attack_details.tactics.name = \"Post-Exploit\", 1, 0))\n  $Defense_Evasion = sum(if(security_result.attack_details.tactics.name = \"Defense Evasion\", 1, 0))\n  $Other = sum(if(security_result.attack_details.tactics.name = \"\", 1, 0))\norder:\n  $Day asc\nlimit:\n  10000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "30"
+            }
+          },
+          "etag": "900f8035c71b4a28befef98bf1c305f52346bfb61f28f0c0ee7b2843e7097af1",
+          "dialect": "YL2"
+        },
+        {
+          "name": "3c387749-78f2-4132-a903-e5b8e95cce17",
+          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\n$Log_Type = $event.metadata.log_type \r\n$Date = timestamp.get_date($event.metadata.event_timestamp.seconds)\r\n\r\nmatch:\r\n    $Date, $Log_Type\r\noutcome:\r\n    $Count = count($event.security_result.summary)\r\norder:\r\n    $Date asc",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "e0e60b3061790dbd2da4d9777c0306b77d6379b54f65dce39f4b2493c8e99de0",
+          "dialect": "YL2"
+        },
+        {
+          "name": "425ea845-1ddb-4d2c-abe8-bbd1b7e7d68d",
+          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\r\n\r\n$Tactic_ID = strings.coalesce($event.security_result.attack_details.tactics.id, $event.security_result.detection_fields[\"Tactic ID\"])\r\n$Tactic_Name = strings.coalesce($event.security_result.attack_details.tactics.name, $event.security_result.detection_fields[\"Tactic\"])\r\n$Tactic_ID != \"\" \r\n$Tactic_Name != \"\"\r\n\r\nmatch:\r\n    $Tactic_ID, $Tactic_Name\r\noutcome:\r\n    $Count = count($event.security_result.summary)\r\norder:\r\n    $Count desc \r\nlimit:\r\n    10",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "91ff5a915566315046cf2fbed73abf9162a4cb56f8689b5d57329a21ddf46f7f",
+          "dialect": "YL2"
+        },
+        {
+          "name": "75d9b01a-af0c-4530-8ed5-a20107187a78",
+          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\n\n$Hostname = strings.coalesce($event.principal.asset.hostname, $event.principal.hostname)\n$Hostname != \"\"\n\nmatch:      \n    $Hostname\noutcome:\n    $Count = count($event.security_result.summary)\norder:\n    $Count desc\nlimit:\n    10",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "a9144065a1872d5250abd16b923d668bd22396c67a07001ced2ad7660ae81d3e",
+          "dialect": "YL2"
+        },
+        {
+          "name": "3fc90564-7620-49e7-a490-a10c89411040",
+          "query": "metadata.log_type = \"CS_DETECTS\"\n$Day = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d\", \"Australia/Sydney\")\nmatch:\n  $Day\noutcome:\n  $Detections = count_distinct(metadata.id)\n  $Endpoints = count_distinct(principal.hostname)\norder:\n  $Day asc\nlimit:\n  100\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "7e2f673f8b9ad57ef187ece0694f8c952a973972fb683a4e653436945a794423",
+          "dialect": "YL2"
+        },
+        {
+          "name": "a1891a49-4b10-4525-a48c-2cbbe9e37535",
+          "query": "metadata.log_type = \"CS_DETECTS\"\n$Day = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d\", \"Australia/Sydney\")\nmatch:\n  $Day\noutcome:\n  $Detections = count_distinct(metadata.id)\n  $Endpoints = count_distinct(principal.hostname)\norder:\n  $Day asc\nlimit:\n  100\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "4bd47cdb14469b9407d67c4aaa630b145f029774f630c2e25114f760b105494e",
+          "dialect": "YL2"
+        },
+        {
+          "name": "c20b8d0c-f9c8-46be-a1b1-3e4e8a7b2748",
+          "query": "$event.metadata.log_type = /LIMACHARLIE_EDR|CS_EDR|CS_DETECTS|ESET_EDR|CHECKPOINT_EDR|SOPHOS_EDR|OSQUERY_EDR|DIGITALGUARDIAN_EDR|SENTINEL_DV|MICROSOFT_DEFENDER_ENDPOINT|SENTINEL_EDR|UPTYCS_EDR|SYMANTEC_EDR|FORTINET_FORTIEDR|REDCANARY_EDR|CYBEREASON_EDR|MICROSOFT_DEFENDER_IDENTITY|DEEP_INSTINCT_EDR|CB_EDR|PAN_EDR|FIREEYE_HX|SENTINELONE_ALERT|SENTINELONE_CF|WATCHGUARD_EDR/ nocase\n\n$User = $event.principal.user.user_display_name\n$User != \"\"\n\nmatch:      \n    $User\noutcome:\n    $Count = count($event.security_result.summary)\norder:\n    $Count desc\nlimit:\n    10",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "5d2cd1e4812c989641c97fbf73e73c3ce34a53a71e964e50d2f9ec625f28979f",
           "dialect": "YL2"
         }
       ]

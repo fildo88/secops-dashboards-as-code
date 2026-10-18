@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "8d042391-a61a-45cc-afdf-5ee3b3332c67",
+        "name": "92463524-7fe0-44bb-b454-2f0ed013147f",
         "displayName": "Detection Rules",
         "description": "Custom YARA-L detection rules: count of rules currently enabled (live) and not archived.",
         "definition": {
@@ -26,7 +26,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "34f5a2a6-3e88-47eb-8f53-7159867da024",
+              "dashboardChart": "7ca75e69-87b2-40a1-b081-3390d955e2f1",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 24,
@@ -37,16 +37,16 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "efec638cb6b974f815897284936760b0c6fe26dff776be7d05f1b5b056693ba0",
+        "etag": "42fab34e5d095744150d9db9c2e9ed31838431f66d7ec7be43d24d6fe181f54f",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "34f5a2a6-3e88-47eb-8f53-7159867da024",
+          "name": "7ca75e69-87b2-40a1-b081-3390d955e2f1",
           "displayName": "Active Detection Rules",
           "description": "Custom rules with live status ENABLED (not archived)",
           "chartDatasource": {
-            "dashboardQuery": "a5c7fa04-aa1c-4de8-8dd7-c1dc90bbeb8f",
+            "dashboardQuery": "71fc1869-66ab-4cf5-92fd-dd32261a2346",
             "dataSources": [
               "RULES"
             ]
@@ -82,12 +82,12 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "d0a2d4219e5fa56e038afb65b6c9517b609d130bc2ac5997dd2cd16e6a091892"
+          "etag": "8b0a929a2ecbec2b094eaa19674a4f7ddb497f4b46fb436c2c07afbf5417650e"
         }
       ],
       "dashboardQueries": [
         {
-          "name": "a5c7fa04-aa1c-4de8-8dd7-c1dc90bbeb8f",
+          "name": "71fc1869-66ab-4cf5-92fd-dd32261a2346",
           "query": "rules.live_status = \"ENABLED\"\nrules.archived = false\n\noutcome:\n    $Active_Rules = count_distinct(rules.name)\n",
           "input": {
             "relativeTime": {
@@ -95,7 +95,7 @@
               "startTimeVal": "36500"
             }
           },
-          "etag": "bd7112d8a6ba221cabd3a0acfe671b253ab5754ebe18a3391d21380a689c2c1b",
+          "etag": "eb4548cb4e492fbc3cf4ba1379c1fb08b4a659081ecac78f98c7d8c8eac41916",
           "dialect": "YL2"
         }
       ]
