@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "4d9c99d5-d3ee-4599-9dc4-05e4313afc1a",
+        "name": "93c457ef-9574-412d-98b3-9cca00b065d3",
         "displayName": "IOC Search - All Log Sources",
         "description": "Enter one IOC (IP, domain, hostname, hash, username, email or URL) in the IOC filter. Every chart searches all log sources for it; detail charts are grouped by activity type with a Log Source column.",
         "definition": {
@@ -21,13 +21,13 @@
               ],
               "displayName": "Global Time Filter",
               "chartIds": [
-                "ba16eaa0-f1ce-4da4-9698-6e8e736be6a1",
-                "1d2f2ce8-fcbe-4eb6-906e-9607f72cf9bd",
-                "b6993588-b399-4053-b02a-1236e7f19294",
-                "2866557a-b4ee-4dfe-b39b-91f0b2ee8fe1",
-                "79215ad0-10f2-4797-9688-108cf3b91b80",
-                "e6b98773-b73b-422d-9389-653e616ac9d8",
-                "82efc9c1-22c9-4580-b728-d077fc937a34"
+                "d8489e68-7170-4b65-86fc-ff69ba554a56",
+                "858ffa82-649d-4081-b7a2-62aaf1582097",
+                "bb171fc9-84aa-438f-883e-123388e01d5b",
+                "811074cb-0abd-4b6e-8d1e-8df53fc4144e",
+                "da2954c3-0cb0-478e-b5e4-a5910f58127a",
+                "965facdb-219e-4379-9448-f86599f6380f",
+                "5317a24a-c952-4f2f-8278-221ba2dc9b94"
               ],
               "isStandardTimeRangeFilter": true,
               "isStandardTimeRangeFilterEnabled": true
@@ -45,13 +45,13 @@
               ],
               "displayName": "IOC (IP, domain, hostname, hash, user, email or URL)",
               "chartIds": [
-                "ba16eaa0-f1ce-4da4-9698-6e8e736be6a1",
-                "1d2f2ce8-fcbe-4eb6-906e-9607f72cf9bd",
-                "b6993588-b399-4053-b02a-1236e7f19294",
-                "2866557a-b4ee-4dfe-b39b-91f0b2ee8fe1",
-                "79215ad0-10f2-4797-9688-108cf3b91b80",
-                "e6b98773-b73b-422d-9389-653e616ac9d8",
-                "82efc9c1-22c9-4580-b728-d077fc937a34"
+                "d8489e68-7170-4b65-86fc-ff69ba554a56",
+                "858ffa82-649d-4081-b7a2-62aaf1582097",
+                "bb171fc9-84aa-438f-883e-123388e01d5b",
+                "811074cb-0abd-4b6e-8d1e-8df53fc4144e",
+                "da2954c3-0cb0-478e-b5e4-a5910f58127a",
+                "965facdb-219e-4379-9448-f86599f6380f",
+                "5317a24a-c952-4f2f-8278-221ba2dc9b94"
               ],
               "advancedFilterConfig": {
                 "token": "ioc",
@@ -70,7 +70,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "ba16eaa0-f1ce-4da4-9698-6e8e736be6a1",
+              "dashboardChart": "d8489e68-7170-4b65-86fc-ff69ba554a56",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 48,
@@ -83,7 +83,7 @@
               ]
             },
             {
-              "dashboardChart": "1d2f2ce8-fcbe-4eb6-906e-9607f72cf9bd",
+              "dashboardChart": "858ffa82-649d-4081-b7a2-62aaf1582097",
               "chartLayout": {
                 "startX": 48,
                 "spanX": 48,
@@ -96,7 +96,7 @@
               ]
             },
             {
-              "dashboardChart": "b6993588-b399-4053-b02a-1236e7f19294",
+              "dashboardChart": "bb171fc9-84aa-438f-883e-123388e01d5b",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -109,7 +109,7 @@
               ]
             },
             {
-              "dashboardChart": "2866557a-b4ee-4dfe-b39b-91f0b2ee8fe1",
+              "dashboardChart": "811074cb-0abd-4b6e-8d1e-8df53fc4144e",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -122,7 +122,7 @@
               ]
             },
             {
-              "dashboardChart": "79215ad0-10f2-4797-9688-108cf3b91b80",
+              "dashboardChart": "da2954c3-0cb0-478e-b5e4-a5910f58127a",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -135,7 +135,7 @@
               ]
             },
             {
-              "dashboardChart": "e6b98773-b73b-422d-9389-653e616ac9d8",
+              "dashboardChart": "965facdb-219e-4379-9448-f86599f6380f",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -148,7 +148,7 @@
               ]
             },
             {
-              "dashboardChart": "82efc9c1-22c9-4580-b728-d077fc937a34",
+              "dashboardChart": "5317a24a-c952-4f2f-8278-221ba2dc9b94",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -161,7 +161,7 @@
               ]
             },
             {
-              "dashboardChart": "9d965677-673d-4ce6-bb28-36701dafe9b2",
+              "dashboardChart": "f2c468ba-4c65-4ff2-ba8d-65a033835e3a",
               "chartLayout": {
                 "startX": 48,
                 "spanX": 48,
@@ -170,7 +170,7 @@
               }
             },
             {
-              "dashboardChart": "d8602cd4-9c57-4fcd-bb7d-9471e810eb9a",
+              "dashboardChart": "43c57197-d26f-4bf5-9541-b6ae1de75350",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 64,
@@ -181,136 +181,16 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "144a380b9375c8c1bf55614786f9f4b5fb8fb99c625c5d4128f74d4cb528771e",
+        "etag": "5db54d400f9579af679dc421ce81b950badd59f93168ac549fe6b9f5bc031f85",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "82efc9c1-22c9-4580-b728-d077fc937a34",
-          "displayName": "Other events (detections, findings, generic)",
-          "description": "All remaining event types involving the IOC",
-          "chartDatasource": {
-            "dashboardQuery": "594325a9-b761-4227-8a68-81c5f6734203",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "xAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "columnDefs": [
-              {
-                "field": "Log_Source",
-                "header": "Log Source"
-              },
-              {
-                "field": "Event_Type",
-                "header": "Event Type"
-              },
-              {
-                "field": "Product_Event",
-                "header": "Product Event"
-              },
-              {
-                "field": "Hits",
-                "header": "Hits"
-              },
-              {
-                "field": "Summary",
-                "header": "Summary"
-              },
-              {
-                "field": "Last_Seen",
-                "header": "Last Seen"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "e3484a3e9d273821610be6efc7d654970491927291ca514105dbeb186c2c62ee",
-          "tokens": [
-            "ioc"
-          ]
-        },
-        {
-          "name": "2866557a-b4ee-4dfe-b39b-91f0b2ee8fe1",
-          "displayName": "DNS lookups",
-          "description": "NETWORK_DNS events involving the IOC (Pi-hole, Sysmon, etc.)",
-          "chartDatasource": {
-            "dashboardQuery": "17c1c45b-1ca5-4309-8256-4dbc2442c8f1",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "xAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "columnDefs": [
-              {
-                "field": "Log_Source",
-                "header": "Log Source"
-              },
-              {
-                "field": "Client",
-                "header": "Client"
-              },
-              {
-                "field": "Query",
-                "header": "Query"
-              },
-              {
-                "field": "Hits",
-                "header": "Hits"
-              },
-              {
-                "field": "Answers",
-                "header": "Answers"
-              },
-              {
-                "field": "Last_Seen",
-                "header": "Last Seen"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "e94d0af7c62f9deae9a046674b93e17349099a15a8e3acc35f66d8a2590756c1",
-          "tokens": [
-            "ioc"
-          ]
-        },
-        {
-          "name": "1d2f2ce8-fcbe-4eb6-906e-9607f72cf9bd",
-          "displayName": "IOC hits over time",
+          "name": "f2c468ba-4c65-4ff2-ba8d-65a033835e3a",
+          "displayName": "Copy of IOC hits over time",
           "description": "Hourly matching events per log source (Australia/Sydney)",
           "chartDatasource": {
-            "dashboardQuery": "646a9108-b7e6-435d-bcd8-c3702a577a1a",
+            "dashboardQuery": "2869fa88-084f-4173-9b18-650b57e11f16",
             "dataSources": [
               "UDM"
             ]
@@ -608,149 +488,17 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "4bf01560f4bb48931adfc00bc84b62688d89173f041697f75259468167f07b50",
+          "etag": "c220acb21b44c9ed868584d3707354a9f4359ec75a096fff84955b5b5b5433c2",
           "tokens": [
             "ioc"
           ]
         },
         {
-          "name": "b6993588-b399-4053-b02a-1236e7f19294",
-          "displayName": "Network connections",
-          "description": "NETWORK_CONNECTION events involving the IOC (firewalls, Sysmon, etc.)",
-          "chartDatasource": {
-            "dashboardQuery": "f70cbbf7-1732-4212-abb1-3ee9e76767f7",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "xAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "columnDefs": [
-              {
-                "field": "Log_Source",
-                "header": "Log Source"
-              },
-              {
-                "field": "Src_IP",
-                "header": "Src IP"
-              },
-              {
-                "field": "Dst_IP",
-                "header": "Dst IP"
-              },
-              {
-                "field": "Dst_Port",
-                "header": "Dst Port"
-              },
-              {
-                "field": "Hits",
-                "header": "Hits"
-              },
-              {
-                "field": "Actions",
-                "header": "Actions"
-              },
-              {
-                "field": "Last_Seen",
-                "header": "Last Seen"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "10270335eac906b5c5e5e76fed8485a82b532ea3250b8a73b4d86e0daf390dea",
-          "tokens": [
-            "ioc"
-          ]
-        },
-        {
-          "name": "79215ad0-10f2-4797-9688-108cf3b91b80",
-          "displayName": "Process, file & registry activity",
-          "description": "PROCESS_*, FILE_* and REGISTRY_* events involving the IOC",
-          "chartDatasource": {
-            "dashboardQuery": "fdddaf4e-4504-43ad-b721-2221b19e8a3a",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "xAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "columnDefs": [
-              {
-                "field": "Log_Source",
-                "header": "Log Source"
-              },
-              {
-                "field": "Host",
-                "header": "Host"
-              },
-              {
-                "field": "Event_Type",
-                "header": "Event Type"
-              },
-              {
-                "field": "Target",
-                "header": "Target"
-              },
-              {
-                "field": "Hits",
-                "header": "Hits"
-              },
-              {
-                "field": "Users",
-                "header": "Users"
-              },
-              {
-                "field": "Parent",
-                "header": "Parent"
-              },
-              {
-                "field": "Last_Seen",
-                "header": "Last Seen"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "38de21ee757703fc87c8bb9d3bb22c9c16d19275f637fa77bd22d40820329d1f",
-          "tokens": [
-            "ioc"
-          ]
-        },
-        {
-          "name": "e6b98773-b73b-422d-9389-653e616ac9d8",
+          "name": "965facdb-219e-4379-9448-f86599f6380f",
           "displayName": "User, authentication & cloud activity",
           "description": "USER_*, RESOURCE_* and GROUP_* events involving the IOC",
           "chartDatasource": {
-            "dashboardQuery": "b09632da-0a58-46a1-8948-b2f96761ad97",
+            "dashboardQuery": "bc5c3083-5922-4d7a-8f4b-4fc742a763cf",
             "dataSources": [
               "UDM"
             ]
@@ -808,17 +556,17 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "71f42fbf286cb7bd973077ad5ba6d7c67af5a3441ab595cd552317e4015d6390",
+          "etag": "ce79f41253b9900bef089836360da3b044f137f9ae40c616aa993d917ab90b6e",
           "tokens": [
             "ioc"
           ]
         },
         {
-          "name": "ba16eaa0-f1ce-4da4-9698-6e8e736be6a1",
-          "displayName": "IOC hits by log source",
-          "description": "Every log source where the IOC appears in any IP, hostname, domain, hash, user, email or URL field",
+          "name": "811074cb-0abd-4b6e-8d1e-8df53fc4144e",
+          "displayName": "DNS lookups",
+          "description": "NETWORK_DNS events involving the IOC (Pi-hole, Sysmon, etc.)",
           "chartDatasource": {
-            "dashboardQuery": "0738b4ef-5b88-4b5a-b387-061a2de9b206",
+            "dashboardQuery": "5cac42c7-694e-4a56-baf7-bf686bac9a58",
             "dataSources": [
               "UDM"
             ]
@@ -845,16 +593,20 @@
                 "header": "Log Source"
               },
               {
+                "field": "Client",
+                "header": "Client"
+              },
+              {
+                "field": "Query",
+                "header": "Query"
+              },
+              {
                 "field": "Hits",
                 "header": "Hits"
               },
               {
-                "field": "Event_Types",
-                "header": "Event Types"
-              },
-              {
-                "field": "First_Seen",
-                "header": "First Seen"
+                "field": "Answers",
+                "header": "Answers"
               },
               {
                 "field": "Last_Seen",
@@ -864,31 +616,17 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "faf8225a81d20e7d37de789b99ed2a51e4614f6c90e2b92d4f9685ee42a61734",
+          "etag": "b3a1129925a39225b22a972c794cac05c051d6c7232023a51ef5118aa151cc4c",
           "tokens": [
             "ioc"
           ]
         },
         {
-          "name": "d8602cd4-9c57-4fcd-bb7d-9471e810eb9a",
-          "displayName": "markdown",
-          "visualization": {
-            "markdown": {
-              "content": "* list item\n```nugger\n2qwww\nwqwww\nwwwww\n```\n[poo](https://www.news.com.au)",
-              "properties": {
-                "backgroundColor": "#1B3663"
-              }
-            }
-          },
-          "tileType": "TILE_TYPE_MARKDOWN",
-          "etag": "0dfaa5bd1e7d83b7d7f01fd00213a64e889376dd3abe07ecd7067fa9b8ddce8b"
-        },
-        {
-          "name": "9d965677-673d-4ce6-bb28-36701dafe9b2",
-          "displayName": "Copy of IOC hits over time",
+          "name": "858ffa82-649d-4081-b7a2-62aaf1582097",
+          "displayName": "IOC hits over time",
           "description": "Hourly matching events per log source (Australia/Sydney)",
           "chartDatasource": {
-            "dashboardQuery": "2e83997a-cb0f-45c8-b2bb-559257f590e5",
+            "dashboardQuery": "79128c6b-6f8a-48fa-8f02-59ec1ecaf011",
             "dataSources": [
               "UDM"
             ]
@@ -1186,39 +924,277 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "1ef3a055b28385c99e0a8dbe2c8bf1d1c39a1d2cd9313224f74c3b1f223e800c",
+          "etag": "d28e78b8d497361830fbd3d8265b63a9561c6197e04c76673e3eb1988e655952",
           "tokens": [
             "ioc"
           ]
+        },
+        {
+          "name": "bb171fc9-84aa-438f-883e-123388e01d5b",
+          "displayName": "Network connections",
+          "description": "NETWORK_CONNECTION events involving the IOC (firewalls, Sysmon, etc.)",
+          "chartDatasource": {
+            "dashboardQuery": "bc744e10-0866-4398-ad44-18ef0058d063",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Log_Source",
+                "header": "Log Source"
+              },
+              {
+                "field": "Src_IP",
+                "header": "Src IP"
+              },
+              {
+                "field": "Dst_IP",
+                "header": "Dst IP"
+              },
+              {
+                "field": "Dst_Port",
+                "header": "Dst Port"
+              },
+              {
+                "field": "Hits",
+                "header": "Hits"
+              },
+              {
+                "field": "Actions",
+                "header": "Actions"
+              },
+              {
+                "field": "Last_Seen",
+                "header": "Last Seen"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "688577404d39007fdb1f71db2d2bb780e9f266b577ac0e6af838e4dce89a0a4d",
+          "tokens": [
+            "ioc"
+          ]
+        },
+        {
+          "name": "da2954c3-0cb0-478e-b5e4-a5910f58127a",
+          "displayName": "Process, file & registry activity",
+          "description": "PROCESS_*, FILE_* and REGISTRY_* events involving the IOC",
+          "chartDatasource": {
+            "dashboardQuery": "c7760691-daf8-4b80-a7a4-6478e7c14820",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Log_Source",
+                "header": "Log Source"
+              },
+              {
+                "field": "Host",
+                "header": "Host"
+              },
+              {
+                "field": "Event_Type",
+                "header": "Event Type"
+              },
+              {
+                "field": "Target",
+                "header": "Target"
+              },
+              {
+                "field": "Hits",
+                "header": "Hits"
+              },
+              {
+                "field": "Users",
+                "header": "Users"
+              },
+              {
+                "field": "Parent",
+                "header": "Parent"
+              },
+              {
+                "field": "Last_Seen",
+                "header": "Last Seen"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "24839c367aec51be43de688358150ed48edb9ec335e3ad87a2412963d303f9eb",
+          "tokens": [
+            "ioc"
+          ]
+        },
+        {
+          "name": "5317a24a-c952-4f2f-8278-221ba2dc9b94",
+          "displayName": "Other events (detections, findings, generic)",
+          "description": "All remaining event types involving the IOC",
+          "chartDatasource": {
+            "dashboardQuery": "f5bd096d-719b-4488-bbb3-f0af438fc36e",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Log_Source",
+                "header": "Log Source"
+              },
+              {
+                "field": "Event_Type",
+                "header": "Event Type"
+              },
+              {
+                "field": "Product_Event",
+                "header": "Product Event"
+              },
+              {
+                "field": "Hits",
+                "header": "Hits"
+              },
+              {
+                "field": "Summary",
+                "header": "Summary"
+              },
+              {
+                "field": "Last_Seen",
+                "header": "Last Seen"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "4002a7a9369a9f58f7bff90e2b19acc24dec6c4b0c3ff7373336f2f538bd852c",
+          "tokens": [
+            "ioc"
+          ]
+        },
+        {
+          "name": "d8489e68-7170-4b65-86fc-ff69ba554a56",
+          "displayName": "IOC hits by log source",
+          "description": "Every log source where the IOC appears in any IP, hostname, domain, hash, user, email or URL field",
+          "chartDatasource": {
+            "dashboardQuery": "f64a1e12-5ba6-4483-ab03-05123285a98b",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Log_Source",
+                "header": "Log Source"
+              },
+              {
+                "field": "Hits",
+                "header": "Hits"
+              },
+              {
+                "field": "Event_Types",
+                "header": "Event Types"
+              },
+              {
+                "field": "First_Seen",
+                "header": "First Seen"
+              },
+              {
+                "field": "Last_Seen",
+                "header": "Last Seen"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "df6589d4b5c11014063381c708b85994bff735ac49bf7523457ab254f7cbcdb1",
+          "tokens": [
+            "ioc"
+          ]
+        },
+        {
+          "name": "43c57197-d26f-4bf5-9541-b6ae1de75350",
+          "displayName": "markdown",
+          "visualization": {
+            "markdown": {
+              "content": "* list item\n```nugger\n2qwww\nwqwww\nwwwww\n```\n[poo](https://www.news.com.au)",
+              "properties": {
+                "backgroundColor": "#1B3663"
+              }
+            }
+          },
+          "tileType": "TILE_TYPE_MARKDOWN",
+          "etag": "58ee04dae2e2dd584b7f94e9396e62c660d070e4fcd5d5134174108fdb509473"
         }
       ],
       "dashboardQueries": [
         {
-          "name": "f70cbbf7-1732-4212-abb1-3ee9e76767f7",
-          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\nmetadata.event_type = \"NETWORK_CONNECTION\"\n$Log_Source = metadata.log_type\n$Src_IP = principal.ip\n$Dst_IP = target.ip\n$Dst_Port = target.port\nmatch:\n  $Log_Source, $Src_IP, $Dst_IP, $Dst_Port\noutcome:\n  $Hits = count(metadata.id)\n  $Actions = array_distinct(security_result.action)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "906912cdfd429d3fead4f30409325cfe42694dda679bdf41d613707ad77ccb15",
-          "dialect": "YL2"
-        },
-        {
-          "name": "fdddaf4e-4504-43ad-b721-2221b19e8a3a",
-          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n(metadata.event_type = \"PROCESS_LAUNCH\" or metadata.event_type = \"PROCESS_INJECTION\" or metadata.event_type = \"PROCESS_MODULE_LOAD\" or metadata.event_type = \"PROCESS_OPEN\" or metadata.event_type = \"PROCESS_PRIVILEGE_ESCALATION\" or metadata.event_type = \"PROCESS_TERMINATION\" or metadata.event_type = \"PROCESS_UNCATEGORIZED\" or metadata.event_type = \"FILE_COPY\" or metadata.event_type = \"FILE_CREATION\" or metadata.event_type = \"FILE_DELETION\" or metadata.event_type = \"FILE_MODIFICATION\" or metadata.event_type = \"FILE_MOVE\" or metadata.event_type = \"FILE_OPEN\" or metadata.event_type = \"FILE_READ\" or metadata.event_type = \"FILE_SYNC\" or metadata.event_type = \"FILE_UNCATEGORIZED\" or metadata.event_type = \"REGISTRY_CREATION\" or metadata.event_type = \"REGISTRY_DELETION\" or metadata.event_type = \"REGISTRY_MODIFICATION\" or metadata.event_type = \"REGISTRY_UNCATEGORIZED\")\n$Log_Source = metadata.log_type\n$Host = principal.hostname\n$Event_Type = metadata.event_type\n$Target = strings.coalesce(target.process.file.full_path, target.file.full_path, target.registry.registry_key)\nmatch:\n  $Log_Source, $Host, $Event_Type, $Target\noutcome:\n  $Hits = count(metadata.id)\n  $Users = array_distinct(principal.user.userid)\n  $Parent = array_distinct(principal.process.file.full_path)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "0e9af28e84ad0a1158bcb83526940c9ff13efff2689530b3927842ff38fdb5ec",
-          "dialect": "YL2"
-        },
-        {
-          "name": "b09632da-0a58-46a1-8948-b2f96761ad97",
+          "name": "bc5c3083-5922-4d7a-8f4b-4fc742a763cf",
           "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n(metadata.event_type = \"USER_BADGE_IN\" or metadata.event_type = \"USER_CHANGE_PASSWORD\" or metadata.event_type = \"USER_CHANGE_PERMISSIONS\" or metadata.event_type = \"USER_COMMUNICATION\" or metadata.event_type = \"USER_CREATION\" or metadata.event_type = \"USER_DELETION\" or metadata.event_type = \"USER_LOGIN\" or metadata.event_type = \"USER_LOGOUT\" or metadata.event_type = \"USER_RESOURCE_ACCESS\" or metadata.event_type = \"USER_RESOURCE_CREATION\" or metadata.event_type = \"USER_RESOURCE_DELETION\" or metadata.event_type = \"USER_RESOURCE_UPDATE_CONTENT\" or metadata.event_type = \"USER_RESOURCE_UPDATE_PERMISSIONS\" or metadata.event_type = \"USER_STATS\" or metadata.event_type = \"USER_UNCATEGORIZED\" or metadata.event_type = \"RESOURCE_CREATION\" or metadata.event_type = \"RESOURCE_DELETION\" or metadata.event_type = \"RESOURCE_PERMISSIONS_CHANGE\" or metadata.event_type = \"RESOURCE_READ\" or metadata.event_type = \"RESOURCE_WRITTEN\" or metadata.event_type = \"GROUP_CREATION\" or metadata.event_type = \"GROUP_DELETION\" or metadata.event_type = \"GROUP_MODIFICATION\" or metadata.event_type = \"GROUP_UNCATEGORIZED\")\n$Log_Source = metadata.log_type\n$User = strings.coalesce(principal.user.email_addresses, principal.user.userid)\n$Event_Type = metadata.event_type\n$Action = metadata.product_event_type\nmatch:\n  $Log_Source, $User, $Event_Type, $Action\noutcome:\n  $Hits = count(metadata.id)\n  $Targets = array_distinct(strings.coalesce(target.resource.name, target.user.userid, target.hostname))\n  $Src_IPs = array_distinct(principal.ip)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
           "input": {
             "relativeTime": {
@@ -1226,11 +1202,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "f492604681c3494eefcb520d56469cc0b322382465f58366512d6224a66557c8",
+          "etag": "3921ea2e5292782343032077722b97728b7792a9ff7849e8779a0df12c07ad53",
           "dialect": "YL2"
         },
         {
-          "name": "594325a9-b761-4227-8a68-81c5f6734203",
+          "name": "f5bd096d-719b-4488-bbb3-f0af438fc36e",
           "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\nnot (metadata.event_type = \"PROCESS_LAUNCH\" or metadata.event_type = \"PROCESS_INJECTION\" or metadata.event_type = \"PROCESS_MODULE_LOAD\" or metadata.event_type = \"PROCESS_OPEN\" or metadata.event_type = \"PROCESS_PRIVILEGE_ESCALATION\" or metadata.event_type = \"PROCESS_TERMINATION\" or metadata.event_type = \"PROCESS_UNCATEGORIZED\" or metadata.event_type = \"FILE_COPY\" or metadata.event_type = \"FILE_CREATION\" or metadata.event_type = \"FILE_DELETION\" or metadata.event_type = \"FILE_MODIFICATION\" or metadata.event_type = \"FILE_MOVE\" or metadata.event_type = \"FILE_OPEN\" or metadata.event_type = \"FILE_READ\" or metadata.event_type = \"FILE_SYNC\" or metadata.event_type = \"FILE_UNCATEGORIZED\" or metadata.event_type = \"REGISTRY_CREATION\" or metadata.event_type = \"REGISTRY_DELETION\" or metadata.event_type = \"REGISTRY_MODIFICATION\" or metadata.event_type = \"REGISTRY_UNCATEGORIZED\" or metadata.event_type = \"USER_BADGE_IN\" or metadata.event_type = \"USER_CHANGE_PASSWORD\" or metadata.event_type = \"USER_CHANGE_PERMISSIONS\" or metadata.event_type = \"USER_COMMUNICATION\" or metadata.event_type = \"USER_CREATION\" or metadata.event_type = \"USER_DELETION\" or metadata.event_type = \"USER_LOGIN\" or metadata.event_type = \"USER_LOGOUT\" or metadata.event_type = \"USER_RESOURCE_ACCESS\" or metadata.event_type = \"USER_RESOURCE_CREATION\" or metadata.event_type = \"USER_RESOURCE_DELETION\" or metadata.event_type = \"USER_RESOURCE_UPDATE_CONTENT\" or metadata.event_type = \"USER_RESOURCE_UPDATE_PERMISSIONS\" or metadata.event_type = \"USER_STATS\" or metadata.event_type = \"USER_UNCATEGORIZED\" or metadata.event_type = \"RESOURCE_CREATION\" or metadata.event_type = \"RESOURCE_DELETION\" or metadata.event_type = \"RESOURCE_PERMISSIONS_CHANGE\" or metadata.event_type = \"RESOURCE_READ\" or metadata.event_type = \"RESOURCE_WRITTEN\" or metadata.event_type = \"GROUP_CREATION\" or metadata.event_type = \"GROUP_DELETION\" or metadata.event_type = \"GROUP_MODIFICATION\" or metadata.event_type = \"GROUP_UNCATEGORIZED\" or metadata.event_type = \"NETWORK_CONNECTION\" or metadata.event_type = \"NETWORK_DNS\")\n$Log_Source = metadata.log_type\n$Event_Type = metadata.event_type\n$Product_Event = metadata.product_event_type\nmatch:\n  $Log_Source, $Event_Type, $Product_Event\noutcome:\n  $Hits = count(metadata.id)\n  $Summary = array_distinct(strings.coalesce(security_result.summary, metadata.description))\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
           "input": {
             "relativeTime": {
@@ -1238,11 +1214,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "d9e5c6626bf77ec621b3a4968cb289dfe7fe8f9e7a5adc918fd1fbed3207c05b",
+          "etag": "bd2549d52f856f27a9f06a77ea0c2c857e093d89de53161523868ed9f0e92457",
           "dialect": "YL2"
         },
         {
-          "name": "0738b4ef-5b88-4b5a-b387-061a2de9b206",
+          "name": "f64a1e12-5ba6-4483-ab03-05123285a98b",
           "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n$Log_Source = metadata.log_type\nmatch:\n  $Log_Source\noutcome:\n  $Hits = count(metadata.id)\n  $Event_Types = array_distinct(metadata.event_type)\n  $First_Seen = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  100\n",
           "input": {
             "relativeTime": {
@@ -1250,11 +1226,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "899e52be447d8e008676eae6ede73fb43a530f6c567b99e5bae73995f0625777",
+          "etag": "f37f5a81ab6374a0474704e3b5e03bad54cbadbe9c9006523bda6ef8b654fb37",
           "dialect": "YL2"
         },
         {
-          "name": "2e83997a-cb0f-45c8-b2bb-559257f590e5",
+          "name": "2869fa88-084f-4173-9b18-650b57e11f16",
           "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n$Log_Source = metadata.log_type\n$Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\nmatch:\n  $Slot, $Log_Source\noutcome:\n  $Cnt = count(metadata.id)\norder:\n  $Slot asc\nlimit:\n  10000\n",
           "input": {
             "relativeTime": {
@@ -1262,11 +1238,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "11428e31709c9d74996e424f0f6614917e4292fb96fc078880dd90f59fa99edf",
+          "etag": "be06310ace7672a383bbcc307aa1cf755072f0d4b8c783e41c3c211246dca86f",
           "dialect": "YL2"
         },
         {
-          "name": "17c1c45b-1ca5-4309-8256-4dbc2442c8f1",
+          "name": "5cac42c7-694e-4a56-baf7-bf686bac9a58",
           "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\nmetadata.event_type = \"NETWORK_DNS\"\n$Log_Source = metadata.log_type\n$Client = strings.coalesce(principal.ip, principal.hostname)\n$Query = network.dns.questions.name\nmatch:\n  $Log_Source, $Client, $Query\noutcome:\n  $Hits = count(metadata.id)\n  $Answers = array_distinct(network.dns.answers.data)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
           "input": {
             "relativeTime": {
@@ -1274,11 +1250,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "39f10f2b2dc85c5905a2366c3b4c0cffe6d46ade9884ec7182770f0a020871a3",
+          "etag": "8672ac5ded81727e0e1bcd587c8f33feda5d63ace029621a00eafd7297a05fdf",
           "dialect": "YL2"
         },
         {
-          "name": "646a9108-b7e6-435d-bcd8-c3702a577a1a",
+          "name": "79128c6b-6f8a-48fa-8f02-59ec1ecaf011",
           "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n$Log_Source = metadata.log_type\n$Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\nmatch:\n  $Slot, $Log_Source\noutcome:\n  $Cnt = count(metadata.id)\norder:\n  $Slot asc\nlimit:\n  10000\n",
           "input": {
             "relativeTime": {
@@ -1286,7 +1262,31 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "24ab8643c0ea1c51102c72d87e94625278d5a1fbcee20acf2d9b37aee88c30bd",
+          "etag": "8c6981e2938b1c9b94a7f3faa84050c629d78245e51c7a93c1856f3eb98d05ee",
+          "dialect": "YL2"
+        },
+        {
+          "name": "bc744e10-0866-4398-ad44-18ef0058d063",
+          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\nmetadata.event_type = \"NETWORK_CONNECTION\"\n$Log_Source = metadata.log_type\n$Src_IP = principal.ip\n$Dst_IP = target.ip\n$Dst_Port = target.port\nmatch:\n  $Log_Source, $Src_IP, $Dst_IP, $Dst_Port\noutcome:\n  $Hits = count(metadata.id)\n  $Actions = array_distinct(security_result.action)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "e13192ec4762a2635c171a4bbaf51f90e34bb2e757587be47732862f8db2b03d",
+          "dialect": "YL2"
+        },
+        {
+          "name": "c7760691-daf8-4b80-a7a4-6478e7c14820",
+          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n(metadata.event_type = \"PROCESS_LAUNCH\" or metadata.event_type = \"PROCESS_INJECTION\" or metadata.event_type = \"PROCESS_MODULE_LOAD\" or metadata.event_type = \"PROCESS_OPEN\" or metadata.event_type = \"PROCESS_PRIVILEGE_ESCALATION\" or metadata.event_type = \"PROCESS_TERMINATION\" or metadata.event_type = \"PROCESS_UNCATEGORIZED\" or metadata.event_type = \"FILE_COPY\" or metadata.event_type = \"FILE_CREATION\" or metadata.event_type = \"FILE_DELETION\" or metadata.event_type = \"FILE_MODIFICATION\" or metadata.event_type = \"FILE_MOVE\" or metadata.event_type = \"FILE_OPEN\" or metadata.event_type = \"FILE_READ\" or metadata.event_type = \"FILE_SYNC\" or metadata.event_type = \"FILE_UNCATEGORIZED\" or metadata.event_type = \"REGISTRY_CREATION\" or metadata.event_type = \"REGISTRY_DELETION\" or metadata.event_type = \"REGISTRY_MODIFICATION\" or metadata.event_type = \"REGISTRY_UNCATEGORIZED\")\n$Log_Source = metadata.log_type\n$Host = principal.hostname\n$Event_Type = metadata.event_type\n$Target = strings.coalesce(target.process.file.full_path, target.file.full_path, target.registry.registry_key)\nmatch:\n  $Log_Source, $Host, $Event_Type, $Target\noutcome:\n  $Hits = count(metadata.id)\n  $Users = array_distinct(principal.user.userid)\n  $Parent = array_distinct(principal.process.file.full_path)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "df21bcddb0a0cb17ae19936fcb23829e9c0c40b27f25202cf69a49c13ac4a99e",
           "dialect": "YL2"
         }
       ]
