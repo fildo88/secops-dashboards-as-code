@@ -89,13 +89,15 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}/script
         run: |
+          git fetch origin main
+          git checkout -B main origin/main
           python script/main.py download --all
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dashboards/
           if [[ -n $(git status --porcelain) ]]; then
             git commit -m "chore: pull latest custom dashboards from Google SecOps"
-            git push origin main
+            git push origin HEAD:main
           else
             echo "No dashboard changes in SecOps to commit."
           fi

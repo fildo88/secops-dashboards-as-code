@@ -4,16 +4,18 @@ GitOps pipeline for managing Google Security Operations (Chronicle) Native Dashb
 
 ## Exported Custom Dashboards (`dashboards/`)
 
-| Display Name | File | Remote UUID |
-| :--- | :--- | :--- |
-| **Detection Rules** | `dashboards/detection_rules.json` | `6441de81-1c5f-4a1c-860f-40dd809796d6` |
-| **Detections vs Endpoints - Overlaid on One Chart (Splunk overlay)** | `dashboards/detections_vs_endpoints_overlaid_on_one_chart_splunk_overlay.json` | `17b1e6dc-6207-4bdf-b209-893cdcab6e67` |
-| **EDR Overview - CrowdStrike** | `dashboards/edr_overview_crowdstrike.json` | `04771b18-42e3-44f3-bc93-a53ddf9f7349` |
-| **IOC Search - All Log Sources** | `dashboards/ioc_search_all_log_sources.json` | `0c0347d4-7858-4a39-92a6-0bac4acaac39` |
-| **IOC Search - Pi-hole & pfSense** | `dashboards/ioc_search_pi_hole_pfsense.json` | `a4b43ddd-9ac1-4cf8-a5f0-8519bd4d290f` |
-| **pfSense Overview** | `dashboards/pfsense_overview.json` | `10c13078-f7b4-4df9-a1f7-4323c228cbd5` |
-| **Pi-Hole Overview** | `dashboards/pi_hole_overview.json` | `835465a6-620a-4074-b872-241a15fdf8ac` |
-| **X-Axis Time Bucketing & Local Timezone (AWST / AEDT)** | `dashboards/x_axis_time_bucketing_local_timezone_awst_aedt.json` | `77748e21-564b-4e55-8f68-8abb5cd620c7` |
+| Display Name | File |
+| :--- | :--- |
+| **Detection Rules** | `dashboards/detection_rules.json` |
+| **Detections vs Endpoints - Overlaid on One Chart (Splunk overlay)** | `dashboards/detections_vs_endpoints_overlaid_on_one_chart_splunk_overlay.json` |
+| **EDR Overview - CrowdStrike** | `dashboards/edr_overview_crowdstrike.json` |
+| **Enabled & Alerting Detection Rules** | `dashboards/enabled_alerting_detection_rules.json` |
+| **IOC Search - All Log Sources** | `dashboards/ioc_search_all_log_sources.json` |
+| **IOC Search - Pi-hole & pfSense** | `dashboards/ioc_search_pi_hole_pfsense.json` |
+| **Overlaid: Detections vs Endpoints (Two Lines)** | `dashboards/overlaid_detections_vs_endpoints_two_lines.json` |
+| **pfSense Overview** | `dashboards/pfsense_overview.json` |
+| **Pi-Hole Overview** | `dashboards/pi_hole_overview.json` |
+| **X-Axis Time Bucketing & Local Timezone (AWST / AEDT)** | `dashboards/x_axis_time_bucketing_local_timezone_awst_aedt.json` |
 
 ## Usage
 
