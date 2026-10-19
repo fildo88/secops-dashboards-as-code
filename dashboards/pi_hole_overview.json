@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "1ef36035-13fe-4896-be1e-e42c3290e769",
+        "name": "5293df47-86bd-4fd1-a8f1-ea59e59658ec",
         "displayName": "Pi-Hole Overview",
         "description": "Pi-hole DNS activity overview",
         "definition": {
@@ -26,7 +26,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "f0e11c92-6868-4f22-9a2c-24716fadf615",
+              "dashboardChart": "da4bbad7-22f2-44c6-9ff0-68d22bf8c2ba",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -35,7 +35,7 @@
               }
             },
             {
-              "dashboardChart": "5b814792-3872-44ac-9a2a-c431921e6414",
+              "dashboardChart": "569d5ff3-e750-45f1-9116-1824f6ef4e12",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -46,16 +46,16 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "f7a4bafce3b1a19c6c7ad0d9f34985d247fe67e1d0c675a86267da7a2bd746ad",
+        "etag": "56ce935db8a011eda179d57407774e2b2aac2dd374188444cf6ef6f273904a2a",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "f0e11c92-6868-4f22-9a2c-24716fadf615",
+          "name": "da4bbad7-22f2-44c6-9ff0-68d22bf8c2ba",
           "displayName": "Top 5 Domains per Hour",
           "description": "Hourly query counts (Australia/Sydney) for the top 5 domains queried through Pi-hole",
           "chartDatasource": {
-            "dashboardQuery": "66d972a1-4413-4f23-975d-584f5861d4e7",
+            "dashboardQuery": "b536d546-ee02-4fbd-995b-2ce203cf0896",
             "dataSources": [
               "UDM"
             ]
@@ -157,15 +157,15 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "524d72f178d62772ca21928ff48f2d3d344a2cdca07048ea020e67eb16d72686",
+          "etag": "6698f60ffd539d364277039823658c18fc87290bca5862e0365e792c89bb6f10",
           "drillDownConfig": {}
         },
         {
-          "name": "5b814792-3872-44ac-9a2a-c431921e6414",
+          "name": "569d5ff3-e750-45f1-9116-1824f6ef4e12",
           "displayName": "Top 5 Domains in Each Hour",
           "description": "Top 5 domains queried through Pi-hole in each hour (Australia/Sydney). Ties for 5th place are included.",
           "chartDatasource": {
-            "dashboardQuery": "2c0810d5-8d38-483f-9ae0-96345c27c5aa",
+            "dashboardQuery": "0ce68c65-83ff-4806-b9b2-9d7aad549fe4",
             "dataSources": [
               "UDM"
             ]
@@ -1493,12 +1493,12 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "154d781fa3627b908dce78325cde9bb02c572858c39bb1437ebf5dc556ea6f4c"
+          "etag": "da65b213e6cec50c02dc0ad50cf3598516679f2a640802bb41c864f1bcd16042"
         }
       ],
       "dashboardQueries": [
         {
-          "name": "66d972a1-4413-4f23-975d-584f5861d4e7",
+          "name": "b536d546-ee02-4fbd-995b-2ce203cf0896",
           "query": "stage top_domains {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n\n  match:\n    $Domain\n\n  outcome:\n    $Total = count(metadata.id)\n\n  order:\n    $Total desc\n\n  limit:\n    5\n}\n\nmetadata.log_type = \"PIHOLE\"\nmetadata.event_type = \"NETWORK_DNS\"\n$Domain = network.dns.questions.name\n$Domain = $top_domains.Domain\n$Hour = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\nmatch:\n  $Hour, $Domain\n\noutcome:\n  $Count = count(metadata.id)\n\norder:\n  $Hour asc\n",
           "input": {
             "relativeTime": {
@@ -1506,11 +1506,11 @@
               "startTimeVal": "2"
             }
           },
-          "etag": "5ec55c2801586f9978b753a28d5673e1c0678844a3b11c73fb3f3b828e3d7e7a",
+          "etag": "4f6ca41d0fbf0061beba780383f37b61a1cc3fbccf7087ac15bd33bbf9809d2e",
           "dialect": "YL2"
         },
         {
-          "name": "2c0810d5-8d38-483f-9ae0-96345c27c5aa",
+          "name": "0ce68c65-83ff-4806-b9b2-9d7aad549fe4",
           "query": "stage hourly_a {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage hourly_b {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage ranked {\n  $Slot = $hourly_a.Slot\n  $Slot = $hourly_b.Slot\n  $Domain = $hourly_a.Domain\n  $Mine = $hourly_a.Cnt\n  $Other = $hourly_b.Cnt\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Queries = max($Mine)\n    $Higher = sum(if($Other > $Mine, 1, 0))\n}\n\n$Hour = $ranked.Slot\n$Domain = $ranked.Domain\n$ranked.Higher < 5\n\nmatch:\n  $Hour, $Domain\n\noutcome:\n  $Count = max($ranked.Queries)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
           "input": {
             "relativeTime": {
@@ -1518,7 +1518,7 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "b9e08d1fe76cec2b470e65bdc1d68690feda81c8645e527d625b0469116e1e66",
+          "etag": "116b53d2b63917344300faf44be21ff2beec5b396bf2c09c93165ee4699ab1e5",
           "dialect": "YL2"
         }
       ]

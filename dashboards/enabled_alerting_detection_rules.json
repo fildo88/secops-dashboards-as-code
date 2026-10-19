@@ -1,0 +1,570 @@
+{
+  "dashboards": [
+    {
+      "dashboard": {
+        "name": "08973978-3569-4a18-b6df-10c1af1953d7",
+        "displayName": "Enabled & Alerting Detection Rules",
+        "description": "Counts of detection rules that are enabled (live), alerting, both, or misconfigured (alerting but disabled). Archived rules are excluded. Rule state is current, not filtered by time.",
+        "definition": {
+          "filters": [
+            {
+              "id": "GlobalTimeFilter",
+              "dataSource": "GLOBAL",
+              "filterOperatorAndFieldValues": [
+                {
+                  "filterOperator": "PAST",
+                  "fieldValues": [
+                    "1",
+                    "DAY"
+                  ]
+                }
+              ],
+              "displayName": "Global Time Filter",
+              "isStandardTimeRangeFilter": true,
+              "isStandardTimeRangeFilterEnabled": true
+            }
+          ],
+          "charts": [
+            {
+              "dashboardChart": "a3ee7504-d1c0-4ea4-bf37-f82542d7dd3b",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 25,
+                "startY": 0,
+                "spanY": 12
+              }
+            },
+            {
+              "dashboardChart": "2f7c96b7-9b7a-4146-8e72-57e57e438e5f",
+              "chartLayout": {
+                "startX": 25,
+                "spanX": 22,
+                "startY": 0,
+                "spanY": 12
+              }
+            },
+            {
+              "dashboardChart": "571b7115-4e61-48a6-99f4-1281fb15ccd9",
+              "chartLayout": {
+                "startX": 48,
+                "spanX": 23,
+                "startY": 0,
+                "spanY": 12
+              }
+            },
+            {
+              "dashboardChart": "beffd28d-ee40-4e35-9d59-7b4623bfc2fb",
+              "chartLayout": {
+                "startX": 72,
+                "spanX": 24,
+                "startY": 0,
+                "spanY": 12
+              }
+            },
+            {
+              "dashboardChart": "672c4aed-5e65-49e7-a8ce-d86d49d038be",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 48,
+                "startY": 12,
+                "spanY": 12
+              }
+            },
+            {
+              "dashboardChart": "2496702e-fd4e-4d6a-8df5-8cab2517a40a",
+              "chartLayout": {
+                "startX": 48,
+                "spanX": 48,
+                "startY": 12,
+                "spanY": 12
+              }
+            },
+            {
+              "dashboardChart": "d9549e41-6b49-4bc0-a708-64667d47e685",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 32,
+                "startY": 24,
+                "spanY": 33
+              }
+            },
+            {
+              "dashboardChart": "61934be1-6878-4e8f-9bd1-b6b171e5e72d",
+              "chartLayout": {
+                "startX": 32,
+                "spanX": 64,
+                "startY": 24,
+                "spanY": 33
+              }
+            }
+          ]
+        },
+        "type": "CUSTOM",
+        "etag": "3c803e111a2d33276cdddd41bb78dbf15c2f36eeed0a2fd3c4ca700bde6be8dc",
+        "access": "DASHBOARD_PUBLIC"
+      },
+      "dashboardCharts": [
+        {
+          "name": "beffd28d-ee40-4e35-9d59-7b4623bfc2fb",
+          "displayName": "Enabled, not alerting",
+          "description": "Live rules that write detections but no alerts",
+          "chartDatasource": {
+            "dashboardQuery": "9c745bc1-25f5-45f2-ac72-9f8df4980801",
+            "dataSources": [
+              "RULES"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesType": "TEXT",
+                "label": "Enabled_Not_Alerting",
+                "field": "Enabled_Not_Alerting",
+                "metricTrendConfig": {
+                  "metricFormat": "METRIC_FORMAT_NUMBER",
+                  "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                  "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "ad71c66ebc91b34524fb357985c1cd0da69fd7cee03ac47075ca70951e97d375"
+        },
+        {
+          "name": "61934be1-6878-4e8f-9bd1-b6b171e5e72d",
+          "displayName": "Enabled rules",
+          "description": "Each enabled rule with alerting flag, lifetime detection count and last detection (Sydney time)",
+          "chartDatasource": {
+            "dashboardQuery": "3d199e88-df04-499e-a724-870d00ca0730",
+            "dataSources": [
+              "RULES"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Rule_Name",
+                "header": "Rule"
+              },
+              {
+                "field": "Severity",
+                "header": "Severity"
+              },
+              {
+                "field": "Alerting",
+                "header": "Alerting"
+              },
+              {
+                "field": "Detections",
+                "header": "Total detections"
+              },
+              {
+                "field": "Last_Detection",
+                "header": "Last detection"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "ae704782d096cc07f98500223ca2594bb4b9887da6872bed9aa5b30815d21068"
+        },
+        {
+          "name": "672c4aed-5e65-49e7-a8ce-d86d49d038be",
+          "displayName": "Alerting but disabled",
+          "description": "Alerting is on but the rule is not live, so it never fires. Likely a misconfiguration",
+          "chartDatasource": {
+            "dashboardQuery": "a415a734-ecbe-4620-a43f-20964fb97722",
+            "dataSources": [
+              "RULES"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesType": "TEXT",
+                "label": "Alerting_But_Disabled",
+                "field": "Alerting_But_Disabled",
+                "metricTrendConfig": {
+                  "metricFormat": "METRIC_FORMAT_NUMBER",
+                  "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                  "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "62ab6b74f1044fc0e56aec361347fe9dbebc3782a85b9fe29afd1d62956ad546"
+        },
+        {
+          "name": "d9549e41-6b49-4bc0-a708-64667d47e685",
+          "displayName": "Enabled rules by severity",
+          "description": "Enabled rules grouped by rule severity",
+          "chartDatasource": {
+            "dashboardQuery": "38b0c000-352f-4f39-97ed-e2bce113991d",
+            "dataSources": [
+              "RULES"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "Enabled rules",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Rules",
+                  "y": "Severity"
+                },
+                "dataLabel": {
+                  "show": true
+                },
+                "itemStyle": {
+                  "color": "#1a73e8"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Rules"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Severity"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Grouped"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "1dd7d8ece96c4b798df4af47f6ea7504dd455f9cf3b35c2bbcc91853e1520804"
+        },
+        {
+          "name": "2496702e-fd4e-4d6a-8df5-8cab2517a40a",
+          "displayName": "Rules by status and alerting",
+          "description": "Count of rules for each live status and alerting combination",
+          "chartDatasource": {
+            "dashboardQuery": "85a61f1c-7ee6-4ea3-8fb9-8a6f32f8fdd6",
+            "dataSources": [
+              "RULES"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Status",
+                "header": "Status"
+              },
+              {
+                "field": "Alerting",
+                "header": "Alerting"
+              },
+              {
+                "field": "Rules",
+                "header": "Rules"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "97a25c4ac23119472f1de6883f2804bee5bd40b7087b5035dcfd3ec1ce4ccfba"
+        },
+        {
+          "name": "571b7115-4e61-48a6-99f4-1281fb15ccd9",
+          "displayName": "Enabled AND alerting",
+          "description": "Live rules that also create alerts",
+          "chartDatasource": {
+            "dashboardQuery": "af7ca20e-9e3a-4ca6-9cda-3341971b5eee",
+            "dataSources": [
+              "RULES"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesType": "TEXT",
+                "label": "Enabled_and_Alerting",
+                "field": "Enabled_and_Alerting",
+                "metricTrendConfig": {
+                  "metricFormat": "METRIC_FORMAT_NUMBER",
+                  "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                  "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "d49ac9a06d76a161a5a4939f7c0de2c9b94713eebf83f9d2c7896ba17ed14ad8"
+        },
+        {
+          "name": "2f7c96b7-9b7a-4146-8e72-57e57e438e5f",
+          "displayName": "Alerting rules",
+          "description": "Rules with alerting turned on (not archived), whether enabled or not",
+          "chartDatasource": {
+            "dashboardQuery": "70f1020f-ab5a-401b-b344-edbe89a90b4a",
+            "dataSources": [
+              "RULES"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesType": "TEXT",
+                "label": "Alerting_Rules",
+                "field": "Alerting_Rules",
+                "metricTrendConfig": {
+                  "metricFormat": "METRIC_FORMAT_NUMBER",
+                  "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                  "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "98937302d1070c7db3468951b8b7f56da05041b6fda8d8e6c2a2eac3dd708b12"
+        },
+        {
+          "name": "a3ee7504-d1c0-4ea4-bf37-f82542d7dd3b",
+          "displayName": "Enabled rules",
+          "description": "Rules with live status ENABLED (not archived)",
+          "chartDatasource": {
+            "dashboardQuery": "a399c419-5bc2-4d67-9d5e-487247ed7a18",
+            "dataSources": [
+              "RULES"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesType": "TEXT",
+                "label": "Enabled_Rules",
+                "field": "Enabled_Rules",
+                "metricTrendConfig": {
+                  "metricFormat": "METRIC_FORMAT_NUMBER",
+                  "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                  "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "c8bc9aba4d3a426c042afa799945d90242a5079e6f82c74a989451dced10846c"
+        }
+      ],
+      "dashboardQueries": [
+        {
+          "name": "a399c419-5bc2-4d67-9d5e-487247ed7a18",
+          "query": "rules.archived = false\nrules.live_status = \"ENABLED\"\n\noutcome:\n    $Enabled_Rules = count_distinct(rules.name)\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "36500"
+            }
+          },
+          "etag": "6863bffd2f2e26b6f6904676efc1841ae2c4eabd73cb65ee8c8718016883152f",
+          "dialect": "YL2"
+        },
+        {
+          "name": "9c745bc1-25f5-45f2-ac72-9f8df4980801",
+          "query": "rules.archived = false\nrules.live_status = \"ENABLED\"\nrules.alerting = false\n\noutcome:\n    $Enabled_Not_Alerting = count_distinct(rules.name)\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "36500"
+            }
+          },
+          "etag": "1a54cc89d06596250e125cdd55d90ab7efc1d60eac3fd1ffb8ac6ebeb064752a",
+          "dialect": "YL2"
+        },
+        {
+          "name": "3d199e88-df04-499e-a724-870d00ca0730",
+          "query": "rules.archived = false\nrules.live_status = \"ENABLED\"\n$Rule_Name = rules.display_name\n$Severity = strings.to_upper(rules.severity)\n$Alerting = rules.alerting\n\nmatch:\n    $Rule_Name, $Severity, $Alerting\n\noutcome:\n    $Detections = max(rules.total_detection_count)\n    $Last_Detection = timestamp.get_timestamp(max(rules.latest_detection_time.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n\norder:\n    $Detections desc\n\nlimit:\n    500\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "36500"
+            }
+          },
+          "etag": "5f451e444a1b9ecd620e2d1e3756ba12a99b48405d7d906fa2f399f34ad1191f",
+          "dialect": "YL2"
+        },
+        {
+          "name": "a415a734-ecbe-4620-a43f-20964fb97722",
+          "query": "rules.archived = false\nrules.live_status != \"ENABLED\"\nrules.alerting = true\n\noutcome:\n    $Alerting_But_Disabled = count_distinct(rules.name)\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "36500"
+            }
+          },
+          "etag": "9f4e0b792b12cc65bbfee3baa389297f1b71daab1164fd73337284ea403b1d9d",
+          "dialect": "YL2"
+        },
+        {
+          "name": "38b0c000-352f-4f39-97ed-e2bce113991d",
+          "query": "rules.archived = false\nrules.live_status = \"ENABLED\"\n$Severity = if(rules.severity = \"\", \"UNSET\", strings.to_upper(rules.severity))\n\nmatch:\n    $Severity\n\noutcome:\n    $Rules = count_distinct(rules.name)\n\norder:\n    $Rules desc\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "36500"
+            }
+          },
+          "etag": "9e67c080262521546855e40d79edd6de98312502ba53e8bdc3521219ac6a681b",
+          "dialect": "YL2"
+        },
+        {
+          "name": "85a61f1c-7ee6-4ea3-8fb9-8a6f32f8fdd6",
+          "query": "rules.archived = false\n$Status = rules.live_status\n$Alerting = if(rules.alerting = true, \"Alerting\", \"Not alerting\")\n\nmatch:\n    $Status, $Alerting\n\noutcome:\n    $Rules = count_distinct(rules.name)\n\norder:\n    $Rules desc\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "36500"
+            }
+          },
+          "etag": "16648ef6d13f42b78371884586f93e7b37ed627c93defd5c84375cd95f8d0b64",
+          "dialect": "YL2"
+        },
+        {
+          "name": "af7ca20e-9e3a-4ca6-9cda-3341971b5eee",
+          "query": "rules.archived = false\nrules.live_status = \"ENABLED\"\nrules.alerting = true\n\noutcome:\n    $Enabled_and_Alerting = count_distinct(rules.name)\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "36500"
+            }
+          },
+          "etag": "6fa4c0d6b7266691f191ef32f6b5c1769188c2632bd09d72dbc920ddcb93cd1a",
+          "dialect": "YL2"
+        },
+        {
+          "name": "70f1020f-ab5a-401b-b344-edbe89a90b4a",
+          "query": "rules.archived = false\nrules.alerting = true\n\noutcome:\n    $Alerting_Rules = count_distinct(rules.name)\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "36500"
+            }
+          },
+          "etag": "d20b3cfd74d3191237adc88fbc557a3f375311b1d15b752e2ce56964e0915153",
+          "dialect": "YL2"
+        }
+      ]
+    }
+  ]
+}

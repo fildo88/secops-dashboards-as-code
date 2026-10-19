@@ -1,0 +1,192 @@
+{
+  "dashboards": [
+    {
+      "dashboard": {
+        "name": "42ab29d9-2088-46d8-a16c-dad72f16cac4",
+        "displayName": "Overlaid Detections vs Endpoints - Two Lines",
+        "description": "Two line series on one chart: daily rule detections (blue, in thousands) and distinct endpoints (orange). X = day (Australia/Sydney), Y = count, last 30 days. Endpoints excludes detections with no hostname.",
+        "definition": {
+          "filters": [
+            {
+              "id": "GlobalTimeFilter",
+              "dataSource": "GLOBAL",
+              "filterOperatorAndFieldValues": [
+                {
+                  "filterOperator": "PAST",
+                  "fieldValues": [
+                    "1",
+                    "DAY"
+                  ]
+                }
+              ],
+              "displayName": "Global Time Filter",
+              "isStandardTimeRangeFilter": true,
+              "isStandardTimeRangeFilterEnabled": true
+            }
+          ],
+          "charts": [
+            {
+              "dashboardChart": "7786473f-1d28-47af-be60-6ed3526702e9",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 96,
+                "startY": 0,
+                "spanY": 28
+              }
+            },
+            {
+              "dashboardChart": "ce148049-823b-4e80-9572-f2c199740403",
+              "chartLayout": {
+                "startX": 0,
+                "spanX": 96,
+                "startY": 28,
+                "spanY": 20
+              }
+            }
+          ]
+        },
+        "type": "CUSTOM",
+        "etag": "a82c54bcde1be382255fe45644745ec28fc5de86dc515c6a63eb4b0cf873e030",
+        "access": "DASHBOARD_PUBLIC"
+      },
+      "dashboardCharts": [
+        {
+          "name": "7786473f-1d28-47af-be60-6ed3526702e9",
+          "displayName": "Detections vs Endpoints per day",
+          "description": "One line per Metric value: blue = detections per day in thousands (20.2 = 20,200), orange = distinct endpoints per day. Same Y axis.",
+          "chartDatasource": {
+            "dashboardQuery": "d69fab20-0b6e-4168-9c7e-f8d400ee945e",
+            "dataSources": [
+              "RULE_DETECTIONS"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "Detections (thousands)",
+                "seriesType": "LINE",
+                "encode": {
+                  "x": "Day",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "Detections (thousands)"
+              },
+              {
+                "seriesName": "Endpoints",
+                "seriesType": "LINE",
+                "encode": {
+                  "x": "Day",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "Endpoints"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Day (Sydney)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Count"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "seriesColumn": [
+              "Metric"
+            ],
+            "groupingType": "Grouped"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "80111ff33fa3ff390945dc48f817b849310b50567d90685179054417f0ca7d67",
+          "drillDownConfig": {}
+        },
+        {
+          "name": "ce148049-823b-4e80-9572-f2c199740403",
+          "displayName": "Daily detections and endpoints (exact counts)",
+          "description": "Values behind the chart",
+          "chartDatasource": {
+            "dashboardQuery": "630ef31a-12f0-4860-bda6-8c73d6bbbe05",
+            "dataSources": [
+              "RULE_DETECTIONS"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Day",
+                "header": "Day"
+              },
+              {
+                "field": "Detections",
+                "header": "Detections"
+              },
+              {
+                "field": "Endpoints",
+                "header": "Endpoints"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "b83dc63bec228a044fa6e78e2ba6afc0bf7766630c26ecbd43ae71fe54ea437c"
+        }
+      ],
+      "dashboardQueries": [
+        {
+          "name": "630ef31a-12f0-4860-bda6-8c73d6bbbe05",
+          "query": "detection.detection.rule_name != \"\"\n$Day = timestamp.get_date(detection.detection_time.seconds, \"Australia/Sydney\")\n$Endpoint = detection.collection_elements.references.event.principal.hostname\n\nmatch:\n    $Day\n\noutcome:\n    $Detections = count_distinct(detection.id)\n    // Detections without a hostname would count as one extra \"endpoint\"; subtract that bucket.\n    $Endpoints = count_distinct($Endpoint) - max(if($Endpoint = \"\", 1, 0))\n\norder:\n    $Day desc\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "30"
+            }
+          },
+          "etag": "6f451d63006457c54177476308db392eaf1b7d0ca3de4f59edc0e3aaac54bc92",
+          "dialect": "YL2"
+        },
+        {
+          "name": "d69fab20-0b6e-4168-9c7e-f8d400ee945e",
+          "query": "// Daily totals from rule detections\nstage daily {\n    detection.detection.rule_name != \"\"\n    $date = timestamp.get_date(detection.detection_time.seconds, \"Australia/Sydney\")\n    $key = strings.concat(strings.substr(detection.id, 0, 0), \"k\")\n    $endpoint = detection.collection_elements.references.event.principal.hostname\n    match:\n        $date, $key\n    outcome:\n        $detections = count_distinct(detection.id)\n        // Detections without a hostname would count as one extra \"endpoint\"; subtract that bucket.\n        $endpoints = count_distinct($endpoint) - max(if($endpoint = \"\", 1, 0))\n        // Same values as floats so both metrics share one Count column; detections in thousands.\n        $detections_k = math.round(count_distinct(detection.id) / 1000, 1)\n        $endpoints_f = (count_distinct($endpoint) - max(if($endpoint = \"\", 1, 0))) / 1\n}\n\n// Exactly two rows, labelled \"Detections (thousands)\" and \"Endpoints\". The label comes from the detection hour\n// only to produce two rows; the counts in this stage are never used.\nstage metrics {\n    detection.detection.rule_name != \"\"\n    $metric = if(timestamp.get_hour(detection.detection_time.seconds) < 12, \"Detections (thousands)\", \"Endpoints\")\n    $key = strings.concat(strings.substr(detection.id, 0, 0), \"k\")\n    match:\n        $metric, $key\n    outcome:\n        $unused = count_distinct(detection.id)\n}\n\n// Join every day to both metric rows -> Day / Metric / Count\n$key = $daily.key\n$key = $metrics.key\n$Day = $daily.date\n$Metric = $metrics.metric\n\nmatch:\n    $Day, $Metric\n\noutcome:\n    $Count = max(if($Metric = \"Detections (thousands)\", $daily.detections_k, $daily.endpoints_f))\n\norder:\n    $Day asc\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "30"
+            }
+          },
+          "etag": "42aebbfaee04c015e123557ff20cbcafaa4c91b8042327045cbf2d4f1c3a9f4e",
+          "dialect": "YL2"
+        }
+      ]
+    }
+  ]
+}

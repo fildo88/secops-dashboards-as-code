@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "ab831e5d-dce5-4a54-bc77-55ec6bc83573",
+        "name": "eea90ce9-ef85-4dc5-b4c3-977beeb3530d",
         "displayName": "IOC Search - All Log Sources",
         "description": "Enter one IOC (IP, domain, hostname, hash, username, email or URL) in the IOC filter. Every chart searches all log sources for it; detail charts are grouped by activity type with a Log Source column.",
         "definition": {
@@ -21,13 +21,13 @@
               ],
               "displayName": "Global Time Filter",
               "chartIds": [
-                "84ba9adb-a9e1-4445-bc7d-fa4eea60d556",
-                "0da43f9b-6975-4b4b-bc1c-fe6e4ffa7c57",
-                "35d54cbf-675f-4b75-8bee-035d0b1dd700",
-                "a0a48205-11b7-4cd8-9ff4-a24a3d875c2a",
-                "9d2b1768-c83b-4c71-ada8-f62bdc844716",
-                "d72c3d02-8f28-4561-b402-bcd759c26fd8",
-                "319c6dcd-b534-4c45-9e3b-7e13e8414191"
+                "8ea2426d-663e-4aed-88fa-b97c8e6ae36a",
+                "622c516a-9f00-45c3-bf58-6467acd96288",
+                "b452b36e-81e8-4271-8a30-b7eeb2e8a946",
+                "70b32f12-2bee-493d-b021-c8146f327746",
+                "efcf7900-b082-49bf-b2a8-c6aa8d5292c3",
+                "b1851871-9105-43fc-98af-29c115ebb6f7",
+                "a437af20-de18-4fb0-b554-389547cfed64"
               ],
               "isStandardTimeRangeFilter": true,
               "isStandardTimeRangeFilterEnabled": true
@@ -45,13 +45,13 @@
               ],
               "displayName": "IOC (IP, domain, hostname, hash, user, email or URL)",
               "chartIds": [
-                "84ba9adb-a9e1-4445-bc7d-fa4eea60d556",
-                "0da43f9b-6975-4b4b-bc1c-fe6e4ffa7c57",
-                "35d54cbf-675f-4b75-8bee-035d0b1dd700",
-                "a0a48205-11b7-4cd8-9ff4-a24a3d875c2a",
-                "9d2b1768-c83b-4c71-ada8-f62bdc844716",
-                "d72c3d02-8f28-4561-b402-bcd759c26fd8",
-                "319c6dcd-b534-4c45-9e3b-7e13e8414191"
+                "8ea2426d-663e-4aed-88fa-b97c8e6ae36a",
+                "622c516a-9f00-45c3-bf58-6467acd96288",
+                "b452b36e-81e8-4271-8a30-b7eeb2e8a946",
+                "70b32f12-2bee-493d-b021-c8146f327746",
+                "efcf7900-b082-49bf-b2a8-c6aa8d5292c3",
+                "b1851871-9105-43fc-98af-29c115ebb6f7",
+                "a437af20-de18-4fb0-b554-389547cfed64"
               ],
               "advancedFilterConfig": {
                 "token": "ioc",
@@ -70,7 +70,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "84ba9adb-a9e1-4445-bc7d-fa4eea60d556",
+              "dashboardChart": "8ea2426d-663e-4aed-88fa-b97c8e6ae36a",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 48,
@@ -83,7 +83,7 @@
               ]
             },
             {
-              "dashboardChart": "0da43f9b-6975-4b4b-bc1c-fe6e4ffa7c57",
+              "dashboardChart": "622c516a-9f00-45c3-bf58-6467acd96288",
               "chartLayout": {
                 "startX": 48,
                 "spanX": 48,
@@ -96,7 +96,7 @@
               ]
             },
             {
-              "dashboardChart": "35d54cbf-675f-4b75-8bee-035d0b1dd700",
+              "dashboardChart": "b452b36e-81e8-4271-8a30-b7eeb2e8a946",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -109,7 +109,7 @@
               ]
             },
             {
-              "dashboardChart": "a0a48205-11b7-4cd8-9ff4-a24a3d875c2a",
+              "dashboardChart": "70b32f12-2bee-493d-b021-c8146f327746",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -122,7 +122,7 @@
               ]
             },
             {
-              "dashboardChart": "9d2b1768-c83b-4c71-ada8-f62bdc844716",
+              "dashboardChart": "efcf7900-b082-49bf-b2a8-c6aa8d5292c3",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -135,7 +135,7 @@
               ]
             },
             {
-              "dashboardChart": "d72c3d02-8f28-4561-b402-bcd759c26fd8",
+              "dashboardChart": "b1851871-9105-43fc-98af-29c115ebb6f7",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -148,7 +148,7 @@
               ]
             },
             {
-              "dashboardChart": "319c6dcd-b534-4c45-9e3b-7e13e8414191",
+              "dashboardChart": "a437af20-de18-4fb0-b554-389547cfed64",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -161,7 +161,7 @@
               ]
             },
             {
-              "dashboardChart": "81ed00f6-7412-41f1-b0b8-8d982f35594e",
+              "dashboardChart": "a90494bb-5c40-4dec-9a30-0116263d5ebf",
               "chartLayout": {
                 "startX": 48,
                 "spanX": 48,
@@ -170,7 +170,7 @@
               }
             },
             {
-              "dashboardChart": "2e669c79-027d-409e-be1e-447b08aa0692",
+              "dashboardChart": "7a50895c-f7e2-49e6-a89c-691f96d6ed76",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 64,
@@ -181,324 +181,30 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "1ed93f8f12e58bf25a0ba53edf37c32790cacb6140e52d03b9d2c5a1445d622b",
+        "etag": "0ec6435011514e91dd27bd915bdca4d11c6850975ad2d851e4d6dc6df4dde213",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "81ed00f6-7412-41f1-b0b8-8d982f35594e",
-          "displayName": "Copy of IOC hits over time",
-          "description": "Hourly matching events per log source (Australia/Sydney)",
-          "chartDatasource": {
-            "dashboardQuery": "7306dac0-ece7-4ac0-876e-681ade015c25",
-            "dataSources": [
-              "UDM"
-            ]
-          },
+          "name": "7a50895c-f7e2-49e6-a89c-691f96d6ed76",
+          "displayName": "markdown",
           "visualization": {
-            "series": [
-              {
-                "seriesName": "AUDITD",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#1a73e8"
-                },
-                "seriesUniqueValue": "AUDITD"
-              },
-              {
-                "seriesName": "CATCH_ALL",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#eb730a"
-                },
-                "seriesUniqueValue": "CATCH_ALL"
-              },
-              {
-                "seriesName": "GCP_CLOUDAUDIT",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#12b5cb"
-                },
-                "seriesUniqueValue": "GCP_CLOUDAUDIT"
-              },
-              {
-                "seriesName": "PIHOLE",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#e52592"
-                },
-                "seriesUniqueValue": "PIHOLE"
-              },
-              {
-                "seriesName": "PFSENSE",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#9334e6"
-                },
-                "seriesUniqueValue": "PFSENSE"
-              },
-              {
-                "seriesName": "UDM",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#188038"
-                },
-                "seriesUniqueValue": "UDM"
-              },
-              {
-                "seriesName": "BINDPLANE_AGENT",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#f9ab00"
-                },
-                "seriesUniqueValue": "BINDPLANE_AGENT"
-              },
-              {
-                "seriesName": "GCP_FIREWALL",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#d93025"
-                },
-                "seriesUniqueValue": "GCP_FIREWALL"
-              },
-              {
-                "seriesName": "WINDOWS_SYSMON",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#5f6368"
-                },
-                "seriesUniqueValue": "WINDOWS_SYSMON"
-              },
-              {
-                "seriesName": "WINEVTLOG",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#a142f4"
-                },
-                "seriesUniqueValue": "WINEVTLOG"
-              },
-              {
-                "seriesName": "HP_PROCURVE",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#24c1e0"
-                },
-                "seriesUniqueValue": "HP_PROCURVE"
-              },
-              {
-                "seriesName": "CS_DETECTS",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#f538a0"
-                },
-                "seriesUniqueValue": "CS_DETECTS"
-              },
-              {
-                "seriesName": "WORKSPACE_ACTIVITY",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#1e8e3e"
-                },
-                "seriesUniqueValue": "WORKSPACE_ACTIVITY"
-              },
-              {
-                "seriesName": "POWERSHELL",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#fa7b17"
-                },
-                "seriesUniqueValue": "POWERSHELL"
-              },
-              {
-                "seriesName": "GCP_SECURITYCENTER_MISCONFIGURATION",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#4285f4"
-                },
-                "seriesUniqueValue": "GCP_SECURITYCENTER_MISCONFIGURATION"
-              },
-              {
-                "seriesName": "GCP_SECURITYCENTER_ERROR",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#c5221f"
-                },
-                "seriesUniqueValue": "GCP_SECURITYCENTER_ERROR"
-              },
-              {
-                "seriesName": "GCP_SECURITYCENTER_TOXIC_COMBINATION",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#af5cf7"
-                },
-                "seriesUniqueValue": "GCP_SECURITYCENTER_TOXIC_COMBINATION"
-              },
-              {
-                "seriesName": "GCP_SECURITYCENTER_VULNERABILITY",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#80868b"
-                },
-                "seriesUniqueValue": "GCP_SECURITYCENTER_VULNERABILITY"
-              },
-              {
-                "seriesName": "GCP_SECURITYCENTER_THREAT",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Slot",
-                  "y": "Cnt"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#fcc934"
-                },
-                "seriesUniqueValue": "GCP_SECURITYCENTER_THREAT"
+            "markdown": {
+              "content": "* list item\n```nugger\n2qwww\nwqwww\nwwwww\n```\n[poo](https://www.news.com.au)",
+              "properties": {
+                "backgroundColor": "#1B3663"
               }
-            ],
-            "xAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Hour (Sydney)"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Matching events"
-              }
-            ],
-            "legends": [
-              {
-                "right": 12,
-                "legendOrient": "VERTICAL"
-              }
-            ],
-            "seriesColumn": [
-              "Log_Source"
-            ],
-            "groupingType": "Stacked"
+            }
           },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "e5ccce576909fb794421ee0758165b2f803ab76d644318e3026f61152e29c434",
-          "tokens": [
-            "ioc"
-          ]
+          "tileType": "TILE_TYPE_MARKDOWN",
+          "etag": "054069fdc1e5408052c3b99f947c1a7cdb3b081d9c82bff6d97570d095a0165b"
         },
         {
-          "name": "a0a48205-11b7-4cd8-9ff4-a24a3d875c2a",
+          "name": "70b32f12-2bee-493d-b021-c8146f327746",
           "displayName": "DNS lookups",
           "description": "NETWORK_DNS events involving the IOC (Pi-hole, Sysmon, etc.)",
           "chartDatasource": {
-            "dashboardQuery": "4477933c-547e-416c-aeb6-7f4d8ff29a79",
+            "dashboardQuery": "5f739e2e-9d33-4176-ad2f-1611512cd2ac",
             "dataSources": [
               "UDM"
             ]
@@ -548,17 +254,17 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "056f359702e6ebc9d1eb21d1eb308ec0ab8cdd9ac003fd26b7c85993f3a2d50f",
+          "etag": "860e10010c0d85dbbff520c5ae1c66abe96fa71fa8e44fa633f616077b6f779d",
           "tokens": [
             "ioc"
           ]
         },
         {
-          "name": "0da43f9b-6975-4b4b-bc1c-fe6e4ffa7c57",
+          "name": "622c516a-9f00-45c3-bf58-6467acd96288",
           "displayName": "IOC hits over time",
           "description": "Hourly matching events per log source (Australia/Sydney)",
           "chartDatasource": {
-            "dashboardQuery": "8731f616-c1c7-42fc-9af1-eef435ae975f",
+            "dashboardQuery": "cc590287-bfcf-4ab4-a436-5519622b40b3",
             "dataSources": [
               "UDM"
             ]
@@ -856,17 +562,17 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "55f0b55f77bd569bbe870d0d81082a55abf8eb2571bb4e9f4814068f1ec1c2de",
+          "etag": "009344ee87fdc28e2d33d755ade2f833258d6cad992af80e624cf7405bd6486c",
           "tokens": [
             "ioc"
           ]
         },
         {
-          "name": "9d2b1768-c83b-4c71-ada8-f62bdc844716",
+          "name": "efcf7900-b082-49bf-b2a8-c6aa8d5292c3",
           "displayName": "Process, file & registry activity",
           "description": "PROCESS_*, FILE_* and REGISTRY_* events involving the IOC",
           "chartDatasource": {
-            "dashboardQuery": "3a0bb90d-a781-408e-b8ed-2dd919f8b54d",
+            "dashboardQuery": "ff417000-38e0-47f8-b6f9-d52b90fbed36",
             "dataSources": [
               "UDM"
             ]
@@ -924,197 +630,17 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "00460c374cfd23efb201a24171c5f03fd4b7934c444c8f037c33b6a7a16064a1",
+          "etag": "f5330e26f90d4e508a63358156d15c746854de68fa98018ae9b2f7cdaa82f75b",
           "tokens": [
             "ioc"
           ]
         },
         {
-          "name": "319c6dcd-b534-4c45-9e3b-7e13e8414191",
-          "displayName": "Other events (detections, findings, generic)",
-          "description": "All remaining event types involving the IOC",
-          "chartDatasource": {
-            "dashboardQuery": "3b1395c1-595f-4fd3-acea-28f807736538",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "xAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "columnDefs": [
-              {
-                "field": "Log_Source",
-                "header": "Log Source"
-              },
-              {
-                "field": "Event_Type",
-                "header": "Event Type"
-              },
-              {
-                "field": "Product_Event",
-                "header": "Product Event"
-              },
-              {
-                "field": "Hits",
-                "header": "Hits"
-              },
-              {
-                "field": "Summary",
-                "header": "Summary"
-              },
-              {
-                "field": "Last_Seen",
-                "header": "Last Seen"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "d56e029b57aab0c82e46e26f87eff1c14a6e70d7fdffe5fcf83c33aa7d774553",
-          "tokens": [
-            "ioc"
-          ]
-        },
-        {
-          "name": "84ba9adb-a9e1-4445-bc7d-fa4eea60d556",
-          "displayName": "IOC hits by log source",
-          "description": "Every log source where the IOC appears in any IP, hostname, domain, hash, user, email or URL field",
-          "chartDatasource": {
-            "dashboardQuery": "338a2761-1b20-4ce9-a87c-7e524299501c",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "xAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "columnDefs": [
-              {
-                "field": "Log_Source",
-                "header": "Log Source"
-              },
-              {
-                "field": "Hits",
-                "header": "Hits"
-              },
-              {
-                "field": "Event_Types",
-                "header": "Event Types"
-              },
-              {
-                "field": "First_Seen",
-                "header": "First Seen"
-              },
-              {
-                "field": "Last_Seen",
-                "header": "Last Seen"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "ad17dbe3824b7246377d932a82c6f0944e54ac3e7732bce138d039bc7ceab168",
-          "tokens": [
-            "ioc"
-          ]
-        },
-        {
-          "name": "35d54cbf-675f-4b75-8bee-035d0b1dd700",
-          "displayName": "Network connections",
-          "description": "NETWORK_CONNECTION events involving the IOC (firewalls, Sysmon, etc.)",
-          "chartDatasource": {
-            "dashboardQuery": "075a00ed-2c13-4bdf-aece-7bb75a5b452c",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "xAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "columnDefs": [
-              {
-                "field": "Log_Source",
-                "header": "Log Source"
-              },
-              {
-                "field": "Src_IP",
-                "header": "Src IP"
-              },
-              {
-                "field": "Dst_IP",
-                "header": "Dst IP"
-              },
-              {
-                "field": "Dst_Port",
-                "header": "Dst Port"
-              },
-              {
-                "field": "Hits",
-                "header": "Hits"
-              },
-              {
-                "field": "Actions",
-                "header": "Actions"
-              },
-              {
-                "field": "Last_Seen",
-                "header": "Last Seen"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "fd103266c71732c527e0c4b78ea0b8e2058d9222074a9e47001b4b9873fef019",
-          "tokens": [
-            "ioc"
-          ]
-        },
-        {
-          "name": "d72c3d02-8f28-4561-b402-bcd759c26fd8",
+          "name": "b1851871-9105-43fc-98af-29c115ebb6f7",
           "displayName": "User, authentication & cloud activity",
           "description": "USER_*, RESOURCE_* and GROUP_* events involving the IOC",
           "chartDatasource": {
-            "dashboardQuery": "6cea76a4-41ce-43b3-8aa0-f6466cffe05f",
+            "dashboardQuery": "d7aae863-5ed4-4186-8e5b-e919d96cd75f",
             "dataSources": [
               "UDM"
             ]
@@ -1172,53 +698,503 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "b0ef8493af340324c58ee8cbb1ec7ea80da1e49aa757a5165323468f714b9c85",
+          "etag": "e13c90e31dfa0fa5e0b00cab3c5031d0a8e64d091733d6573697d743cb0c82b1",
           "tokens": [
             "ioc"
           ]
         },
         {
-          "name": "2e669c79-027d-409e-be1e-447b08aa0692",
-          "displayName": "markdown",
-          "visualization": {
-            "markdown": {
-              "content": "* list item\n```nugger\n2qwww\nwqwww\nwwwww\n```\n[poo](https://www.news.com.au)",
-              "properties": {
-                "backgroundColor": "#1B3663"
-              }
-            }
+          "name": "a90494bb-5c40-4dec-9a30-0116263d5ebf",
+          "displayName": "Copy of IOC hits over time",
+          "description": "Hourly matching events per log source (Australia/Sydney)",
+          "chartDatasource": {
+            "dashboardQuery": "dae2dca8-7524-448f-aca2-2389f0b38e58",
+            "dataSources": [
+              "UDM"
+            ]
           },
-          "tileType": "TILE_TYPE_MARKDOWN",
-          "etag": "ba2bccb9fe15479d6b1c326499d56acd4869c445dd47a870045edf8e5b9e3603"
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "AUDITD",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                },
+                "seriesUniqueValue": "AUDITD"
+              },
+              {
+                "seriesName": "CATCH_ALL",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "CATCH_ALL"
+              },
+              {
+                "seriesName": "GCP_CLOUDAUDIT",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#12b5cb"
+                },
+                "seriesUniqueValue": "GCP_CLOUDAUDIT"
+              },
+              {
+                "seriesName": "PIHOLE",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e52592"
+                },
+                "seriesUniqueValue": "PIHOLE"
+              },
+              {
+                "seriesName": "PFSENSE",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#9334e6"
+                },
+                "seriesUniqueValue": "PFSENSE"
+              },
+              {
+                "seriesName": "UDM",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                },
+                "seriesUniqueValue": "UDM"
+              },
+              {
+                "seriesName": "BINDPLANE_AGENT",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                },
+                "seriesUniqueValue": "BINDPLANE_AGENT"
+              },
+              {
+                "seriesName": "GCP_FIREWALL",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "GCP_FIREWALL"
+              },
+              {
+                "seriesName": "WINDOWS_SYSMON",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#5f6368"
+                },
+                "seriesUniqueValue": "WINDOWS_SYSMON"
+              },
+              {
+                "seriesName": "WINEVTLOG",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#a142f4"
+                },
+                "seriesUniqueValue": "WINEVTLOG"
+              },
+              {
+                "seriesName": "HP_PROCURVE",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#24c1e0"
+                },
+                "seriesUniqueValue": "HP_PROCURVE"
+              },
+              {
+                "seriesName": "CS_DETECTS",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f538a0"
+                },
+                "seriesUniqueValue": "CS_DETECTS"
+              },
+              {
+                "seriesName": "WORKSPACE_ACTIVITY",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1e8e3e"
+                },
+                "seriesUniqueValue": "WORKSPACE_ACTIVITY"
+              },
+              {
+                "seriesName": "POWERSHELL",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fa7b17"
+                },
+                "seriesUniqueValue": "POWERSHELL"
+              },
+              {
+                "seriesName": "GCP_SECURITYCENTER_MISCONFIGURATION",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#4285f4"
+                },
+                "seriesUniqueValue": "GCP_SECURITYCENTER_MISCONFIGURATION"
+              },
+              {
+                "seriesName": "GCP_SECURITYCENTER_ERROR",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#c5221f"
+                },
+                "seriesUniqueValue": "GCP_SECURITYCENTER_ERROR"
+              },
+              {
+                "seriesName": "GCP_SECURITYCENTER_TOXIC_COMBINATION",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#af5cf7"
+                },
+                "seriesUniqueValue": "GCP_SECURITYCENTER_TOXIC_COMBINATION"
+              },
+              {
+                "seriesName": "GCP_SECURITYCENTER_VULNERABILITY",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#80868b"
+                },
+                "seriesUniqueValue": "GCP_SECURITYCENTER_VULNERABILITY"
+              },
+              {
+                "seriesName": "GCP_SECURITYCENTER_THREAT",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Slot",
+                  "y": "Cnt"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#fcc934"
+                },
+                "seriesUniqueValue": "GCP_SECURITYCENTER_THREAT"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour (Sydney)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Matching events"
+              }
+            ],
+            "legends": [
+              {
+                "right": 12,
+                "legendOrient": "VERTICAL"
+              }
+            ],
+            "seriesColumn": [
+              "Log_Source"
+            ],
+            "groupingType": "Stacked"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "6a85acac4c8fc5f673531d516a553dec7df560629da1b43e8778243eaa548e95",
+          "tokens": [
+            "ioc"
+          ]
+        },
+        {
+          "name": "b452b36e-81e8-4271-8a30-b7eeb2e8a946",
+          "displayName": "Network connections",
+          "description": "NETWORK_CONNECTION events involving the IOC (firewalls, Sysmon, etc.)",
+          "chartDatasource": {
+            "dashboardQuery": "6eb0fea8-8648-4007-88d7-059949858e38",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Log_Source",
+                "header": "Log Source"
+              },
+              {
+                "field": "Src_IP",
+                "header": "Src IP"
+              },
+              {
+                "field": "Dst_IP",
+                "header": "Dst IP"
+              },
+              {
+                "field": "Dst_Port",
+                "header": "Dst Port"
+              },
+              {
+                "field": "Hits",
+                "header": "Hits"
+              },
+              {
+                "field": "Actions",
+                "header": "Actions"
+              },
+              {
+                "field": "Last_Seen",
+                "header": "Last Seen"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "dc20793ec99617cdaea7a34bec22c63874fa655388b17f144ca5423b17dbd973",
+          "tokens": [
+            "ioc"
+          ]
+        },
+        {
+          "name": "a437af20-de18-4fb0-b554-389547cfed64",
+          "displayName": "Other events (detections, findings, generic)",
+          "description": "All remaining event types involving the IOC",
+          "chartDatasource": {
+            "dashboardQuery": "5ca43b8c-b6bb-4194-9f7e-2d6db25e1c42",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Log_Source",
+                "header": "Log Source"
+              },
+              {
+                "field": "Event_Type",
+                "header": "Event Type"
+              },
+              {
+                "field": "Product_Event",
+                "header": "Product Event"
+              },
+              {
+                "field": "Hits",
+                "header": "Hits"
+              },
+              {
+                "field": "Summary",
+                "header": "Summary"
+              },
+              {
+                "field": "Last_Seen",
+                "header": "Last Seen"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "09d5f06a03c10070d76a1464461dea9b201eb0db3867101661361206f905ebad",
+          "tokens": [
+            "ioc"
+          ]
+        },
+        {
+          "name": "8ea2426d-663e-4aed-88fa-b97c8e6ae36a",
+          "displayName": "IOC hits by log source",
+          "description": "Every log source where the IOC appears in any IP, hostname, domain, hash, user, email or URL field",
+          "chartDatasource": {
+            "dashboardQuery": "7a7fc184-dbbf-4021-89af-7c1693833be8",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "xAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "columnDefs": [
+              {
+                "field": "Log_Source",
+                "header": "Log Source"
+              },
+              {
+                "field": "Hits",
+                "header": "Hits"
+              },
+              {
+                "field": "Event_Types",
+                "header": "Event Types"
+              },
+              {
+                "field": "First_Seen",
+                "header": "First Seen"
+              },
+              {
+                "field": "Last_Seen",
+                "header": "Last Seen"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "a48e3bbc53108f7d64afc76ac6a1d0b4e1c99182788fdac897d0ebf45fc9d9c0",
+          "tokens": [
+            "ioc"
+          ]
         }
       ],
       "dashboardQueries": [
         {
-          "name": "3b1395c1-595f-4fd3-acea-28f807736538",
-          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\nnot (metadata.event_type = \"PROCESS_LAUNCH\" or metadata.event_type = \"PROCESS_INJECTION\" or metadata.event_type = \"PROCESS_MODULE_LOAD\" or metadata.event_type = \"PROCESS_OPEN\" or metadata.event_type = \"PROCESS_PRIVILEGE_ESCALATION\" or metadata.event_type = \"PROCESS_TERMINATION\" or metadata.event_type = \"PROCESS_UNCATEGORIZED\" or metadata.event_type = \"FILE_COPY\" or metadata.event_type = \"FILE_CREATION\" or metadata.event_type = \"FILE_DELETION\" or metadata.event_type = \"FILE_MODIFICATION\" or metadata.event_type = \"FILE_MOVE\" or metadata.event_type = \"FILE_OPEN\" or metadata.event_type = \"FILE_READ\" or metadata.event_type = \"FILE_SYNC\" or metadata.event_type = \"FILE_UNCATEGORIZED\" or metadata.event_type = \"REGISTRY_CREATION\" or metadata.event_type = \"REGISTRY_DELETION\" or metadata.event_type = \"REGISTRY_MODIFICATION\" or metadata.event_type = \"REGISTRY_UNCATEGORIZED\" or metadata.event_type = \"USER_BADGE_IN\" or metadata.event_type = \"USER_CHANGE_PASSWORD\" or metadata.event_type = \"USER_CHANGE_PERMISSIONS\" or metadata.event_type = \"USER_COMMUNICATION\" or metadata.event_type = \"USER_CREATION\" or metadata.event_type = \"USER_DELETION\" or metadata.event_type = \"USER_LOGIN\" or metadata.event_type = \"USER_LOGOUT\" or metadata.event_type = \"USER_RESOURCE_ACCESS\" or metadata.event_type = \"USER_RESOURCE_CREATION\" or metadata.event_type = \"USER_RESOURCE_DELETION\" or metadata.event_type = \"USER_RESOURCE_UPDATE_CONTENT\" or metadata.event_type = \"USER_RESOURCE_UPDATE_PERMISSIONS\" or metadata.event_type = \"USER_STATS\" or metadata.event_type = \"USER_UNCATEGORIZED\" or metadata.event_type = \"RESOURCE_CREATION\" or metadata.event_type = \"RESOURCE_DELETION\" or metadata.event_type = \"RESOURCE_PERMISSIONS_CHANGE\" or metadata.event_type = \"RESOURCE_READ\" or metadata.event_type = \"RESOURCE_WRITTEN\" or metadata.event_type = \"GROUP_CREATION\" or metadata.event_type = \"GROUP_DELETION\" or metadata.event_type = \"GROUP_MODIFICATION\" or metadata.event_type = \"GROUP_UNCATEGORIZED\" or metadata.event_type = \"NETWORK_CONNECTION\" or metadata.event_type = \"NETWORK_DNS\")\n$Log_Source = metadata.log_type\n$Event_Type = metadata.event_type\n$Product_Event = metadata.product_event_type\nmatch:\n  $Log_Source, $Event_Type, $Product_Event\noutcome:\n  $Hits = count(metadata.id)\n  $Summary = array_distinct(strings.coalesce(security_result.summary, metadata.description))\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "e4077ae79b8ee98046a312781e15d4a268d6a44a0fddd065c3df520c2b9456fd",
-          "dialect": "YL2"
-        },
-        {
-          "name": "338a2761-1b20-4ce9-a87c-7e524299501c",
-          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n$Log_Source = metadata.log_type\nmatch:\n  $Log_Source\noutcome:\n  $Hits = count(metadata.id)\n  $Event_Types = array_distinct(metadata.event_type)\n  $First_Seen = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  100\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "82b7e3409171ddbc30eb1fddf62c991e5ce2fb34c903f9e44e002ac54b84f738",
-          "dialect": "YL2"
-        },
-        {
-          "name": "7306dac0-ece7-4ac0-876e-681ade015c25",
+          "name": "cc590287-bfcf-4ab4-a436-5519622b40b3",
           "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n$Log_Source = metadata.log_type\n$Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\nmatch:\n  $Slot, $Log_Source\noutcome:\n  $Cnt = count(metadata.id)\norder:\n  $Slot asc\nlimit:\n  10000\n",
           "input": {
             "relativeTime": {
@@ -1226,35 +1202,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "cf0078687cd810038f26bb67b8ec67e4c27c9d94b6866c969fc95ada51130486",
+          "etag": "fff62986ac2d8f15d6e06ef7740d361fdad9e71614cb1710e856a522977b572b",
           "dialect": "YL2"
         },
         {
-          "name": "4477933c-547e-416c-aeb6-7f4d8ff29a79",
-          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\nmetadata.event_type = \"NETWORK_DNS\"\n$Log_Source = metadata.log_type\n$Client = strings.coalesce(principal.ip, principal.hostname)\n$Query = network.dns.questions.name\nmatch:\n  $Log_Source, $Client, $Query\noutcome:\n  $Hits = count(metadata.id)\n  $Answers = array_distinct(network.dns.answers.data)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "892c50ea856f2074248fc05c81d636b4bf6e2ae1ea70fd03584383549790dc15",
-          "dialect": "YL2"
-        },
-        {
-          "name": "8731f616-c1c7-42fc-9af1-eef435ae975f",
-          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n$Log_Source = metadata.log_type\n$Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\nmatch:\n  $Slot, $Log_Source\noutcome:\n  $Cnt = count(metadata.id)\norder:\n  $Slot asc\nlimit:\n  10000\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "617d9b3b9058df96731c2c955e412a4f02fbcb72d2cd8abb41d20ab34c7485a9",
-          "dialect": "YL2"
-        },
-        {
-          "name": "075a00ed-2c13-4bdf-aece-7bb75a5b452c",
+          "name": "6eb0fea8-8648-4007-88d7-059949858e38",
           "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\nmetadata.event_type = \"NETWORK_CONNECTION\"\n$Log_Source = metadata.log_type\n$Src_IP = principal.ip\n$Dst_IP = target.ip\n$Dst_Port = target.port\nmatch:\n  $Log_Source, $Src_IP, $Dst_IP, $Dst_Port\noutcome:\n  $Hits = count(metadata.id)\n  $Actions = array_distinct(security_result.action)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
           "input": {
             "relativeTime": {
@@ -1262,11 +1214,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "16496f1cf28de880cc4d11168435cf3b9d6c2e136239321e6627dc4d93917420",
+          "etag": "0f8f682907d335636bc5befdec0ef82d502b394a32f62ef8f58679143f03635e",
           "dialect": "YL2"
         },
         {
-          "name": "3a0bb90d-a781-408e-b8ed-2dd919f8b54d",
+          "name": "ff417000-38e0-47f8-b6f9-d52b90fbed36",
           "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n(metadata.event_type = \"PROCESS_LAUNCH\" or metadata.event_type = \"PROCESS_INJECTION\" or metadata.event_type = \"PROCESS_MODULE_LOAD\" or metadata.event_type = \"PROCESS_OPEN\" or metadata.event_type = \"PROCESS_PRIVILEGE_ESCALATION\" or metadata.event_type = \"PROCESS_TERMINATION\" or metadata.event_type = \"PROCESS_UNCATEGORIZED\" or metadata.event_type = \"FILE_COPY\" or metadata.event_type = \"FILE_CREATION\" or metadata.event_type = \"FILE_DELETION\" or metadata.event_type = \"FILE_MODIFICATION\" or metadata.event_type = \"FILE_MOVE\" or metadata.event_type = \"FILE_OPEN\" or metadata.event_type = \"FILE_READ\" or metadata.event_type = \"FILE_SYNC\" or metadata.event_type = \"FILE_UNCATEGORIZED\" or metadata.event_type = \"REGISTRY_CREATION\" or metadata.event_type = \"REGISTRY_DELETION\" or metadata.event_type = \"REGISTRY_MODIFICATION\" or metadata.event_type = \"REGISTRY_UNCATEGORIZED\")\n$Log_Source = metadata.log_type\n$Host = principal.hostname\n$Event_Type = metadata.event_type\n$Target = strings.coalesce(target.process.file.full_path, target.file.full_path, target.registry.registry_key)\nmatch:\n  $Log_Source, $Host, $Event_Type, $Target\noutcome:\n  $Hits = count(metadata.id)\n  $Users = array_distinct(principal.user.userid)\n  $Parent = array_distinct(principal.process.file.full_path)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
           "input": {
             "relativeTime": {
@@ -1274,11 +1226,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "ae3ea66b3af5f539161b89cea10191637882a7ad4a80c3997f8b70c579ffffdb",
+          "etag": "d0237647d683b97e134367f82fbfae886295367e10030a99036bf9b89ebc7336",
           "dialect": "YL2"
         },
         {
-          "name": "6cea76a4-41ce-43b3-8aa0-f6466cffe05f",
+          "name": "d7aae863-5ed4-4186-8e5b-e919d96cd75f",
           "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n(metadata.event_type = \"USER_BADGE_IN\" or metadata.event_type = \"USER_CHANGE_PASSWORD\" or metadata.event_type = \"USER_CHANGE_PERMISSIONS\" or metadata.event_type = \"USER_COMMUNICATION\" or metadata.event_type = \"USER_CREATION\" or metadata.event_type = \"USER_DELETION\" or metadata.event_type = \"USER_LOGIN\" or metadata.event_type = \"USER_LOGOUT\" or metadata.event_type = \"USER_RESOURCE_ACCESS\" or metadata.event_type = \"USER_RESOURCE_CREATION\" or metadata.event_type = \"USER_RESOURCE_DELETION\" or metadata.event_type = \"USER_RESOURCE_UPDATE_CONTENT\" or metadata.event_type = \"USER_RESOURCE_UPDATE_PERMISSIONS\" or metadata.event_type = \"USER_STATS\" or metadata.event_type = \"USER_UNCATEGORIZED\" or metadata.event_type = \"RESOURCE_CREATION\" or metadata.event_type = \"RESOURCE_DELETION\" or metadata.event_type = \"RESOURCE_PERMISSIONS_CHANGE\" or metadata.event_type = \"RESOURCE_READ\" or metadata.event_type = \"RESOURCE_WRITTEN\" or metadata.event_type = \"GROUP_CREATION\" or metadata.event_type = \"GROUP_DELETION\" or metadata.event_type = \"GROUP_MODIFICATION\" or metadata.event_type = \"GROUP_UNCATEGORIZED\")\n$Log_Source = metadata.log_type\n$User = strings.coalesce(principal.user.email_addresses, principal.user.userid)\n$Event_Type = metadata.event_type\n$Action = metadata.product_event_type\nmatch:\n  $Log_Source, $User, $Event_Type, $Action\noutcome:\n  $Hits = count(metadata.id)\n  $Targets = array_distinct(strings.coalesce(target.resource.name, target.user.userid, target.hostname))\n  $Src_IPs = array_distinct(principal.ip)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
           "input": {
             "relativeTime": {
@@ -1286,7 +1238,55 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "791c0dd2439a4552e9bb582833712e4884c20ce813b553f34c019e36f5b7a2bf",
+          "etag": "bb507edf51847ee958f096b870fd8222152a99a936344cf7a6bb819cff3e62b6",
+          "dialect": "YL2"
+        },
+        {
+          "name": "5ca43b8c-b6bb-4194-9f7e-2d6db25e1c42",
+          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\nnot (metadata.event_type = \"PROCESS_LAUNCH\" or metadata.event_type = \"PROCESS_INJECTION\" or metadata.event_type = \"PROCESS_MODULE_LOAD\" or metadata.event_type = \"PROCESS_OPEN\" or metadata.event_type = \"PROCESS_PRIVILEGE_ESCALATION\" or metadata.event_type = \"PROCESS_TERMINATION\" or metadata.event_type = \"PROCESS_UNCATEGORIZED\" or metadata.event_type = \"FILE_COPY\" or metadata.event_type = \"FILE_CREATION\" or metadata.event_type = \"FILE_DELETION\" or metadata.event_type = \"FILE_MODIFICATION\" or metadata.event_type = \"FILE_MOVE\" or metadata.event_type = \"FILE_OPEN\" or metadata.event_type = \"FILE_READ\" or metadata.event_type = \"FILE_SYNC\" or metadata.event_type = \"FILE_UNCATEGORIZED\" or metadata.event_type = \"REGISTRY_CREATION\" or metadata.event_type = \"REGISTRY_DELETION\" or metadata.event_type = \"REGISTRY_MODIFICATION\" or metadata.event_type = \"REGISTRY_UNCATEGORIZED\" or metadata.event_type = \"USER_BADGE_IN\" or metadata.event_type = \"USER_CHANGE_PASSWORD\" or metadata.event_type = \"USER_CHANGE_PERMISSIONS\" or metadata.event_type = \"USER_COMMUNICATION\" or metadata.event_type = \"USER_CREATION\" or metadata.event_type = \"USER_DELETION\" or metadata.event_type = \"USER_LOGIN\" or metadata.event_type = \"USER_LOGOUT\" or metadata.event_type = \"USER_RESOURCE_ACCESS\" or metadata.event_type = \"USER_RESOURCE_CREATION\" or metadata.event_type = \"USER_RESOURCE_DELETION\" or metadata.event_type = \"USER_RESOURCE_UPDATE_CONTENT\" or metadata.event_type = \"USER_RESOURCE_UPDATE_PERMISSIONS\" or metadata.event_type = \"USER_STATS\" or metadata.event_type = \"USER_UNCATEGORIZED\" or metadata.event_type = \"RESOURCE_CREATION\" or metadata.event_type = \"RESOURCE_DELETION\" or metadata.event_type = \"RESOURCE_PERMISSIONS_CHANGE\" or metadata.event_type = \"RESOURCE_READ\" or metadata.event_type = \"RESOURCE_WRITTEN\" or metadata.event_type = \"GROUP_CREATION\" or metadata.event_type = \"GROUP_DELETION\" or metadata.event_type = \"GROUP_MODIFICATION\" or metadata.event_type = \"GROUP_UNCATEGORIZED\" or metadata.event_type = \"NETWORK_CONNECTION\" or metadata.event_type = \"NETWORK_DNS\")\n$Log_Source = metadata.log_type\n$Event_Type = metadata.event_type\n$Product_Event = metadata.product_event_type\nmatch:\n  $Log_Source, $Event_Type, $Product_Event\noutcome:\n  $Hits = count(metadata.id)\n  $Summary = array_distinct(strings.coalesce(security_result.summary, metadata.description))\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "9458d651d655732d8a15fde8a66e42339ba955797208eda508d4db270d8fc0a3",
+          "dialect": "YL2"
+        },
+        {
+          "name": "7a7fc184-dbbf-4021-89af-7c1693833be8",
+          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n$Log_Source = metadata.log_type\nmatch:\n  $Log_Source\noutcome:\n  $Hits = count(metadata.id)\n  $Event_Types = array_distinct(metadata.event_type)\n  $First_Seen = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  100\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "b636fb2c4235af6fae152a891f536649823824d40e4448fbe62da88f32e526db",
+          "dialect": "YL2"
+        },
+        {
+          "name": "dae2dca8-7524-448f-aca2-2389f0b38e58",
+          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\n$Log_Source = metadata.log_type\n$Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\nmatch:\n  $Slot, $Log_Source\noutcome:\n  $Cnt = count(metadata.id)\norder:\n  $Slot asc\nlimit:\n  10000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "45045f07a1e92efbe2d80e6fd4e0613cbc5afd224369f9c7779c43b3c0a958d7",
+          "dialect": "YL2"
+        },
+        {
+          "name": "5f739e2e-9d33-4176-ad2f-1611512cd2ac",
+          "query": "metadata.log_type != strings.concat(metadata.log_type, \"$ioc$\")\n(ip = \"$ioc$\" or hostname = \"$ioc$\" nocase or domain = \"$ioc$\" nocase or hash = \"$ioc$\" nocase or user = \"$ioc$\" nocase or email = \"$ioc$\" nocase or target.url = \"$ioc$\" nocase)\nmetadata.event_type = \"NETWORK_DNS\"\n$Log_Source = metadata.log_type\n$Client = strings.coalesce(principal.ip, principal.hostname)\n$Query = network.dns.questions.name\nmatch:\n  $Log_Source, $Client, $Query\noutcome:\n  $Hits = count(metadata.id)\n  $Answers = array_distinct(network.dns.answers.data)\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\norder:\n  $Hits desc\nlimit:\n  500\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "9a6420ae854b367d79843a68f5ea78b9f348c5f02370fb2aeed691779ef3a6b0",
           "dialect": "YL2"
         }
       ]
