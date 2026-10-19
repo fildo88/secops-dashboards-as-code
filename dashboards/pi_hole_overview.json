@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "fd2567d7-1373-4972-9dba-fb63c542059d",
+        "name": "1ef36035-13fe-4896-be1e-e42c3290e769",
         "displayName": "Pi-Hole Overview",
         "description": "Pi-hole DNS activity overview",
         "definition": {
@@ -26,7 +26,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "8ed914bd-f914-41a5-b803-6cc4d290be26",
+              "dashboardChart": "f0e11c92-6868-4f22-9a2c-24716fadf615",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -35,7 +35,7 @@
               }
             },
             {
-              "dashboardChart": "330602ab-74f9-4c89-aeef-962eb1b1b52e",
+              "dashboardChart": "5b814792-3872-44ac-9a2a-c431921e6414",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -46,16 +46,126 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "fd614ac452d9d8ad91413b9265f922fe6881341c7586bf579446b84025cabaf9",
+        "etag": "f7a4bafce3b1a19c6c7ad0d9f34985d247fe67e1d0c675a86267da7a2bd746ad",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "330602ab-74f9-4c89-aeef-962eb1b1b52e",
+          "name": "f0e11c92-6868-4f22-9a2c-24716fadf615",
+          "displayName": "Top 5 Domains per Hour",
+          "description": "Hourly query counts (Australia/Sydney) for the top 5 domains queried through Pi-hole",
+          "chartDatasource": {
+            "dashboardQuery": "66d972a1-4413-4f23-975d-584f5861d4e7",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "dit.whatsapp.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#0c67df"
+                },
+                "seriesUniqueValue": "dit.whatsapp.net"
+              },
+              {
+                "seriesName": "gateway.fe2.apple-dns.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#eb730a"
+                },
+                "seriesUniqueValue": "gateway.fe2.apple-dns.net"
+              },
+              {
+                "seriesName": "mmx-ds.cdn.whatsapp.net",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#10a3b7"
+                },
+                "seriesUniqueValue": "mmx-ds.cdn.whatsapp.net"
+              },
+              {
+                "seriesName": "self.events.data.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#d93025"
+                },
+                "seriesUniqueValue": "self.events.data.microsoft.com"
+              },
+              {
+                "seriesName": "mobile.events.data.microsoft.com",
+                "stack": "stack",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Count"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e51f8f"
+                },
+                "seriesUniqueValue": "mobile.events.data.microsoft.com"
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Query Count"
+              }
+            ],
+            "legends": [
+              {
+                "right": 12,
+                "legendOrient": "VERTICAL"
+              }
+            ],
+            "seriesColumn": [
+              "Domain"
+            ],
+            "groupingType": "Stacked"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "524d72f178d62772ca21928ff48f2d3d344a2cdca07048ea020e67eb16d72686",
+          "drillDownConfig": {}
+        },
+        {
+          "name": "5b814792-3872-44ac-9a2a-c431921e6414",
           "displayName": "Top 5 Domains in Each Hour",
           "description": "Top 5 domains queried through Pi-hole in each hour (Australia/Sydney). Ties for 5th place are included.",
           "chartDatasource": {
-            "dashboardQuery": "b1cb1a9a-e33e-40f5-ad77-e325321e6a89",
+            "dashboardQuery": "2c0810d5-8d38-483f-9ae0-96345c27c5aa",
             "dataSources": [
               "UDM"
             ]
@@ -1383,134 +1493,12 @@
             "groupingType": "Stacked"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "dd01ff61766da269c3ba464694bccd83725d945e8bd762700c7b41718abc478a"
-        },
-        {
-          "name": "8ed914bd-f914-41a5-b803-6cc4d290be26",
-          "displayName": "Top 5 Domains per Hour",
-          "description": "Hourly query counts (Australia/Sydney) for the top 5 domains queried through Pi-hole",
-          "chartDatasource": {
-            "dashboardQuery": "9060d159-6ecc-4be9-9e20-c4bcb5886caa",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "dit.whatsapp.net",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#0c67df"
-                },
-                "seriesUniqueValue": "dit.whatsapp.net"
-              },
-              {
-                "seriesName": "gateway.fe2.apple-dns.net",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#eb730a"
-                },
-                "seriesUniqueValue": "gateway.fe2.apple-dns.net"
-              },
-              {
-                "seriesName": "mmx-ds.cdn.whatsapp.net",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#10a3b7"
-                },
-                "seriesUniqueValue": "mmx-ds.cdn.whatsapp.net"
-              },
-              {
-                "seriesName": "self.events.data.microsoft.com",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#d93025"
-                },
-                "seriesUniqueValue": "self.events.data.microsoft.com"
-              },
-              {
-                "seriesName": "mobile.events.data.microsoft.com",
-                "stack": "stack",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Count"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#e51f8f"
-                },
-                "seriesUniqueValue": "mobile.events.data.microsoft.com"
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Hour"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Query Count"
-              }
-            ],
-            "legends": [
-              {
-                "right": 12,
-                "legendOrient": "VERTICAL"
-              }
-            ],
-            "seriesColumn": [
-              "Domain"
-            ],
-            "groupingType": "Stacked"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "0a8ec887e884bc3e754e13e674e7efc53b18a03ee068a04579f473c47abd8775",
-          "drillDownConfig": {}
+          "etag": "154d781fa3627b908dce78325cde9bb02c572858c39bb1437ebf5dc556ea6f4c"
         }
       ],
       "dashboardQueries": [
         {
-          "name": "b1cb1a9a-e33e-40f5-ad77-e325321e6a89",
-          "query": "stage hourly_a {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage hourly_b {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage ranked {\n  $Slot = $hourly_a.Slot\n  $Slot = $hourly_b.Slot\n  $Domain = $hourly_a.Domain\n  $Mine = $hourly_a.Cnt\n  $Other = $hourly_b.Cnt\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Queries = max($Mine)\n    $Higher = sum(if($Other > $Mine, 1, 0))\n}\n\n$Hour = $ranked.Slot\n$Domain = $ranked.Domain\n$ranked.Higher < 5\n\nmatch:\n  $Hour, $Domain\n\noutcome:\n  $Count = max($ranked.Queries)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "6e3d7b66b253ad20038731c660d95d36ee6956215d9689904e85da0d8f711194",
-          "dialect": "YL2"
-        },
-        {
-          "name": "9060d159-6ecc-4be9-9e20-c4bcb5886caa",
+          "name": "66d972a1-4413-4f23-975d-584f5861d4e7",
           "query": "stage top_domains {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n\n  match:\n    $Domain\n\n  outcome:\n    $Total = count(metadata.id)\n\n  order:\n    $Total desc\n\n  limit:\n    5\n}\n\nmetadata.log_type = \"PIHOLE\"\nmetadata.event_type = \"NETWORK_DNS\"\n$Domain = network.dns.questions.name\n$Domain = $top_domains.Domain\n$Hour = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\nmatch:\n  $Hour, $Domain\n\noutcome:\n  $Count = count(metadata.id)\n\norder:\n  $Hour asc\n",
           "input": {
             "relativeTime": {
@@ -1518,7 +1506,19 @@
               "startTimeVal": "2"
             }
           },
-          "etag": "77bf75410cb5eb2bfa8292778b687b39139924c822a0c0bc18d6bedd65f7815e",
+          "etag": "5ec55c2801586f9978b753a28d5673e1c0678844a3b11c73fb3f3b828e3d7e7a",
+          "dialect": "YL2"
+        },
+        {
+          "name": "2c0810d5-8d38-483f-9ae0-96345c27c5aa",
+          "query": "stage hourly_a {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage hourly_b {\n  metadata.log_type = \"PIHOLE\"\n  metadata.event_type = \"NETWORK_DNS\"\n  $Domain = network.dns.questions.name\n  $Domain != \"\"\n  $Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Cnt = count(metadata.id)\n}\n\nstage ranked {\n  $Slot = $hourly_a.Slot\n  $Slot = $hourly_b.Slot\n  $Domain = $hourly_a.Domain\n  $Mine = $hourly_a.Cnt\n  $Other = $hourly_b.Cnt\n\n  match:\n    $Slot, $Domain\n\n  outcome:\n    $Queries = max($Mine)\n    $Higher = sum(if($Other > $Mine, 1, 0))\n}\n\n$Hour = $ranked.Slot\n$Domain = $ranked.Domain\n$ranked.Higher < 5\n\nmatch:\n  $Hour, $Domain\n\noutcome:\n  $Count = max($ranked.Queries)\n\norder:\n  $Hour asc\n\nlimit:\n  10000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "b9e08d1fe76cec2b470e65bdc1d68690feda81c8645e527d625b0469116e1e66",
           "dialect": "YL2"
         }
       ]

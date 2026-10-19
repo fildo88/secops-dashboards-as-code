@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "792731f4-58dd-4560-a495-09dddc35d4ff",
+        "name": "97c63e45-cf42-452c-ad97-1ce962b0ce79",
         "displayName": "IOC Search - Pi-hole & pfSense",
         "description": "Enter an IOC (IP, domain, hostname, hash, user, email or URL) in the IOC filter. Charts show whether it appears in Pi-hole DNS and pfSense firewall logs, plus every other log source.",
         "definition": {
@@ -21,10 +21,10 @@
               ],
               "displayName": "Global Time Filter",
               "chartIds": [
-                "49b55a9f-94fa-4c16-b95f-3966885de4f0",
-                "bd807190-f03a-4463-9890-493faca8945e",
-                "d8a3f8e8-2f56-42b6-92de-f71a74656db0",
-                "b09f40dc-2e85-4d3f-8c95-108f1e71d6e7"
+                "f22f8223-45af-4256-9243-e999913fc2b9",
+                "2157b6af-e185-4f96-9053-14cbb9c07e89",
+                "7c5d8d03-e7f9-4fa2-9f96-6df3dec8b78b",
+                "4b588bb9-0dcb-41b9-b399-c152c480369c"
               ],
               "isStandardTimeRangeFilter": true,
               "isStandardTimeRangeFilterEnabled": true
@@ -42,10 +42,10 @@
               ],
               "displayName": "IOC",
               "chartIds": [
-                "49b55a9f-94fa-4c16-b95f-3966885de4f0",
-                "bd807190-f03a-4463-9890-493faca8945e",
-                "d8a3f8e8-2f56-42b6-92de-f71a74656db0",
-                "b09f40dc-2e85-4d3f-8c95-108f1e71d6e7"
+                "f22f8223-45af-4256-9243-e999913fc2b9",
+                "2157b6af-e185-4f96-9053-14cbb9c07e89",
+                "7c5d8d03-e7f9-4fa2-9f96-6df3dec8b78b",
+                "4b588bb9-0dcb-41b9-b399-c152c480369c"
               ],
               "advancedFilterConfig": {
                 "token": "ioc",
@@ -66,7 +66,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "49b55a9f-94fa-4c16-b95f-3966885de4f0",
+              "dashboardChart": "f22f8223-45af-4256-9243-e999913fc2b9",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 48,
@@ -79,7 +79,7 @@
               ]
             },
             {
-              "dashboardChart": "bd807190-f03a-4463-9890-493faca8945e",
+              "dashboardChart": "2157b6af-e185-4f96-9053-14cbb9c07e89",
               "chartLayout": {
                 "startX": 48,
                 "spanX": 48,
@@ -92,7 +92,7 @@
               ]
             },
             {
-              "dashboardChart": "d8a3f8e8-2f56-42b6-92de-f71a74656db0",
+              "dashboardChart": "7c5d8d03-e7f9-4fa2-9f96-6df3dec8b78b",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -105,7 +105,7 @@
               ]
             },
             {
-              "dashboardChart": "b09f40dc-2e85-4d3f-8c95-108f1e71d6e7",
+              "dashboardChart": "4b588bb9-0dcb-41b9-b399-c152c480369c",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -120,16 +120,16 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "d1f295764744c066343d4da681364fdb3f3247ca5fb67d2f0634fd02413dbb1f",
+        "etag": "b2ec344cd5440cf95d556d90c2209ef7974035770a29b21e5837d35757e6571c",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "d8a3f8e8-2f56-42b6-92de-f71a74656db0",
+          "name": "7c5d8d03-e7f9-4fa2-9f96-6df3dec8b78b",
           "displayName": "Pi-hole: DNS activity matching IOC",
           "description": "Pi-hole events where the IOC is the queried domain, the client IP, or a resolved answer IP.",
           "chartDatasource": {
-            "dashboardQuery": "c904c98c-05a8-4263-8433-aa0c621aa2bd",
+            "dashboardQuery": "2a8e494b-85cf-4e01-8b09-d097048e8bb2",
             "dataSources": [
               "UDM"
             ]
@@ -183,17 +183,17 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "0f83b25e494e0a774175167f34f63623e9adfbdc615ac587574fe573c76c5c89",
+          "etag": "587fb8dbbeeea5c33311f685f969c7d2cc89d219cb8c9382cdb2e5a557062f5e",
           "tokens": [
             "ioc"
           ]
         },
         {
-          "name": "49b55a9f-94fa-4c16-b95f-3966885de4f0",
+          "name": "f22f8223-45af-4256-9243-e999913fc2b9",
           "displayName": "IOC matches by log source",
           "description": "Every log source containing the IOC, with first and last sighting (Australia/Sydney).",
           "chartDatasource": {
-            "dashboardQuery": "1d8dc85e-2d98-437e-a5fb-749de7213568",
+            "dashboardQuery": "fddf0f26-2025-4d9d-ac17-ccc88a88ee74",
             "dataSources": [
               "UDM"
             ]
@@ -235,17 +235,17 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "cb91615fa5c12291d246ee52cdf4f1ff30584e618b50bbe35e0c47451b76eb8b",
+          "etag": "7637c4b9b44b8af68add2ab4adcfaedab908399dd4cc009690222dc0b16b3ee6",
           "tokens": [
             "ioc"
           ]
         },
         {
-          "name": "b09f40dc-2e85-4d3f-8c95-108f1e71d6e7",
+          "name": "4b588bb9-0dcb-41b9-b399-c152c480369c",
           "displayName": "pfSense: firewall connections matching IOC",
           "description": "pfSense connections where the IOC is the source or destination.",
           "chartDatasource": {
-            "dashboardQuery": "6508f3eb-c41e-49f3-b04a-a4c4d15ffbff",
+            "dashboardQuery": "7eb53713-c156-4c83-8203-d6e994eb705a",
             "dataSources": [
               "UDM"
             ]
@@ -303,17 +303,17 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "73f1e28a3a1af69c8f509ef6a192386eefe7fc713e6ea9960a730ebedd7e1b70",
+          "etag": "19057f80d4e911fcdedc4c28452dc91510c9bad4372de8a8962c75f2db25a7e0",
           "tokens": [
             "ioc"
           ]
         },
         {
-          "name": "bd807190-f03a-4463-9890-493faca8945e",
+          "name": "2157b6af-e185-4f96-9053-14cbb9c07e89",
           "displayName": "Pi-hole & pfSense IOC hits over time",
           "description": "Hourly matches for the IOC in Pi-hole DNS and pfSense firewall logs.",
           "chartDatasource": {
-            "dashboardQuery": "2a1e76e4-6117-4147-b6c2-e8f161e2f6a3",
+            "dashboardQuery": "1cec589b-ab59-4ff4-954f-a987562567c7",
             "dataSources": [
               "UDM"
             ]
@@ -371,7 +371,7 @@
             "groupingType": "Grouped"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "ea43eaf1fe8190b76356d6f01dc88281823aa3859e66a30feb8b31e34af3d2b2",
+          "etag": "312e0e187686d017f1e9a376b4c6f6ff95886274532ab553539ab6ece4597c76",
           "tokens": [
             "ioc"
           ]
@@ -379,19 +379,7 @@
       ],
       "dashboardQueries": [
         {
-          "name": "2a1e76e4-6117-4147-b6c2-e8f161e2f6a3",
-          "query": "(metadata.log_type = \"PIHOLE\" or metadata.log_type = \"PFSENSE\")\n(ip = $ioc$ or domain = $ioc$ or hostname = $ioc$ or hash = $ioc$ or user = $ioc$ or email = $ioc$ or target.url = $ioc$)\n$Log_Source = metadata.log_type\n$Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\nmatch:\n  $Slot, $Log_Source\n\noutcome:\n  $Hits = count(metadata.id)\n\norder:\n  $Slot asc\n\nlimit:\n  10000\n",
-          "input": {
-            "relativeTime": {
-              "timeUnit": "DAY",
-              "startTimeVal": "7"
-            }
-          },
-          "etag": "8033c634a0a2148e292671df690dfac189d6f3a0d00b44e32da870be5f39325b",
-          "dialect": "YL2"
-        },
-        {
-          "name": "c904c98c-05a8-4263-8433-aa0c621aa2bd",
+          "name": "2a8e494b-85cf-4e01-8b09-d097048e8bb2",
           "query": "metadata.log_type = \"PIHOLE\"\n(ip = $ioc$ or domain = $ioc$ or hostname = $ioc$ or hash = $ioc$ or user = $ioc$ or email = $ioc$ or target.url = $ioc$)\n$Domain = network.dns.questions.name\n$Client_IP = principal.ip\n$Action = security_result.action\n\nmatch:\n  $Domain, $Client_IP, $Action\n\noutcome:\n  $Hits = count(metadata.id)\n  $Answers = array_distinct(network.dns.answers.data)\n  $First_Seen = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n\norder:\n  $Hits desc\n\nlimit:\n  1000\n",
           "input": {
             "relativeTime": {
@@ -399,11 +387,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "5d43da7a94db5f73197fd1d1801ae84d5229761d0fb7177fddbca4a338792e0e",
+          "etag": "f936bdd19a470cb7a96fd66f437fb27997df5445cbf6af9daeef9a71d9684764",
           "dialect": "YL2"
         },
         {
-          "name": "1d8dc85e-2d98-437e-a5fb-749de7213568",
+          "name": "fddf0f26-2025-4d9d-ac17-ccc88a88ee74",
           "query": "(ip = $ioc$ or domain = $ioc$ or hostname = $ioc$ or hash = $ioc$ or user = $ioc$ or email = $ioc$ or target.url = $ioc$)\n$Log_Source = metadata.log_type\n\nmatch:\n  $Log_Source\n\noutcome:\n  $Hits = count(metadata.id)\n  $First_Seen = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n\norder:\n  $Hits desc\n\nlimit:\n  50\n",
           "input": {
             "relativeTime": {
@@ -411,11 +399,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "593034e41beea804b50ae1953e0d94555bb26bdbfb62a1724b287232ce95e566",
+          "etag": "1de093e5db7a006f86f6391db33ee15513e115d13a4fe3526d58e341fbe71d10",
           "dialect": "YL2"
         },
         {
-          "name": "6508f3eb-c41e-49f3-b04a-a4c4d15ffbff",
+          "name": "7eb53713-c156-4c83-8203-d6e994eb705a",
           "query": "metadata.log_type = \"PFSENSE\"\n(ip = $ioc$ or domain = $ioc$ or hostname = $ioc$ or hash = $ioc$ or user = $ioc$ or email = $ioc$ or target.url = $ioc$)\n$Source_IP = principal.ip\n$Destination_IP = target.ip\n$Destination_Port = target.port\n$Protocol = network.ip_protocol\n$Action = security_result.action\n\nmatch:\n  $Source_IP, $Destination_IP, $Destination_Port, $Protocol, $Action\n\noutcome:\n  $Hits = count(metadata.id)\n  $First_Seen = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n  $Last_Seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M\", \"Australia/Sydney\")\n\norder:\n  $Hits desc\n\nlimit:\n  1000\n",
           "input": {
             "relativeTime": {
@@ -423,7 +411,19 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "c794c9bb82c3478504b92b8c45de2b5b9b098c9cc422c0dc15f223566e1bd305",
+          "etag": "bc2dc61c7acd050dae95433224b40f71d85605db62db049d9617003114411479",
+          "dialect": "YL2"
+        },
+        {
+          "name": "1cec589b-ab59-4ff4-954f-a987562567c7",
+          "query": "(metadata.log_type = \"PIHOLE\" or metadata.log_type = \"PFSENSE\")\n(ip = $ioc$ or domain = $ioc$ or hostname = $ioc$ or hash = $ioc$ or user = $ioc$ or email = $ioc$ or target.url = $ioc$)\n$Log_Source = metadata.log_type\n$Slot = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00\", \"Australia/Sydney\")\n\nmatch:\n  $Slot, $Log_Source\n\noutcome:\n  $Hits = count(metadata.id)\n\norder:\n  $Slot asc\n\nlimit:\n  10000\n",
+          "input": {
+            "relativeTime": {
+              "timeUnit": "DAY",
+              "startTimeVal": "7"
+            }
+          },
+          "etag": "82676e610f205f0edbbc8046478cda76d4f316745f7a511f43f7e0ebbd9d7c66",
           "dialect": "YL2"
         }
       ]

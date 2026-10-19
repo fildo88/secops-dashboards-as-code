@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "c61bff98-52b0-4aeb-933a-c7df09c980f8",
+        "name": "90b1005c-a6af-4023-85d8-e6fa21ab585f",
         "displayName": "Detections vs Endpoints - Overlaid on One Chart (Splunk overlay)",
         "description": "Daily rule detections and distinct endpoints (principal.hostname) overlaid on one chart, days bucketed in Australia/Perth. Overlaying several measures works when all series use the same chart type (area, line or bar); mixing bar + line or dual Y axes in one widget is a feature request. A log Y axis keeps Endpoints visible next to Detections. Endpoints excludes detections with no hostname.",
         "definition": {
@@ -26,7 +26,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "1b1df056-a9e6-409c-804c-a69c4db2e59a",
+              "dashboardChart": "14f144b8-f5f3-44f2-a408-180703b6e807",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -35,7 +35,7 @@
               }
             },
             {
-              "dashboardChart": "d518798f-6a27-47dd-99f6-38dc31432537",
+              "dashboardChart": "f7b1f14c-8108-4e68-a920-4f1f7502634f",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 48,
@@ -44,7 +44,7 @@
               }
             },
             {
-              "dashboardChart": "65ff7bf0-e21a-40b7-92db-c0562d713b7f",
+              "dashboardChart": "844debe4-40d4-48d9-ba1c-3e17ecf1d20d",
               "chartLayout": {
                 "startX": 48,
                 "spanX": 48,
@@ -53,7 +53,7 @@
               }
             },
             {
-              "dashboardChart": "b1239581-95ab-4098-867b-99670cd9ecce",
+              "dashboardChart": "dd490875-0046-4ca7-a779-ad2450b147f9",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 48,
@@ -62,7 +62,7 @@
               }
             },
             {
-              "dashboardChart": "2ebcd659-0f08-4fa3-a570-98a5f7645a1e",
+              "dashboardChart": "65379cbf-1784-47b5-8f22-86aad98db16a",
               "chartLayout": {
                 "startX": 48,
                 "spanX": 48,
@@ -73,136 +73,16 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "7d1eed54e27cf3dff430208a79a933a5b86c7780152dfd7b6092f8bfaf223443",
+        "etag": "66e34d7eb3768b5d8ddef5c42f98e83704d1ae9287dcd8f745b4a44ffd9fd5e3",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "65ff7bf0-e21a-40b7-92db-c0562d713b7f",
-          "displayName": "Same overlay - Bar graph, log scale",
-          "description": "Same query rendered as side-by-side bars (category X axis). Bars for one measure with a line for the other in the same widget is not supported today.",
-          "chartDatasource": {
-            "dashboardQuery": "4b69def4-3807-43bc-909b-c7a564a63e32",
-            "dataSources": [
-              "RULE_DETECTIONS"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "Detections",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Date",
-                  "y": "Detections"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#ff6d00"
-                }
-              },
-              {
-                "seriesName": "Endpoints",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Date",
-                  "y": "Endpoints"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#e91e63"
-                }
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Date (AWST)"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "LOG",
-                "displayName": "Count (log scale)"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "a929b15044e33fd3d4d7bccf8e5a03d9b03abc2ad67c1d4bf7566a1996bd99c7"
-        },
-        {
-          "name": "d518798f-6a27-47dd-99f6-38dc31432537",
-          "displayName": "Same overlay - Line graph, log scale",
-          "description": "Same query and settings as above, rendered as a line graph.",
-          "chartDatasource": {
-            "dashboardQuery": "c7ede1b5-a9d4-466f-a611-2d53dea3be25",
-            "dataSources": [
-              "RULE_DETECTIONS"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "Detections",
-                "showSymbol": true,
-                "seriesType": "LINE",
-                "encode": {
-                  "x": "Date",
-                  "y": "Detections"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#ff6d00"
-                }
-              },
-              {
-                "seriesName": "Endpoints",
-                "showSymbol": true,
-                "seriesType": "LINE",
-                "encode": {
-                  "x": "Date",
-                  "y": "Endpoints"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#e91e63"
-                }
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "TIME",
-                "displayName": "Date (AWST)"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "LOG",
-                "displayName": "Count (log scale)"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "227042b1ea9db9f69e8fd59a32cd222f7374904ccb359863a83a8e3a51225570"
-        },
-        {
-          "name": "2ebcd659-0f08-4fa3-a570-98a5f7645a1e",
+          "name": "65379cbf-1784-47b5-8f22-86aad98db16a",
           "displayName": "Daily Detections and Endpoints (table)",
           "description": "Exact daily values behind the charts, newest first.",
           "chartDatasource": {
-            "dashboardQuery": "7d1a5569-c12f-49cd-8d83-c7533a149664",
+            "dashboardQuery": "88377242-999e-455e-a941-b4cee88746a4",
             "dataSources": [
               "RULE_DETECTIONS"
             ]
@@ -240,14 +120,14 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "b35c40096d351fe7c0b8064b8b363de64d1671dcab770a621a8f761aac52056f"
+          "etag": "e7c15e8004ade8cd3792ba936763c9d2a67559d8df6ca67e1808a9b21818b10a"
         },
         {
-          "name": "1b1df056-a9e6-409c-804c-a69c4db2e59a",
+          "name": "14f144b8-f5f3-44f2-a408-180703b6e807",
           "displayName": "Detections + Endpoints overlaid - Area graph, log scale",
           "description": "Victor's ask: Endpoints overlaid on Detections in one chart. Two series of the same type (Area), X axis = Date (Time), Y axis = logarithmic so ~10 endpoints stay visible beside ~20,000 detections. Grouping = Off (overlaid, not stacked).",
           "chartDatasource": {
-            "dashboardQuery": "370488c0-b063-40c1-80f2-f5f1cff7de8a",
+            "dashboardQuery": "ca86895d-4639-4d9a-8c21-9c8cfa9e2d7a",
             "dataSources": [
               "RULE_DETECTIONS"
             ]
@@ -305,14 +185,14 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "7820390aa67fa087a04dfd961864d4fc0003162f7389d4ab889c7533fbe0181e"
+          "etag": "542b0e4e9c653d96fceb4feb6e5233a6e6346c46aa924dd495588213cc0e5cdf"
         },
         {
-          "name": "b1239581-95ab-4098-867b-99670cd9ecce",
+          "name": "dd490875-0046-4ca7-a779-ad2450b147f9",
           "displayName": "Why log scale: same overlay on a linear axis",
           "description": "Identical area graph with a linear Y axis - Endpoints flattens against the floor because it is three orders of magnitude smaller than Detections.",
           "chartDatasource": {
-            "dashboardQuery": "f32b9db4-b691-48e9-9ee9-3a72dc5fc0cc",
+            "dashboardQuery": "ee633d40-752a-4f6a-ae93-4edeb72442d1",
             "dataSources": [
               "RULE_DETECTIONS"
             ]
@@ -370,12 +250,132 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "c63f3ea0f4a5acbe436017725c290e1f997ac3de1c4b464c8b1184db6cc29e33"
+          "etag": "e54070c2e876106140dace8997fead96a32b1fea1a4f7e91bb1d6fd0dacc5ae1"
+        },
+        {
+          "name": "844debe4-40d4-48d9-ba1c-3e17ecf1d20d",
+          "displayName": "Same overlay - Bar graph, log scale",
+          "description": "Same query rendered as side-by-side bars (category X axis). Bars for one measure with a line for the other in the same widget is not supported today.",
+          "chartDatasource": {
+            "dashboardQuery": "78595df6-fb1b-4514-9d87-71d0245c489d",
+            "dataSources": [
+              "RULE_DETECTIONS"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "Detections",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Date",
+                  "y": "Detections"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#ff6d00"
+                }
+              },
+              {
+                "seriesName": "Endpoints",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Date",
+                  "y": "Endpoints"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e91e63"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Date (AWST)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "LOG",
+                "displayName": "Count (log scale)"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "2b76897f1aa1feeec5bebd94989481f183e4e4b7ccf0432018487d5a5853b9b9"
+        },
+        {
+          "name": "f7b1f14c-8108-4e68-a920-4f1f7502634f",
+          "displayName": "Same overlay - Line graph, log scale",
+          "description": "Same query and settings as above, rendered as a line graph.",
+          "chartDatasource": {
+            "dashboardQuery": "5158c2a8-8894-4973-b005-299e7533f9f1",
+            "dataSources": [
+              "RULE_DETECTIONS"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "Detections",
+                "showSymbol": true,
+                "seriesType": "LINE",
+                "encode": {
+                  "x": "Date",
+                  "y": "Detections"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#ff6d00"
+                }
+              },
+              {
+                "seriesName": "Endpoints",
+                "showSymbol": true,
+                "seriesType": "LINE",
+                "encode": {
+                  "x": "Date",
+                  "y": "Endpoints"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e91e63"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "TIME",
+                "displayName": "Date (AWST)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "LOG",
+                "displayName": "Count (log scale)"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "aa7384e09ac9f1f52cae570203e79f7845796dd9b5c0dbfb649bb91bec80e3df"
         }
       ],
       "dashboardQueries": [
         {
-          "name": "7d1a5569-c12f-49cd-8d83-c7533a149664",
+          "name": "88377242-999e-455e-a941-b4cee88746a4",
           "query": "detection.detection.rule_name != \"\"\n$Date = timestamp.get_date(detection.detection_time.seconds, \"Australia/Perth\")\n$Endpoint = detection.collection_elements.references.event.principal.hostname\n\nmatch:\n    $Date\n\noutcome:\n    $Detections = count_distinct(detection.id)\n    // Detections without a hostname would count as one extra \"endpoint\"; subtract that bucket.\n    $Endpoints = count_distinct($Endpoint) - max(if($Endpoint = \"\", 1, 0))\n\norder:\n    $Date desc",
           "input": {
             "relativeTime": {
@@ -383,11 +383,11 @@
               "startTimeVal": "30"
             }
           },
-          "etag": "8257f88368d5b45e4bb6916ee33cfd95cc14d7d9c7eb877f32ce573a03bbf8f2",
+          "etag": "da6b7a500461d2198c1f4d348057f8256094d4fbe169e0fb6cf750449bbeb789",
           "dialect": "YL2"
         },
         {
-          "name": "370488c0-b063-40c1-80f2-f5f1cff7de8a",
+          "name": "ca86895d-4639-4d9a-8c21-9c8cfa9e2d7a",
           "query": "detection.detection.rule_name != \"\"\n$Date = timestamp.get_date(detection.detection_time.seconds, \"Australia/Perth\")\n$Endpoint = detection.collection_elements.references.event.principal.hostname\n\nmatch:\n    $Date\n\noutcome:\n    $Detections = count_distinct(detection.id)\n    // Detections without a hostname would count as one extra \"endpoint\"; subtract that bucket.\n    $Endpoints = count_distinct($Endpoint) - max(if($Endpoint = \"\", 1, 0))\n\norder:\n    $Date asc",
           "input": {
             "relativeTime": {
@@ -395,11 +395,11 @@
               "startTimeVal": "30"
             }
           },
-          "etag": "0eaf09ab7d35552febc12aca05a80003ef8572a1646c8f49df6214cf7bf0ef01",
+          "etag": "6863079159a869cd2ab91b769ab2ed1da3871a0fe75e15e22857aed6276c826c",
           "dialect": "YL2"
         },
         {
-          "name": "f32b9db4-b691-48e9-9ee9-3a72dc5fc0cc",
+          "name": "ee633d40-752a-4f6a-ae93-4edeb72442d1",
           "query": "detection.detection.rule_name != \"\"\n$Date = timestamp.get_date(detection.detection_time.seconds, \"Australia/Perth\")\n$Endpoint = detection.collection_elements.references.event.principal.hostname\n\nmatch:\n    $Date\n\noutcome:\n    $Detections = count_distinct(detection.id)\n    // Detections without a hostname would count as one extra \"endpoint\"; subtract that bucket.\n    $Endpoints = count_distinct($Endpoint) - max(if($Endpoint = \"\", 1, 0))\n\norder:\n    $Date asc",
           "input": {
             "relativeTime": {
@@ -407,11 +407,11 @@
               "startTimeVal": "30"
             }
           },
-          "etag": "b0fa18fc585f5a03aa21935e0393c314286cebaca5fca15db2cda39cff8eff4b",
+          "etag": "b076928fbc7473c33a6e177374542c86ff5d6ce85aa26d2d89f6646ee1c19a78",
           "dialect": "YL2"
         },
         {
-          "name": "4b69def4-3807-43bc-909b-c7a564a63e32",
+          "name": "78595df6-fb1b-4514-9d87-71d0245c489d",
           "query": "detection.detection.rule_name != \"\"\n$Date = timestamp.get_date(detection.detection_time.seconds, \"Australia/Perth\")\n$Endpoint = detection.collection_elements.references.event.principal.hostname\n\nmatch:\n    $Date\n\noutcome:\n    $Detections = count_distinct(detection.id)\n    // Detections without a hostname would count as one extra \"endpoint\"; subtract that bucket.\n    $Endpoints = count_distinct($Endpoint) - max(if($Endpoint = \"\", 1, 0))\n\norder:\n    $Date asc",
           "input": {
             "relativeTime": {
@@ -419,11 +419,11 @@
               "startTimeVal": "30"
             }
           },
-          "etag": "6f5f348cbdc437b1c8c372bcd7427ad57bac04b79032c14fae63c4a53b5119b3",
+          "etag": "b217c3f8709042c75de4acd0c2ef8d9c26abfdb17250b152dc86e70c9e289711",
           "dialect": "YL2"
         },
         {
-          "name": "c7ede1b5-a9d4-466f-a611-2d53dea3be25",
+          "name": "5158c2a8-8894-4973-b005-299e7533f9f1",
           "query": "detection.detection.rule_name != \"\"\n$Date = timestamp.get_date(detection.detection_time.seconds, \"Australia/Perth\")\n$Endpoint = detection.collection_elements.references.event.principal.hostname\n\nmatch:\n    $Date\n\noutcome:\n    $Detections = count_distinct(detection.id)\n    // Detections without a hostname would count as one extra \"endpoint\"; subtract that bucket.\n    $Endpoints = count_distinct($Endpoint) - max(if($Endpoint = \"\", 1, 0))\n\norder:\n    $Date asc",
           "input": {
             "relativeTime": {
@@ -431,7 +431,7 @@
               "startTimeVal": "30"
             }
           },
-          "etag": "2e2571e4756b932dd4df55dacf4bc5571b8ff7493207e565462f7ef1556cf51b",
+          "etag": "a42546a4f9c1aec5cc847584dbc73e9dfb236bd9815c5187c92dfca0fdb5c943",
           "dialect": "YL2"
         }
       ]

@@ -2,7 +2,7 @@
   "dashboards": [
     {
       "dashboard": {
-        "name": "424aea01-305e-4890-ad78-2892421ebefb",
+        "name": "33a0e147-ecff-414b-a651-e65218be28d0",
         "displayName": "X-Axis Time Bucketing & Local Timezone (AWST / AEDT)",
         "description": "Answers: can the X axis bucket by hour (12:00 PM) and date/time (12:00 AM Mon Oct 5) in the local time zone? Pattern A = fixed time zone in the query (%F %H:00, sortable). Pattern B = exact custom labels with a hidden chronological sort key. Pattern C = 'HOUR' granularity with no time zone, auto-localised to each viewer's SecOps time-zone setting.",
         "definition": {
@@ -26,7 +26,7 @@
           ],
           "charts": [
             {
-              "dashboardChart": "0229f8be-288e-4111-97f9-2fb8409dff6c",
+              "dashboardChart": "d54d7f00-450d-4870-be5f-30f5e35f1fc5",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 48,
@@ -35,7 +35,7 @@
               }
             },
             {
-              "dashboardChart": "46961d5d-69f8-4367-9810-3133581402c8",
+              "dashboardChart": "51a6fa46-1808-4881-aa33-1505a4bbd67c",
               "chartLayout": {
                 "startX": 48,
                 "spanX": 48,
@@ -44,7 +44,7 @@
               }
             },
             {
-              "dashboardChart": "ff260d63-fb06-4293-b35f-b848e811c557",
+              "dashboardChart": "158a2e90-c810-4127-901e-2c53f28c4384",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -53,7 +53,7 @@
               }
             },
             {
-              "dashboardChart": "273f6810-0b33-437f-ae7d-2843ac250b0a",
+              "dashboardChart": "db1d2000-e012-4a1c-ae8e-952ef561e9b5",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 48,
@@ -62,7 +62,7 @@
               }
             },
             {
-              "dashboardChart": "6ee226cb-96eb-459b-917c-a8a937b5eb86",
+              "dashboardChart": "2797452e-f418-4dff-86dd-05538aeecebc",
               "chartLayout": {
                 "startX": 48,
                 "spanX": 48,
@@ -71,7 +71,7 @@
               }
             },
             {
-              "dashboardChart": "a412025c-794a-4c55-a3f0-28df6039bde5",
+              "dashboardChart": "eb5b9d0f-638c-485e-a98c-0395a9b7000e",
               "chartLayout": {
                 "startX": 0,
                 "spanX": 96,
@@ -82,204 +82,16 @@
           ]
         },
         "type": "CUSTOM",
-        "etag": "43b8b265d77ccae88018bcc4c5f7d27251cd932d8696718bb2f42ad875685648",
+        "etag": "406a951353593e5fa486f0f38ca0e1d45da09ece1ad6269189de5ad3f8e05562",
         "access": "DASHBOARD_PUBLIC"
       },
       "dashboardCharts": [
         {
-          "name": "ff260d63-fb06-4293-b35f-b848e811c557",
-          "displayName": "Exact custom labels \"12:00 PM Mon Oct 5\" - Australia/Perth, last 48h",
-          "description": "Pattern B. Label = timestamp.get_timestamp(seconds, \"%I:00 %p %a %b %e\", \"Australia/Perth\"). Custom strings are not sortable by the UI, so a hidden chronological key ($Sort_Key, %F %H:00) is grouped and used in order:.",
-          "chartDatasource": {
-            "dashboardQuery": "da6e65bc-4841-41d1-b44e-da48df4595c7",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "Logins (AWST)",
-                "seriesType": "LINE",
-                "encode": {
-                  "x": "Time_AWST",
-                  "y": "Logins"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#e51f8f"
-                }
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Time (AWST)"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Logins"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "d8cdcd9aed573a873e5614d274099044133827f65f208cdefa8c7ef4ccf35838"
-        },
-        {
-          "name": "273f6810-0b33-437f-ae7d-2843ac250b0a",
-          "displayName": "Hourly logins - auto-localised to each viewer's SecOps time zone",
-          "description": "Pattern C. timestamp.get_timestamp(seconds, \"HOUR\") with NO time zone returns UTC buckets tagged HOUR granularity; the UI converts them to the viewer's SecOps time-zone setting. Don't add a time zone to HOUR/MINUTE/SECOND buckets: the UI assumes UTC input and would shift the values twice.",
-          "chartDatasource": {
-            "dashboardQuery": "a5baebd1-1d72-43b7-9fce-11078800547a",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "Logins (viewer TZ)",
-                "seriesType": "LINE",
-                "encode": {
-                  "x": "Hour",
-                  "y": "Logins"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#188038"
-                }
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Hour (viewer time zone)"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Logins"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "ccb9e9f8b5ba514a3ee1bc5be775cd430ba8c46554d7ff01d3c57820fdfc2741"
-        },
-        {
-          "name": "0229f8be-288e-4111-97f9-2fb8409dff6c",
-          "displayName": "Hourly logins - fixed Australia/Perth (AWST, UTC+8)",
-          "description": "Pattern A. timestamp.get_timestamp(seconds, \"%F %H:00\", \"Australia/Perth\"). Bucketed in Perth time by the backend, sorted chronologically and shown verbatim, so every viewer sees Perth wall-clock time.",
-          "chartDatasource": {
-            "dashboardQuery": "290327f6-754a-4951-a87f-3a09f1397378",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "Logins (AWST)",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour_AWST",
-                  "y": "Logins"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#1a73e8"
-                }
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Hour (AWST)"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Logins"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "6e3365be2e1418ca78f9db7b684cd698941f191b295fe8e32a1be8371b322bb5"
-        },
-        {
-          "name": "6ee226cb-96eb-459b-917c-a8a937b5eb86",
-          "displayName": "Login profile by hour of day - Australia/Perth (0-23)",
-          "description": "timestamp.get_hour(seconds, \"Australia/Perth\") folds all days into hours 0-23 AWST - useful for shift and after-hours baselining.",
-          "chartDatasource": {
-            "dashboardQuery": "6d89d6f8-6577-4509-9cf4-7069c1b225db",
-            "dataSources": [
-              "UDM"
-            ]
-          },
-          "visualization": {
-            "series": [
-              {
-                "seriesName": "Logins by hour of day",
-                "seriesType": "BAR",
-                "encode": {
-                  "x": "Hour_Of_Day_AWST",
-                  "y": "Logins"
-                },
-                "dataLabel": {},
-                "itemStyle": {
-                  "color": "#f9ab00"
-                }
-              }
-            ],
-            "xAxes": [
-              {
-                "axisType": "CATEGORY",
-                "displayName": "Hour of day (AWST)"
-              }
-            ],
-            "yAxes": [
-              {
-                "axisType": "VALUE",
-                "displayName": "Logins"
-              }
-            ],
-            "legends": [
-              {
-                "legendOrient": "HORIZONTAL"
-              }
-            ],
-            "groupingType": "Off"
-          },
-          "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "1834bde1c843f77d616f1c7c0a56c9c83139d7cfd5e8de743abb145eaa30ea9d"
-        },
-        {
-          "name": "a412025c-794a-4c55-a3f0-28df6039bde5",
+          "name": "eb5b9d0f-638c-485e-a98c-0395a9b7000e",
           "displayName": "UTC / Perth / Melbourne bucket mapping (last 24h)",
           "description": "The same events bucketed three ways - shows the +8h (AWST) and +11h (AEDT) offsets side by side.",
           "chartDatasource": {
-            "dashboardQuery": "a40b5bca-2066-4e0a-9e91-23f3565ae943",
+            "dashboardQuery": "2ea18135-f452-4a57-a743-2f470fa27f73",
             "dataSources": [
               "UDM"
             ]
@@ -321,14 +133,14 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "e4695222cc59cf020e7a65c282f672fa1c025456c36417aa880189544b8e1e3e"
+          "etag": "3899808db766e87cf0678e7032882fc1842bee618aac090df51cb790d7dc6e8d"
         },
         {
-          "name": "46961d5d-69f8-4367-9810-3133581402c8",
+          "name": "51a6fa46-1808-4881-aa33-1505a4bbd67c",
           "displayName": "Hourly logins - fixed Australia/Melbourne (AEST/AEDT, DST-aware)",
           "description": "Pattern A. Same query with \"Australia/Melbourne\". The IANA zone handles daylight saving automatically (AEDT, UTC+11, from 4 Oct 2026).",
           "chartDatasource": {
-            "dashboardQuery": "a93ac595-1036-413e-9136-744c2199f417",
+            "dashboardQuery": "e6cbe205-b3bb-4cf5-80b1-1bc68e2c7fc3",
             "dataSources": [
               "UDM"
             ]
@@ -368,12 +180,200 @@
             "groupingType": "Off"
           },
           "tileType": "TILE_TYPE_VISUALIZATION",
-          "etag": "3cfd3947f456112c08ec762b10eafc862b4d4b4af2c88b602ddd240049908083"
+          "etag": "a3d726a4ffd52356a3bf2d7314c6896c5701494706069422c71cfbc5124bf2de"
+        },
+        {
+          "name": "158a2e90-c810-4127-901e-2c53f28c4384",
+          "displayName": "Exact custom labels \"12:00 PM Mon Oct 5\" - Australia/Perth, last 48h",
+          "description": "Pattern B. Label = timestamp.get_timestamp(seconds, \"%I:00 %p %a %b %e\", \"Australia/Perth\"). Custom strings are not sortable by the UI, so a hidden chronological key ($Sort_Key, %F %H:00) is grouped and used in order:.",
+          "chartDatasource": {
+            "dashboardQuery": "8719a82d-9b28-40ba-a2d4-dfa5ead3d25a",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "Logins (AWST)",
+                "seriesType": "LINE",
+                "encode": {
+                  "x": "Time_AWST",
+                  "y": "Logins"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#e51f8f"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Time (AWST)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Logins"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "6daed4b69017fd778f6c1dc3522f78d04f75f1d773c0fdfbd5236b4150131c76"
+        },
+        {
+          "name": "db1d2000-e012-4a1c-ae8e-952ef561e9b5",
+          "displayName": "Hourly logins - auto-localised to each viewer's SecOps time zone",
+          "description": "Pattern C. timestamp.get_timestamp(seconds, \"HOUR\") with NO time zone returns UTC buckets tagged HOUR granularity; the UI converts them to the viewer's SecOps time-zone setting. Don't add a time zone to HOUR/MINUTE/SECOND buckets: the UI assumes UTC input and would shift the values twice.",
+          "chartDatasource": {
+            "dashboardQuery": "2ab25d99-d16c-4f79-a63c-19874abf5772",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "Logins (viewer TZ)",
+                "seriesType": "LINE",
+                "encode": {
+                  "x": "Hour",
+                  "y": "Logins"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#188038"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour (viewer time zone)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Logins"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "9f2eb7b2bed5427524581ac855437b6ee6f53748d1fd778b376940f27cc6cdf7"
+        },
+        {
+          "name": "d54d7f00-450d-4870-be5f-30f5e35f1fc5",
+          "displayName": "Hourly logins - fixed Australia/Perth (AWST, UTC+8)",
+          "description": "Pattern A. timestamp.get_timestamp(seconds, \"%F %H:00\", \"Australia/Perth\"). Bucketed in Perth time by the backend, sorted chronologically and shown verbatim, so every viewer sees Perth wall-clock time.",
+          "chartDatasource": {
+            "dashboardQuery": "262241f5-ac52-4add-b83e-2c89cc3fb18a",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "Logins (AWST)",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour_AWST",
+                  "y": "Logins"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#1a73e8"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour (AWST)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Logins"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "feb05fbce1699ddaab3056f74f8576427c424b54f0fb165a263c300542f125c9"
+        },
+        {
+          "name": "2797452e-f418-4dff-86dd-05538aeecebc",
+          "displayName": "Login profile by hour of day - Australia/Perth (0-23)",
+          "description": "timestamp.get_hour(seconds, \"Australia/Perth\") folds all days into hours 0-23 AWST - useful for shift and after-hours baselining.",
+          "chartDatasource": {
+            "dashboardQuery": "be0739fd-e6fa-489d-b1c9-f6cfbe297600",
+            "dataSources": [
+              "UDM"
+            ]
+          },
+          "visualization": {
+            "series": [
+              {
+                "seriesName": "Logins by hour of day",
+                "seriesType": "BAR",
+                "encode": {
+                  "x": "Hour_Of_Day_AWST",
+                  "y": "Logins"
+                },
+                "dataLabel": {},
+                "itemStyle": {
+                  "color": "#f9ab00"
+                }
+              }
+            ],
+            "xAxes": [
+              {
+                "axisType": "CATEGORY",
+                "displayName": "Hour of day (AWST)"
+              }
+            ],
+            "yAxes": [
+              {
+                "axisType": "VALUE",
+                "displayName": "Logins"
+              }
+            ],
+            "legends": [
+              {
+                "legendOrient": "HORIZONTAL"
+              }
+            ],
+            "groupingType": "Off"
+          },
+          "tileType": "TILE_TYPE_VISUALIZATION",
+          "etag": "902d1044247dc8df123826e24eaebf8134713a1f1cc8f79f83d558c990d0e4bd"
         }
       ],
       "dashboardQueries": [
         {
-          "name": "a40b5bca-2066-4e0a-9e91-23f3565ae943",
+          "name": "2ea18135-f452-4a57-a743-2f470fa27f73",
           "query": "metadata.event_type = \"USER_LOGIN\"\n$Hour_UTC = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%F %H:00\", \"UTC\")\n$Perth_AWST = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%I:00 %p %a %b %e\", \"Australia/Perth\")\n$Melbourne_AEDT = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%I:00 %p %a %b %e\", \"Australia/Melbourne\")\n\nmatch:\n    $Hour_UTC, $Perth_AWST, $Melbourne_AEDT\n\noutcome:\n    $Logins = count(metadata.id)\n\norder:\n    $Hour_UTC desc",
           "input": {
             "relativeTime": {
@@ -381,11 +381,11 @@
               "startTimeVal": "24"
             }
           },
-          "etag": "3f0da903c494ed87384665202bf88e3fd28b87270981e5769053b1c0eeeef1bc",
+          "etag": "285e97a654a4114dca07c359dd7fb8b12ce60b0c4377d8a76ea5df3589adb459",
           "dialect": "YL2"
         },
         {
-          "name": "a93ac595-1036-413e-9136-744c2199f417",
+          "name": "e6cbe205-b3bb-4cf5-80b1-1bc68e2c7fc3",
           "query": "metadata.event_type = \"USER_LOGIN\"\n$Hour_Melbourne = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%F %H:00\", \"Australia/Melbourne\")\n\nmatch:\n    $Hour_Melbourne\n\noutcome:\n    $Logins = count(metadata.id)\n\norder:\n    $Hour_Melbourne asc",
           "input": {
             "relativeTime": {
@@ -393,11 +393,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "4e42e55731669317da4476c2bdc6c2a5fc59a7b9ebfb92e99206a0fc82fd632f",
+          "etag": "8bdffdbac3c137f3af94c7655e744d8ba8518dd23205172fdb17b27ad43f5cba",
           "dialect": "YL2"
         },
         {
-          "name": "da6e65bc-4841-41d1-b44e-da48df4595c7",
+          "name": "8719a82d-9b28-40ba-a2d4-dfa5ead3d25a",
           "query": "metadata.event_type = \"USER_LOGIN\"\n$Sort_Key = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%F %H:00\", \"Australia/Perth\")\n$Time_AWST = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%I:00 %p %a %b %e\", \"Australia/Perth\")\n\nmatch:\n    $Sort_Key, $Time_AWST\n\noutcome:\n    $Logins = count(metadata.id)\n\norder:\n    $Sort_Key asc",
           "input": {
             "relativeTime": {
@@ -405,11 +405,11 @@
               "startTimeVal": "48"
             }
           },
-          "etag": "52ed8d0751c69a96e2207f7417b3c02848088a2d64a33dccb8c48fdad53654b7",
+          "etag": "11101ae7a3b3e6eb7da429f26a22622544fbecc6bc37b891a5d420f72a54625d",
           "dialect": "YL2"
         },
         {
-          "name": "a5baebd1-1d72-43b7-9fce-11078800547a",
+          "name": "2ab25d99-d16c-4f79-a63c-19874abf5772",
           "query": "metadata.event_type = \"USER_LOGIN\"\n$Hour = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"HOUR\")\n\nmatch:\n    $Hour\n\noutcome:\n    $Logins = count(metadata.id)\n\norder:\n    $Hour asc",
           "input": {
             "relativeTime": {
@@ -417,11 +417,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "9bdaf7d1f4a70f49043889b1943c4639f69e70010b98e2d16e9c1eab26791ff8",
+          "etag": "c5ff06456a66a658b6a3406397f2aaebd488f2ab397b4a629e6d09ab4449cd34",
           "dialect": "YL2"
         },
         {
-          "name": "290327f6-754a-4951-a87f-3a09f1397378",
+          "name": "262241f5-ac52-4add-b83e-2c89cc3fb18a",
           "query": "metadata.event_type = \"USER_LOGIN\"\n$Hour_AWST = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%F %H:00\", \"Australia/Perth\")\n\nmatch:\n    $Hour_AWST\n\noutcome:\n    $Logins = count(metadata.id)\n\norder:\n    $Hour_AWST asc",
           "input": {
             "relativeTime": {
@@ -429,11 +429,11 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "d2deeed49e9e0106124b208a8ea9f7c6d97f5b2e3de2c098ae07aa85fe64f87e",
+          "etag": "ce87ecc93f523d59f49fe5842437b6d14ed2a0e22b999ff64afc85d742c73baa",
           "dialect": "YL2"
         },
         {
-          "name": "6d89d6f8-6577-4509-9cf4-7069c1b225db",
+          "name": "be0739fd-e6fa-489d-b1c9-f6cfbe297600",
           "query": "metadata.event_type = \"USER_LOGIN\"\n$Hour_Of_Day_AWST = timestamp.get_hour(metadata.event_timestamp.seconds, \"Australia/Perth\")\n\nmatch:\n    $Hour_Of_Day_AWST\n\noutcome:\n    $Logins = count(metadata.id)\n\norder:\n    $Hour_Of_Day_AWST asc",
           "input": {
             "relativeTime": {
@@ -441,7 +441,7 @@
               "startTimeVal": "7"
             }
           },
-          "etag": "01584f3cb6dee1f1d131f3074f3b0bc1b239c4d79ba9223fc97c4977759a9b6e",
+          "etag": "9f42796f442646f542d02f24d2b3a3aba0d61e85f897e7535a844d9afb638ec9",
           "dialect": "YL2"
         }
       ]
